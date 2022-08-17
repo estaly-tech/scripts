@@ -1,4 +1,4 @@
-API_URL = "https://fef4-5-40-86-158.eu.ngrok.io"
+API_URL = "https://669e-5-40-86-158.eu.ngrok.io"
 ADD_TO_CART_CLASS_NAME = "single_add_to_cart_button button alt"
 
 OFFER_BUTTON_SELECTOR = ""
