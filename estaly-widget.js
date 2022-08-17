@@ -19,12 +19,12 @@ function closeModal() {
 const PDP = {
     selectedPlanId: null,
 
-    async init({variantReferenceId}) {
+    async init({variantReferenceId, merchantId}) {
         if (!variantReferenceId) {
             return
         }
 
-        const data = await Estaly.getOffers(variantReferenceId);
+        const data = await Estaly.getOffers(variantReferenceId, merchantId);
         const offers = data.offers;
         const relevantOffer = offers.filter((offer) => offer.productVariantId === variantReferenceId)[0];
         const plans = relevantOffer.plans;
@@ -137,9 +137,9 @@ const Estaly = {
         selectedOfferId: null
     },
 
-    async getOffers(variantReferenceIds) {
+    async getOffers(variantReferenceIds, merchantId) {
         const url = `${API_URL}/offers?reference_ids=${variantReferenceIds}`
-        const response = await fetch(url, { headers: { Authorization: API_KEY } })
+        const response = await fetch(url, { headers: { Authorization: merchantId } })
         const data = await response.json()
 
         return data;
