@@ -1,5 +1,5 @@
 API_URL = "https://api.staging.estaly.co"
-ADD_TO_CART_CLASS_NAME = "single_add_to_cart_button button alt"
+ADD_TO_CART_CLASS_NAME = "name  grunion-field-width-50"
 
 OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
