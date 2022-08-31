@@ -1,5 +1,5 @@
 API_URL = "https://api.staging.estaly.co"
-ADD_TO_CART_CLASS_NAME = "single_add_to_cart_button button alt single-product-cart-btn btn btn-solid btn-uppercase btn-md btn-primary btn-oval"
+ADD_TO_CART_CLASS_NAME = "elementor-widget-container"
 
 OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
