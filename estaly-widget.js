@@ -82,6 +82,8 @@ const PDP = {
         addToCartButton.addEventListener("click", (event) => {
             if (this.selectedPlanId == null) {
             } else {
+                event.preventDefault();
+                console.log("event prevent default");
                 this.addOfferToCart(variantReferenceId, event);
             }
         })
@@ -118,8 +120,6 @@ const PDP = {
             return;
         }
         console.log("a plan is selected");
-        e.preventDefault();
-        console.log("event prevent default");
         return new Promise((resolve, reject) => {
             jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
             success: (response) => {
