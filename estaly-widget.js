@@ -115,10 +115,8 @@ const PDP = {
 
     addOfferToCart(variantReferenceId) {
         if (this.selectedPlanId == null) {
-            alert("no plan is selected");
             return;
         }
-        alert("a plan is selected");
         jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
             async: false
         });
