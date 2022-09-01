@@ -120,7 +120,7 @@ const PDP = {
         console.log("a plan is selected");
         jQuery.when( jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId, async: true}) ).then(function() {
             console.log("protection plan added to cart");
-          });
+        });
     }
 }
 
