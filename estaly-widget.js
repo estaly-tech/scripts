@@ -119,18 +119,15 @@ const PDP = {
         if (this.selectedPlanId == null) {
             return;
         }
+        e.preventDefault();
         console.log("a plan is selected");
-        return new Promise((resolve, reject) => {
-            jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
-            success: (response) => {
-                resolve(response);
-                console.log("a plan is added to cart"); 
+        jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
+        success: function (data) {
+                console.log(data)
             },
-            error: (response) => {
-                reject(response);
-                console.log("error");
-            }})
-        });
+            error: function (error) {
+                console.log(error)
+        }})
     }
 }
 
