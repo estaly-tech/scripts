@@ -79,6 +79,7 @@ const PDP = {
         })
 
         const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
+        addToCartButton.on("submit", this.addOfferToCart(variantReferenceId));
         addToCartButton.addEventListener("click", () => {
             if (this.selectedPlanId == null) {
             } else {
