@@ -79,7 +79,6 @@ const PDP = {
         })
 
         const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
-        addToCartButton.on("submit", this.addOfferToCart(variantReferenceId));
         addToCartButton.addEventListener("click", () => {
             if (this.selectedPlanId == null) {
             } else {
@@ -119,8 +118,9 @@ const PDP = {
             return;
         }
         console.log("a plan is selected");
-        jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId, async: true});
-        console.log("ajax query");
+        jQuery.when( jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId, async: true}) ).then(function() {
+            console.log("protection plan added to cart");
+          });
     }
 }
 
