@@ -119,6 +119,7 @@ const PDP = {
         }
         console.log("a plan is selected");
         return new Promise((resolve, reject) => {
+            e.preventDefault();
             jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
             success: (response) => {
                 resolve(response);
@@ -126,6 +127,7 @@ const PDP = {
             },
             error: (response) => {
                 reject(response);
+                console.log("error");
             }})
         });
     }
