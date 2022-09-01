@@ -82,9 +82,7 @@ const PDP = {
         addToCartButton.addEventListener("click", (event) => {
             if (this.selectedPlanId == null) {
             } else {
-                event.preventDefault();
-                console.log("event prevent default");
-                this.addOfferToCart(variantReferenceId);
+                this.addOfferToCart(variantReferenceId, event);
             }
         })
     },
@@ -115,18 +113,24 @@ const PDP = {
         })
     },
 
-    addOfferToCart(variantReferenceId) {
+    addOfferToCart(variantReferenceId, e) {
         if (this.selectedPlanId == null) {
             return;
         }
+        e.preventDefault();
+        console.log("event prevent");
         console.log("a plan is selected");
-        jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
-        success: function (data) {
-            console.log(data)
-        },
-        error: function (error) {
-            console.log(error)
-        }})
+        return new Promise((resolve, reject) => {
+            jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
+            success: (response) => {
+                resolve(response);
+                console.log("a plan is added to cart"); 
+            },
+            error: (response) => {
+                reject(response);
+                console.log("error");
+            }})
+        });
     }
 }
 
