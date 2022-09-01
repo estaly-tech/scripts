@@ -82,7 +82,7 @@ const PDP = {
         addToCartButton.addEventListener("click", () => {
             if (this.selectedPlanId == null) {
             } else {
-                this.addOfferToCart(variantReferenceId)
+                this.addOfferToCart(variantReferenceId, e);
             }
         })
     },
