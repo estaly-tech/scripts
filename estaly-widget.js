@@ -121,9 +121,8 @@ const PDP = {
         return new Promise((resolve, reject) => {
             jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
             success: (response) => {
-                resolve(JSON.parse(response));
+                resolve(response);
                 console.log("a plan is added to cart"); 
-                console.log(JSON.parse(response));
             },
             error: (response) => {
                 reject(response);
