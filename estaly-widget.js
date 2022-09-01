@@ -79,12 +79,12 @@ const PDP = {
         })
 
         const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
-        addToCartButton.addEventListener("click", (event) => {
+        addToCartButton.addEventListener("click", function(e) {
             if (this.selectedPlanId == null) {
             } else {
-                event.preventDefault();
+                e.preventDefault();
                 console.log("event prevent default");
-                this.addOfferToCart(variantReferenceId, event);
+                this.addOfferToCart(variantReferenceId);
             }
         })
     },
@@ -115,18 +115,17 @@ const PDP = {
         })
     },
 
-    addOfferToCart(variantReferenceId, e) {
+    addOfferToCart(variantReferenceId) {
         if (this.selectedPlanId == null) {
             return;
         }
-        e.preventDefault();
         console.log("a plan is selected");
         jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
         success: function (data) {
-                console.log(data)
-            },
-            error: function (error) {
-                console.log(error)
+            console.log(data)
+        },
+        error: function (error) {
+            console.log(error)
         }})
     }
 }
