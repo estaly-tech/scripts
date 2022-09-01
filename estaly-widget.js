@@ -113,7 +113,7 @@ const PDP = {
         })
     },
 
-    addOfferToCart(variantReferenceId) {
+    addOfferToCart(variantReferenceId, e) {
         if (this.selectedPlanId == null) {
             return;
         }
