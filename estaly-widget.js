@@ -117,9 +117,8 @@ const PDP = {
         if (this.selectedPlanId == null) {
             return;
         }
-        jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
-            async: false
-        });
+        setTimeout(jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId, async: false}), 1000);
+        console.log("ajax query");
     }
 }
 
