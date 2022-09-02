@@ -121,11 +121,11 @@ const PDP = {
             url: "/wp-admin/admin-ajax.php",
             dataType: 'JSON',
             data: {
-                action: "multi_add_to_cart",
+                action: "add_to_cart",
                 items: productsData
             },
-            success: function () {
-                console.log("protection plan added");
+            success: function (redirectLink) {
+                window.location.href = redirectLink;
             }
         });
     }
