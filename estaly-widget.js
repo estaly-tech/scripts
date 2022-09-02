@@ -1,5 +1,5 @@
 API_URL = "https://api.staging.estaly.co"
-ADD_TO_CART_CLASS_NAME = "price-configurator"
+ADD_TO_CART_CLASS_NAME = "green-round-button-voltaire"
 
 OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
