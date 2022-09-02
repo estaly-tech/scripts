@@ -118,19 +118,19 @@ const PDP = {
         if (this.selectedPlanId == null) {
             return;
         }
-        e.preventDefault();
-        console.log("event prevent");
-        console.log("a plan is selected");
-        return new Promise((resolve, reject) => {
-            jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
-            success: (response) => {
-                resolve(response);
-                console.log("a plan is added to cart"); 
+        var productsData = []
+        productsData.push({'id': this.selectedPlanId, 'qty': 1})
+        $.ajax({
+            type: "POST",
+            url: "/wp-admin/admin-ajax.php",
+            dataType: 'JSON',
+            data: {
+                action: "multi_add_to_cart",
+                items: productsData
             },
-            error: (response) => {
-                reject(response);
-                console.log("error");
-            }})
+            success: function () {
+                console.log("protection plan added");
+            }
         });
     }
 }
