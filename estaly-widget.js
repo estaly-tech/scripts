@@ -80,6 +80,7 @@ const PDP = {
 
         const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
         addToCartButton.addEventListener("click", (event) => {
+            e.preventDefault();
             if (this.selectedPlanId == null) {
             } else {
                 this.addOfferToCart(variantReferenceId, event);
