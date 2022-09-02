@@ -194,7 +194,7 @@ const Estaly = {
             })
         })
 
-        const closeModalButton = document.querySelector(".modal-dialog .close")
+        const closeModalButton = document.querySelector(".modal-dialog .close-estaly")
         closeModalButton.addEventListener("click", this.closeModal)
 
         const protectMyPurchaseButton = document.querySelector(".modal-dialog .button-submit")
