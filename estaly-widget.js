@@ -1,5 +1,4 @@
 API_URL = "https://api.staging.estaly.co"
-ADD_TO_CART_CLASS_NAME = "green-round-button-voltaire"
 
 OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
@@ -77,11 +76,6 @@ const PDP = {
         learnMoreButton.addEventListener("click", () => {
             Estaly.openModal(false);
         })
-
-        const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
-        addToCartButton.addEventListener("click", () => {
-            this.addOfferToCart(variantReferenceId);
-        })
     },
 
     displayButtons() {
@@ -109,26 +103,6 @@ const PDP = {
             priceSpan.innerText = plan.price
         })
     },
-
-    addOfferToCart(variantReferenceId) {
-        if (this.selectedPlanId == null) {
-            return;
-        }
-        var productsData = []
-        productsData.push({'id': this.selectedPlanId, 'qty': 1})
-        $.ajax({
-            type: "POST",
-            url: "/wp-admin/admin-ajax.php",
-            dataType: 'JSON',
-            data: {
-                action: "add_to_cart",
-                items: productsData
-            },
-            success: function (redirectLink) {
-                window.location.href = redirectLink;
-            }
-        });
-    }
 }
 
 const Estaly = {
