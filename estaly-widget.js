@@ -133,11 +133,11 @@ const PDP = {
 
     confirm_configurator_estaly() {
         const radios_and_checkboxes = [':radio:checked', ':checkbox:checked'];
+        var productsData = [];
         if (this.selectedPlanId == null) {
         } else {
             productsData.push({'id': this.selectedPlanId, 'qty': 1})
         }
-        var productsData = [];
         radios_and_checkboxes.forEach(function(radio_and_checkbox) {
             $(radio_and_checkbox).each(function (ind, ele) {
                 let productId = parseInt($(ele).attr("id"));
