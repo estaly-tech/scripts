@@ -80,11 +80,8 @@ const PDP = {
 
         const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
         addToCartButton.addEventListener("click", (event) => {
-            event.preventDefault();
-            if (this.selectedPlanId == null) {
-            } else {
-                this.addOfferToCart(variantReferenceId, event);
-            }
+            event.stopPropagation();
+            this.confirm_configurator_estaly(event);
         })
     },
 
@@ -132,6 +129,37 @@ const PDP = {
                 console.log("protection plan added");
             }
         });
+    }, 
+
+    confirm_configurator_estaly() {
+        const radios_and_checkboxes = [':radio:checked', ':checkbox:checked'];
+        if (this.selectedPlanId == null) {
+        } else {
+            productsData.push({'id': this.selectedPlanId, 'qty': 1})
+        }
+        var productsData = [];
+        radios_and_checkboxes.forEach(function(radio_and_checkbox) {
+            $(radio_and_checkbox).each(function (ind, ele) {
+                let productId = parseInt($(ele).attr("id"));
+                let productName = $(ele).attr("name");
+                if(!isNaN(productId)) {
+                    productsData.push({'id': productId, 'qty': 1});
+                }
+            });
+            $.ajax({
+                type: "POST",
+                url: "/wp-admin/admin-ajax.php",
+                dataType: 'JSON',
+                data: {
+                    action: "multi_add_to_cart",
+                    items: productsData
+                },
+                success: function (redirectLink) {
+                    window.location.href = redirectLink;
+                }
+            });
+    
+        })
     }
 }
 
