@@ -280,7 +280,7 @@ span {
 }
 
 .offer-button:focus {
-    border-color: transparent;
+    border-color: transparent !important;
 }
 
 .offer-term-length {
