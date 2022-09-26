@@ -200,7 +200,6 @@ const Estaly = {
         const modal = document.querySelector(".modal-dialog");
 
         if (modal) {
-            modal.querySelector("h2").innerText = modalMarketingDetails.headline;
             modal.querySelector(".coverage-header").innerText = modalMarketingDetails.coverageBulletsHeading;
 
             const bulletPoints = modal.querySelectorAll(".list .list-item");
