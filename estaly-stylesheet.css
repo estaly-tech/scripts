@@ -1,0 +1,335 @@
+.estaly-pdp-offering {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.mt-2 {
+    margin-top: 0.25rem;
+}
+
+span {
+    text-align: center;
+}
+
+.headline-buttons {
+    display: inline;
+    font-size: 15px !important;
+    letter-spacing: 0px !important;
+    font-family: 'Sackers Gothic Heavy' !important;
+    color: #c43118 !important;
+    margin: auto 0 !important;
+    text-transform: lowercase !important;
+}
+
+.link-buttons {
+    display: inline;
+    font-size: 14px !important;
+    color: #C0C0C0 !important;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 5px !important;
+}
+
+.modal-dialog {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.modal-dialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 50%);
+    display: flex;
+    overflow: auto;
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    z-index: 2;
+}
+
+.content-container-estaly {
+    padding: 2.8rem 3rem;
+    padding-bottom: 0px !important;
+    text-align: left;
+    width: 62.5%;
+    background-color: #f7f6f1 !important; 
+}
+
+.image-container-estaly {
+    overflow: hidden;
+    width: 38%;
+    max-height: 25rem !important;
+}
+
+.close-estaly {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    padding-left: 1px;
+    cursor: pointer;
+}
+
+.close-estaly:hover {
+    background: #8C8DDB;
+}
+
+.logo-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom : 20px; 
+
+}
+
+.content-image-container-estaly {
+    display: flex !important;
+}
+
+.plus {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.merchant-logo {
+    max-height: 3rem;
+    max-width: 17rem;
+}
+
+.subheading-estaly {
+    font-size: 12px !important;
+    letter-spacing: 0px !important;
+    font-family: 'Minion Pro' !important;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+    text-transform : none;
+    text-align: center;
+}
+
+.sub-subheading-estaly {
+    font-size: 14px !important;
+    letter-spacing: 0px !important;
+    font-family: 'Minion Pro' !important;
+    font-weight: 900 !important;
+    text-transform : none;
+    text-align: center;
+}
+
+.list {
+    padding-top: 10px !important;
+    margin: 0 0 1.5rem;
+    padding-left: 1.7rem;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+}
+
+.list-item {
+    font-size: 13px !important;
+    letter-spacing: 0px !important;
+    font-family: 'Minion Pro' !important;
+    margin: 0.8rem 0;
+    font-weight: light;
+    text-align: center;
+}
+
+.terms-link {
+    font-size: 10px !important;
+    letter-spacing: 0px !important;
+    font-family: 'Minion Pro' !important;
+    color: #9f9f9f !important;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+.learn-more-image {
+    object-fit: cover !important;
+    width: 100% !important;
+}
+
+.offered-by {
+    font-size: 10px !important;
+    letter-spacing: 0px !important;
+    font-family: 'Minion Pro' !important;
+    display: flex;
+}
+
+.link-container {
+    margin-top: 31px !important;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.link-out {
+    margin-left: 0.4rem;
+}
+
+.buttons-container {
+    display: none;
+}
+
+.horizontal-line {
+    border: 0.1rem solid #EDEDED;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.choice-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.choice-container button {
+    border-radius: 0.2rem;
+    height: 4.2rem;
+    width: 19.2rem;
+}
+
+.button-link {
+    background-color: transparent;
+    border: none;
+    color: #6d7278;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    text-decoration: underline;
+}
+
+.button-submit {
+    background: #8C8DDB;
+    border-width: 0rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 100%;
+    transition: 250ms opacity;
+}
+
+.offer-button {
+    padding: 0.8rem;
+    padding-left: 30px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-align: center;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    transition: border 200ms, box-shadow 200ms;
+}
+
+.button-group {
+    margin-top: 5px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column !important;
+    align-content: center !important;
+}
+
+.offer-button.active {
+    background-color: transparent !important;
+    border-left: 2px solid #26392f !important;
+    color: black !important;
+    border-radius: 0px !important;
+}
+
+.offer-button:focus {
+    background-color: transparent !important;
+    color: black !important; 
+    border-radius: 0px !important;
+    border-left: 0px; 
+}
+
+.offer-button:hover {
+    background-color: transparent !important;
+    color: black !important; 
+}
+
+.offer-term-length {
+    font-family: 'Minion pro' !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    letter-spacing: 0 !important;
+}
+
+.button-group > .offer-button {
+    flex: 1;
+}
+
+.dash-offer-price {
+    display: inline !important;
+    font-family: 'Minion pro' !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    letter-spacing: 0 !important;
+    margin-left: 7px !important;
+}
+
+.offer-price {
+    display: inline !important;
+    font-family: 'Minion pro' !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    letter-spacing: 0 !important;
+    margin-left: 7px !important;
+}
+
+.coverage-header {
+    display: none !important;
+}
+
+.button-insur {
+    color: #f7f6f1 !important;
+    background-color: #213529 !important;
+    font-family: 'Sackers Gothic Heavy';
+    border-radius: 10px;
+    font-size: 10px!important;
+    line-height: 14px!important;
+    text-transform: lowercase!important;
+    font-weight: 600 !important;
+    border: 1px solid #213529 !important;
+    padding: 10px 50px !important;
+    overflow: hidden;
+    position: relative;
+}
