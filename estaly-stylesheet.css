@@ -274,13 +274,6 @@ span {
     border-radius: 0px;
 }
 
-.offer-button:focus {
-    background-color: transparent !important;
-    color: black !important; 
-    border-radius: 0px !important;
-    border-left: 0px;
-}
-
 .offer-button:hover {
     background-color: transparent !important;
     color: black !important; 
