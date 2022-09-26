@@ -279,6 +279,10 @@ span {
     color: black !important; 
 }
 
+.offer-button:focus {
+    border-color: transparent;
+}
+
 .offer-term-length {
     font-family: 'Minion pro' !important;
     font-weight: 400 !important;
