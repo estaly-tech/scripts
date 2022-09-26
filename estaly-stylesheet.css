@@ -267,7 +267,7 @@ span {
     align-content: center !important;
 }
 
-.offer-button.active {
+.offer-button:active {
     background-color: transparent !important;
     border-left: 2px solid #26392f !important;
     color: black !important;
