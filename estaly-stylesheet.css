@@ -281,6 +281,10 @@ span {
     border-left: 0px;
 }
 
+.offer-button:focus:not(:active) {
+    border-left: 0px !important;
+}
+
 .offer-button:hover {
     background-color: transparent !important;
     color: black !important; 
