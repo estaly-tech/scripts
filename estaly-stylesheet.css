@@ -278,7 +278,7 @@ span {
     background-color: transparent !important;
     color: black !important; 
     border-radius: 0px !important;
-    border-left: 0.1px #26392f !important;
+    border-left: 0px;
 }
 
 .offer-button:hover {
