@@ -271,7 +271,7 @@ span {
     background-color: transparent !important;
     border-left: 2px solid #26392f !important;
     color: black !important;
-    border-radius: 0px !important;
+    border-radius: 0px;
 }
 
 .offer-button:focus {
