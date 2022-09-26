@@ -54,7 +54,6 @@ const PDP = {
         const buttons = document.querySelector(".estaly-pdp-offering")
 
         if (buttons) {
-            buttons.querySelector(".headline-buttons").innerText = buttonsMarketingDetails.headline
             buttons.querySelector(".link-buttons").innerText = buttonsMarketingDetails.linkText
         }
     },
