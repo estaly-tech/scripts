@@ -210,7 +210,6 @@ const Estaly = {
 
             modal.querySelector(".terms-link").innerText = modalMarketingDetails.linkText;
             modal.querySelector(".terms-link").href = modalMarketingDetails.planDetailsUrl;
-            modal.querySelector(".merchant-logo").src = modalMarketingDetails.merchantLogo;
             modal.querySelector(".button-link").innerText = modalMarketingDetails.declineText;
             modal.querySelector(".button-submit").innerText = modalMarketingDetails.buyText;
             modal.querySelector(".offered-by").innerText = modalMarketingDetails.legalText;
