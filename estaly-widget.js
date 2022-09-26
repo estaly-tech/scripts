@@ -166,6 +166,12 @@ const Estaly = {
         const closeModalButton = document.querySelector(".modal-dialog .close-estaly")
         closeModalButton.addEventListener("click", this.closeModal)
 
+        const addProtectionPlan = document.getElementsByClassName("button-insur")[0]
+        addProtectionPlan.addEventListener("click", () => {
+            document.getElementsByClassName("offer-button")[1].click();
+            this.closeModal();
+        })
+
         const protectMyPurchaseButton = document.querySelector(".modal-dialog .button-submit")
         protectMyPurchaseButton.addEventListener("click", () => {
             if (this.state.selectedOfferId == null) {
@@ -209,7 +215,6 @@ const Estaly = {
             modal.querySelector(".terms-link").href = modalMarketingDetails.planDetailsUrl;
             modal.querySelector(".button-link").innerText = modalMarketingDetails.declineText;
             modal.querySelector(".button-submit").innerText = modalMarketingDetails.buyText;
-            modal.querySelector(".offered-by").innerText = modalMarketingDetails.legalText;
             modal.querySelector(".learn-more-image").src = modalMarketingDetails.image;
         }
     },
