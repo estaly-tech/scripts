@@ -215,7 +215,6 @@ const Estaly = {
             modal.querySelector(".terms-link").href = modalMarketingDetails.planDetailsUrl;
             modal.querySelector(".button-link").innerText = modalMarketingDetails.declineText;
             modal.querySelector(".button-submit").innerText = modalMarketingDetails.buyText;
-            modal.querySelector(".learn-more-image").src = modalMarketingDetails.image;
         }
     },
 }
