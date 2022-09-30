@@ -337,3 +337,10 @@ span {
     overflow: hidden;
     position: relative;
 }
+
+@media only screen and (max-width: 768px){
+	.modal-content { height: auto !important }
+	.list-item { font-size: 10px !important }
+	.subheading-estaly { font-size: 10px !important }
+	.sub-subheading-estaly { font-size: 12px !important }
+}
