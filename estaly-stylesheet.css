@@ -161,6 +161,7 @@ span {
 .list-item {
     font-size: 13px !important;
     letter-spacing: 0px !important;
+    margin: 0px !important;
     font-family: 'Minion Pro' !important;
     font-weight: light;
     text-align: center;
