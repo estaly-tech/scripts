@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 480px){
     .subheading-estaly { font-size: 10px !important ;}
 	.modal-content { height: auto !important ;}
 	.sub-subheading-estaly { font-size: 12px !important ;}
