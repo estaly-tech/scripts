@@ -1,13 +1,3 @@
-@media only screen and (max-width: 480px){
-    .subheading-estaly { font-size: 10px !important ;}
-	.modal-content { height: auto !important ;}
-	.sub-subheading-estaly { font-size: 12px !important ;}
-	.list-item { font-size: 10px !important ;}
-    .offered-by .p {
-        display:none !important;
-    }
-}
-
 .estaly-pdp-offering {
     display: none;
     margin-bottom: 20px;
@@ -346,4 +336,14 @@ span {
     padding: 10px 50px !important;
     overflow: hidden;
     position: relative;
+}
+
+@media (max-width: 480px){
+    .subheading-estaly { font-size: 10px !important ;}
+	.modal-content { height: auto !important ;}
+	.sub-subheading-estaly { font-size: 12px !important ;}
+	.list-item { font-size: 10px !important ;}
+    .offered-by .p {
+        display:none !important;
+    }
 }
