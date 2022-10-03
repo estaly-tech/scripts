@@ -70,7 +70,6 @@ span {
 
 .content-container-estaly {
     padding: 2.8rem 3rem;
-    padding-bottom: 0px !important;
     text-align: left;
     width: 62.5%;
     background-color: #f7f6f1 !important; 
@@ -345,11 +344,13 @@ span {
     .offered-by p {
         display:none !important;
     }
-    .link-container {
-        flex-direction: column;
-        align-items: center;
-    }
     .offer-button {
         padding-left: 70px !important;
+    }
+    .content-container-estaly {
+        width: 100% !important;
+    }
+    .image-container-estaly {
+        display: none !important;
     }
 }
