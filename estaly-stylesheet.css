@@ -79,7 +79,6 @@ span {
 .image-container-estaly {
     overflow: hidden;
     width: 38%;
-    max-height: 25rem !important;
 }
 
 .close-estaly {
