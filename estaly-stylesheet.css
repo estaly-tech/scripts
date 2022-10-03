@@ -255,8 +255,7 @@ span {
     transition: border 200ms, box-shadow 200ms;
 }
 
-.button-group {
-    margin-top: 5px; 
+.button-group { 
     display: flex;
     justify-content: center;
     flex-direction: column !important;
