@@ -208,7 +208,7 @@ const Estaly = {
 
             const bulletPoints = modal.querySelectorAll(".list .list-item");
             bulletPoints.forEach((bulletPoint, index) => {
-                bulletPoint.innerText = modalMarketingDetails.bulletPoints[index];
+                bulletPoint.innerText = modalMarketingDetails.bulletPoints[index+1];
             })
 
             modal.querySelector(".terms-link").innerText = modalMarketingDetails.linkText;
