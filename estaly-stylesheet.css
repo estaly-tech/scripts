@@ -1,6 +1,6 @@
 .estaly-pdp-offering {
     display: none;
-    margin-bottom: 20px;
+    padding: 3% 0 !important;
 }
 
 .flex {
@@ -333,6 +333,10 @@ span {
     padding: 10px 50px !important;
     overflow: hidden;
     position: relative;
+}
+
+.bouton_rouge {
+    margin: 0 !important;
 }
 
 @media (max-width: 580px){
