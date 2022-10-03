@@ -336,7 +336,7 @@ span {
     position: relative;
 }
 
-@media (max-width: 480px){
+@media (max-width: 580px){
     .subheading-estaly { font-size: 10px !important ;}
 	.modal-content-estaly { height: auto !important ;}
 	.sub-subheading-estaly { font-size: 12px !important ;}
