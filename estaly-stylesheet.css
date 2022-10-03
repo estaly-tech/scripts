@@ -345,4 +345,8 @@ span {
     .offered-by p {
         display:none !important;
     }
+    .link-containter {
+        flex-direction: column;
+        align-items: center;
+    }
 }
