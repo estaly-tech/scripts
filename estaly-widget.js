@@ -1,4 +1,4 @@
-API_URL = "https://api.staging.estaly.co"
+API_URL = "https://api.estaly.co"
 
 OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
