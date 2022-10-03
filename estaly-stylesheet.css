@@ -56,7 +56,7 @@ span {
     pointer-events: auto;
 }
 
-.modal-content {
+.modal-content-estaly {
     background: white;
     border-radius: 0.5rem;
     box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 50%);
@@ -340,10 +340,10 @@ span {
 
 @media (max-width: 480px){
     .subheading-estaly { font-size: 10px !important ;}
-	.modal-content { height: auto !important ;}
+	.modal-content-estaly { height: auto !important ;}
 	.sub-subheading-estaly { font-size: 12px !important ;}
 	.list-item { font-size: 10px !important ;}
-    .offered-by .p {
+    .offered-by p {
         display:none !important;
     }
 }
