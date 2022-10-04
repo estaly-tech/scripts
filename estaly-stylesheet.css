@@ -87,7 +87,6 @@ span {
     width: 24px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 1px 1px 3px #000;
     padding-left: 1px;
     cursor: pointer;
 }
