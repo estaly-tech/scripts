@@ -343,3 +343,7 @@ span {
         display: none !important;
     }
 }
+
+@media (max-width: 997px) and (min-width: 580px){
+    .modal-content-estaly { height: 25rem !important ;}
+}
