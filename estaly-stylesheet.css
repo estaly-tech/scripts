@@ -164,7 +164,7 @@ span {
 }
 
 .learn-more-image {
-    object-position: 100% 50%; 
+    object-position: 100% 35%; 
     object-fit: cover !important;
     width: 100% !important;
 }
