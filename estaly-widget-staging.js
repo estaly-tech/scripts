@@ -168,6 +168,8 @@ const Estaly = {
 
         const addProtectionPlan = document.getElementsByClassName("button-insur")[0]
         addProtectionPlan.addEventListener("click", () => {
+            document.querySelectorAll(`.offer-button`)[0].classList.remove('active');
+            document.querySelectorAll(`.offer-button`)[2].classList.remove('active');
             document.querySelectorAll(`.offer-button`)[1].classList.add("active");
             this.closeModal();
         })
