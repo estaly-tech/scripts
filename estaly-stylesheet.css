@@ -67,7 +67,7 @@ span {
 }
 
 .content-container-estaly {
-    padding: 2.8rem 3rem;
+    padding: 1.8rem 3rem;
     text-align: left;
     width: 62.5%;
     background-color: #f7f6f1 !important; 
@@ -164,6 +164,7 @@ span {
 }
 
 .learn-more-image {
+    object-position: 100% 50%; 
     object-fit: cover !important;
     width: 100% !important;
 }
@@ -177,7 +178,7 @@ span {
 
 .link-container {
     margin-top: 5px !important;
-    padding-top: 10px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
