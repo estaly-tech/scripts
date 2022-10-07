@@ -1,0 +1,265 @@
+.estaly-pdp-offering {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.mt-2 {
+    margin-top: 0.25rem;
+}
+
+span {
+    text-align: center;
+}
+
+.headline-buttons {
+    display: inline;
+    font-size: 16px;
+}
+
+.link-buttons {
+    display: inline;
+    color: #487358;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal-dialog {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.modal-dialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 50%);
+    display: flex;
+    overflow: auto;
+    position: relative;
+    width: 79.4rem;
+    z-index: 2;
+}
+
+.content-container {
+    padding: 4.8rem 4rem;
+    text-align: left;
+    width: 62.5%;
+}
+
+.image-container {
+    overflow: hidden;
+    width: 38%;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    padding-left: 1px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background: #487358;
+}
+
+.logo-container {
+    align-items: center;
+    display: flex;
+}
+
+.plus {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.merchant-logo {
+    max-height: 5rem;
+    max-width: 17rem;
+}
+
+.subheading {
+    font-size: 2.0rem;
+    font-weight: normal;
+    line-height: 2.4rem;
+}
+
+.coverage-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 2rem;
+    text-align: left;
+}
+
+.list {
+    margin: 0 0 1.5rem;
+    overflow: hidden;
+    padding-left: 1.7rem;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.list-item {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 2.0rem;
+    margin: 0.8rem 0;
+    text-align: left;
+}
+
+.terms-link {
+    color: #487358;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+.learn-more-image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-out {
+    margin-left: 0.4rem;
+}
+
+.buttons-container {
+    display: none;
+}
+
+.horizontal-line {
+    border: 0.1rem solid #EDEDED;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.choice-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.choice-container button {
+    border-radius: 0.2rem;
+    height: 4.2rem;
+    width: 19.2rem;
+}
+
+.button-link {
+    background-color: transparent;
+    border: none;
+    color: #6d7278;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    text-decoration: underline;
+}
+
+.button-submit {
+    background: #487358;
+    border-width: 0rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 100%;
+    transition: 250ms opacity;
+}
+
+.offer-button {
+    padding: 0.8rem;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #b2bcc3;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    transition: border 200ms, box-shadow 200ms;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.offer-button.active {
+    border-color: #487358;
+    box-shadow: 0 0 0 1px inset #487358;
+    background-color: #487358;
+    color: #fff;
+}
+
+.button-group > .offer-button {
+    flex: 1;
+}
+
+.offer-button + .offer-button {
+    margin-left: 1rem;
+}
+
+/* CART */
+
+.simple-offer {
+    border-radius: 5px;
+    background: transparent;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border: 0.1rem solid #8C8DDB;
+    color: #8C8DDB;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.simple-offer:hover {
+    background-color: #8C8DDB;
+    color: #fff;
+    border: 0.1rem solid transparent;
+}
+
+.simple-offer:active {
+    background-color: #8C8DDB;
+    color: #fff;
+}
