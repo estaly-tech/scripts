@@ -121,17 +121,17 @@
 <script src="https://estaly-tech.github.io/scripts/shopify/estaly-widget-shopify.js"></script>
 
 <script async>
+  const merchantId = "Bearer iI9uA0mQw7nEHj2MFi-a2g"
+  VARIANT_SELECTOR = "js product-form__input"
+  const addToCartButtonClass = "add"
+  const buyItNowButtonClass = "shopify-payment-button__button shopify-payment-button__button--unbranded BUz42FHpSPncCPJ4Pr_f jjzYeefyWpPZLH9pIgyw RWJ0IfBjxIhflh4AIrUw"
+
   document.addEventListener('DOMContentLoaded', async function () {
     const widgets = Estaly.Widgets;
     const variantReferenceId = product_to_protect_id;
-    const merchantId = "Bearer iI9uA0mQw7nEHj2MFi-a2g"
     console.log(variantReferenceId);
-    await widgets.add(Estaly.Widgets.PDP, { variantReferenceId, merchantId });
+    await widgets.add(Estaly.Widgets.PDP, { variantReferenceId, merchantId, addToCartButtonClass, buyItNowButtonClass });
   })
-</script>
-
-<script async>
-  VARIANT_SELECTOR = "js product-form__input"
 
   function variantSelectorUpdateEstalyWidget(){
     const targetNode = document.getElementsByClassName(VARIANT_SELECTOR)[0];
@@ -145,7 +145,7 @@
   window.onload = variantSelectorUpdateEstalyWidget;
 
   async function UpdateEstalyWidget(variantSelectedId){
-    var data = await Estaly.getOffers(variantSelectedId);
+    var data = await Estaly.getOffers(variantSelectedId, merchantId);
     var offers = data.offers;
     var relevantOffer = offers.filter((offer) => offer.productVariantId === variantSelectedId)[0];
     var plans = relevantOffer.plans;

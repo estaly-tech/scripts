@@ -49,7 +49,7 @@ const Cart = {
 const PDP = {
     selectedPlanId: null,
 
-    async init({variantReferenceId, merchantId}) {
+    async init({variantReferenceId, merchantId, addToCartButtonClass, buyItNowButtonClass}) {
         if (!variantReferenceId) {
             return
         }
@@ -62,7 +62,7 @@ const PDP = {
 
         this.insertPlans(plans);
         this.fillButtonsMarketing(data.marketing.buttons);
-        this.initButtons(variantReferenceId);
+        this.initButtons(variantReferenceId, addToCartButtonClass, buyItNowButtonClass);
         this.displayButtons();
 
         Estaly.fillModalMarketing(data.marketing.modal);
@@ -91,7 +91,7 @@ const PDP = {
         }
     },
 
-    initButtons(variantReferenceId) {
+    initButtons(variantReferenceId, addToCartButtonClass, buyItNowButtonClass) {
         const offerButtons = document.querySelectorAll(".offer-button")
         offerButtons.forEach((offerButton) => {
             offerButton.addEventListener("click", () => {
@@ -109,7 +109,7 @@ const PDP = {
             Estaly.openModal(false);
         })
 
-        const addToCartButton = document.getElementsByName("add")[0];
+        const addToCartButton = document.getElementsByName(addToCartButtonClass)[0];
         addToCartButton.addEventListener("click", () => {
             if (this.selectedPlanId == null) {
                 Estaly.openModal(true)
@@ -138,7 +138,7 @@ const PDP = {
             });
         }
 
-        waitForElm("shopify-payment-button__button shopify-payment-button__button--unbranded BUz42FHpSPncCPJ4Pr_f jjzYeefyWpPZLH9pIgyw RWJ0IfBjxIhflh4AIrUw").then((elm) => {
+        waitForElm(buyItNowButtonClass).then((elm) => {
             elm.addEventListener("click", e => {
                 e.preventDefault();
                 e.stopImmediatePropagation();
