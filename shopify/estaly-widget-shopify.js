@@ -1,4 +1,4 @@
-API_URL = "https://c2fe-196-65-159-84.eu.ngrok.io"
+API_URL = "https://7e84-80-215-14-196.eu.ngrok.io"
 
 CART_ITEM_SELECTOR = ".cart-item__details"
 
