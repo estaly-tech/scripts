@@ -63,7 +63,7 @@ const PDP = {
             Estaly.openModal(false);
         })
 
-        const addToCartButton = document.getElementsByName(addToCartButtonClass)[0];
+        const addToCartButton = document.getElementsByClassName(addToCartButtonClass)[0];
         addToCartButton.addEventListener("click", () => {
             if (this.selectedPlanId == null) {
                 Estaly.openModal(true)
