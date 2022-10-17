@@ -253,7 +253,6 @@ const PDP = {
 const Estaly = {
     Widgets: {
         PDP: PDP,
-        Cart: Cart,
 
         add(widget, params) {
             widget.init(params)
