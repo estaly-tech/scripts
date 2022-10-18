@@ -173,7 +173,7 @@ const PDP = {
         
         var static_token = $('input[name=token]').val();
             
-        var id_product = variantReferenceId;
+        var id_product = this.selectedPlanId;
                         
         $.ajax({
             type: 'POST',
