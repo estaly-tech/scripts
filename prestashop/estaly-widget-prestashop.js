@@ -66,7 +66,6 @@ const PDP = {
         const addToCartButton = document.getElementsByClassName(addToCartButtonClass)[0];
         addToCartButton.addEventListener("click", () => {
             if (this.selectedPlanId == null) {
-                Estaly.openModal(true)
             } else {
                 this.addOfferToCart(variantReferenceId)
             }
@@ -170,33 +169,26 @@ const PDP = {
         if (this.selectedPlanId == null) {
             return
         }
-
-        if (Estaly.getSelectedVariantId()) {
-            var selectedVariantId = Estaly.getSelectedVariantId;
-        }
-        else {
-            var selectedVariantId = variantReferenceId;
-        }
-
-        const data = {
-            items: [
-                {
-                    id: this.selectedPlanId,
-                    quantity: 1,
-                    properties: {
-                        'VariantId': selectedVariantId
-                    }
-                },
-            ]
-        }
-
-        jQuery.ajax({
-            type: "POST",
-            url: "/cart/add.js",
-            data: data,
+        console.log("ADD TO CART SELECTED WITH ESTALY PLAN");
+        
+        var static_token = $('input[name=token]').val();
+            
+        var id_product = '24';
+                        
+        $.ajax({
+            type: 'POST',
+            headers: { "cache-control": "no-cache" },
+            url: prestashop.urls.pages.cart,
             async: false,
             cache: false,
-            dataType: "json",
+            dataType : "json",
+            data: {'action': 'add-to-cart', 'add': 1, 'ajax': true, 'qty': 1, 'id_product': id_product, 'token': static_token},
+            success: function(jsonData,textStatus,jqXHR)
+            {
+                ajaxCart.updateCartInformation(jsonData, true);
+                console.log(jsonData);
+                console.log("SUCCESS");
+            }
         });
     },
 
