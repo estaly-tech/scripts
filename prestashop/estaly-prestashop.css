@@ -6,7 +6,7 @@
     display: flex;
 }
 
-.flex-col {
+.estaly-flex-col {
     flex-direction: column;
 }
 
