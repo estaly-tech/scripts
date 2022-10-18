@@ -123,7 +123,7 @@ span {
     text-align: left;
 }
 
-.list {
+.estaly-list {
     margin: 0 0 1.5rem;
     overflow: hidden;
     padding-left: 1.7rem;
@@ -231,10 +231,10 @@ span {
     color: #fff;
 }
 
-.estaly-button-group > .offer-button {
+.estaly-button-group > .estaly-offer-button {
     flex: 1;
 }
 
-.estaly-offer-button + .offer-button {
+.estaly-offer-button + .estaly-offer-button {
     margin-left: 1rem;
 }
