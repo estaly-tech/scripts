@@ -26,7 +26,7 @@ const PDP = {
     },
 
     setButtonsState(parentClass = "") {
-        const offerButtons = document.querySelectorAll(`${parentClass} .offer-button`)
+        const offerButtons = document.querySelectorAll(`${parentClass} .estaly-offer-button`)
         offerButtons.forEach((offerButton) => {
             if (offerButton.dataset.planVariantId == this.selectedPlanId) {
                 offerButton.classList.add("active");
@@ -40,13 +40,13 @@ const PDP = {
         const buttons = document.querySelector(".estaly-pdp-offering")
 
         if (buttons) {
-            buttons.querySelector(".headline-buttons").innerText = buttonsMarketingDetails.headline
-            buttons.querySelector(".link-buttons").innerText = buttonsMarketingDetails.linkText
+            buttons.querySelector(".estaly-headline-buttons").innerText = buttonsMarketingDetails.headline
+            buttons.querySelector(".estaly-link-buttons").innerText = buttonsMarketingDetails.linkText
         }
     },
 
     initButtons(variantReferenceId, addToCartButtonClass, buyItNowButtonClass) {
-        const offerButtons = document.querySelectorAll(".offer-button")
+        const offerButtons = document.querySelectorAll(".estaly-offer-button")
         offerButtons.forEach((offerButton) => {
             offerButton.addEventListener("click", () => {
                 if (offerButton.dataset.planVariantId == this.selectedPlanId) {
@@ -58,7 +58,7 @@ const PDP = {
             })
         })
 
-        const learnMoreButton = document.querySelector(".link-buttons");
+        const learnMoreButton = document.querySelector(".estaly-link-buttons");
         learnMoreButton.addEventListener("click", () => {
             Estaly.openModal(false);
         })
@@ -105,7 +105,7 @@ const PDP = {
         })
 
         function initModalToCheckout(variantReferenceId) {
-            const protectMyPurchaseButton = document.querySelector(".modal-dialog .button-submit")
+            const protectMyPurchaseButton = document.querySelector(".estaly-modal-dialog .estaly-button-submit")
             protectMyPurchaseButton.addEventListener("click", e => {
                 e.preventDefault(); 
                 e.stopPropagation();
@@ -128,7 +128,7 @@ const PDP = {
                 return
             })
 
-            const closeModalButton = document.querySelector(".modal-dialog .close")
+            const closeModalButton = document.querySelector(".estaly-modal-dialog .estaly-close")
             closeModalButton.addEventListener("click", e => {
                 e.preventDefault();
                 e.stopImmediatePropagation;
@@ -151,16 +151,16 @@ const PDP = {
             return
         }
 
-        const offerButtons = document.querySelectorAll(".offer-button")
+        const offerButtons = document.querySelectorAll(".estaly-offer-button")
         offerButtons.forEach((offerButton, index) => {
             const plan = plans[index % plans.length]
 
             offerButton.dataset.planVariantId = plan.offerVariantId
 
-            const termLengthSpan = offerButton.querySelector(".offer-term-length")
+            const termLengthSpan = offerButton.querySelector(".estaly-offer-term-length")
             termLengthSpan.innerText = plan.termLength
 
-            const priceSpan = offerButton.querySelector(".offer-price")
+            const priceSpan = offerButton.querySelector(".estaly-offer-price")
             priceSpan.innerText = plan.price
         })
     },
@@ -275,22 +275,22 @@ const Estaly = {
             return
         }
 
-        const offerButtons = document.querySelectorAll(".offer-button")
+        const offerButtons = document.querySelectorAll(".estaly-offer-button")
         offerButtons.forEach((offerButton, index) => {
             const offer = offers[index % offers.length]
 
             offerButton.dataset.planVariantId = offer.offerVariantId;
 
-            const termLengthSpan = offerButton.querySelector(".offer-term-length")
+            const termLengthSpan = offerButton.querySelector(".estaly-offer-term-length")
             termLengthSpan.innerText = offer.termLength
 
-            const priceSpan = offerButton.querySelector(".offer-price")
+            const priceSpan = offerButton.querySelector(".estaly-offer-price")
             priceSpan.innerText = offer.price
         })
     },
 
     initModal({afterAddToCartCallback}, variantReferenceId) {
-        const offerButtons = document.querySelectorAll(".modal-dialog .offer-button")
+        const offerButtons = document.querySelectorAll(".estaly-modal-dialog .estaly-offer-button")
         offerButtons.forEach((offerButton) => {
             offerButton.addEventListener("click", () => {
                 if (offerButton.dataset.planVariantId == this.state.selectedOfferId) {
@@ -308,10 +308,10 @@ const Estaly = {
             })
         })
 
-        const closeModalButton = document.querySelector(".modal-dialog .close")
+        const closeModalButton = document.querySelector(".estaly-modal-dialog .estaly-close")
         closeModalButton.addEventListener("click", this.closeModal)
 
-        const protectMyPurchaseButton = document.querySelector(".modal-dialog .button-submit")
+        const protectMyPurchaseButton = document.querySelector(".estaly-modal-dialog .estaly-button-submit")
         protectMyPurchaseButton.addEventListener("click", () => {
             if (this.state.selectedOfferId == null) {
                 this.closeModal();
@@ -327,39 +327,39 @@ const Estaly = {
     },
 
     openModal(withButtons) {
-        const modal = document.querySelector(".modal-dialog")
+        const modal = document.querySelector(".estaly-modal-dialog")
         if (withButtons) {
-            modal.querySelector(".buttons-container").style.display = "block"
+            modal.querySelector(".estaly-buttons-container").style.display = "block"
         } else {
-            modal.querySelector(".buttons-container").style.display = "none"
+            modal.querySelector(".estaly-buttons-container").style.display = "none"
         }
         modal.style.display = "flex"
     },
 
     closeModal() {
-        const modal = document.querySelector(".modal-dialog")
+        const modal = document.querySelector(".estaly-modal-dialog")
         modal.style.display = "none"
     },
 
     fillModalMarketing(modalMarketingDetails) {
-        const modal = document.querySelector(".modal-dialog");
+        const modal = document.querySelector(".estaly-modal-dialog");
 
         if (modal) {
             modal.querySelector("h2").innerText = modalMarketingDetails.headline;
-            modal.querySelector(".coverage-header").innerText = modalMarketingDetails.coverageBulletsHeading;
+            modal.querySelector(".estaly-coverage-header").innerText = modalMarketingDetails.coverageBulletsHeading;
 
-            const bulletPoints = modal.querySelectorAll(".list .list-item");
+            const bulletPoints = modal.querySelectorAll(".estaly-list .estaly-list-item");
             bulletPoints.forEach((bulletPoint, index) => {
                 bulletPoint.innerText = modalMarketingDetails.bulletPoints[index];
             })
 
-            modal.querySelector(".terms-link").innerText = modalMarketingDetails.linkText;
-            modal.querySelector(".terms-link").href = modalMarketingDetails.planDetailsUrl;
-            modal.querySelector(".merchant-logo").src = modalMarketingDetails.merchantLogo;
-            modal.querySelector(".button-link").innerText = modalMarketingDetails.declineText;
-            modal.querySelector(".button-submit").innerText = modalMarketingDetails.buyText;
-            modal.querySelector(".offered-by").innerText = modalMarketingDetails.legalText;
-            modal.querySelector(".learn-more-image").src = modalMarketingDetails.image;
+            modal.querySelector(".estaly-terms-link").innerText = modalMarketingDetails.linkText;
+            modal.querySelector(".estaly-terms-link").href = modalMarketingDetails.planDetailsUrl;
+            modal.querySelector(".estaly-merchant-logo").src = modalMarketingDetails.merchantLogo;
+            modal.querySelector(".estaly-button-link").innerText = modalMarketingDetails.declineText;
+            modal.querySelector(".estaly-button-submit").innerText = modalMarketingDetails.buyText;
+            modal.querySelector(".estaly-offered-by").innerText = modalMarketingDetails.legalText;
+            modal.querySelector(".estaly-learn-more-image").src = modalMarketingDetails.image;
         }
     },
 
