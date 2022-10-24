@@ -182,7 +182,7 @@ const PDP = {
             async: false,
             cache: false,
             dataType : "json",
-            data: {'action': 'add-to-cart', 'add': 1, 'ajax': true, 'qty': 1, 'id_product': id_product, 'token': static_token},
+            data: {'action': 'update', 'add': 1, 'ajax': true, 'qty': 1, 'id_product': id_product, 'id_customization': 29, 'token': static_token},
             success: function(jsonData,textStatus,jqXHR)
             {
                 ajaxCart.updateCartInformation(jsonData, true);
