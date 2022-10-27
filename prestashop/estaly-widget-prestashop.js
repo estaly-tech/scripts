@@ -176,6 +176,8 @@ const PDP = {
         var id_product = this.selectedPlanId;
 
         var id_customization = this.retrieveCustomizationId(this.selectedPlanId);
+
+        console.log(id_customization);
                         
         $.ajax({
             type: 'POST',
