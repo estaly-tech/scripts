@@ -175,7 +175,7 @@ const PDP = {
             
         var id_product = this.selectedPlanId;
 
-        var id_customization = retrieveCustomizationId(this.selectedPlanId);
+        var id_customization = PDP.retrieveCustomizationId(this.selectedPlanId);
 
         console.log(id_customization);
                         
