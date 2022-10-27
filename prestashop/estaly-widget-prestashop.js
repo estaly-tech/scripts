@@ -174,9 +174,6 @@ const PDP = {
         var static_token = $('input[name=token]').val();
             
         var id_product = this.selectedPlanId;
-
-        var formActionAttribute_name_field = "Product ID";
-        var formActionAttribute_value_field    = "8239294"
                         
         $.ajax({
             type: 'POST',
@@ -185,7 +182,7 @@ const PDP = {
             async: false,
             cache: false,
             dataType : "json",
-            data: {'action': 'update', 'add': 1, 'ajax': true, 'qty': 1, 'id_product': id_product, formActionAttribute_name_field: formActionAttribute_value_field, 'token': static_token},
+            data: {'action': 'update', 'add': 1, 'ajax': true, 'qty': 1, 'id_product': id_product, 'token': static_token},
             success: function(jsonData,textStatus,jqXHR)
             {
                 ajaxCart.updateCartInformation(jsonData, true);
