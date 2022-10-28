@@ -174,8 +174,6 @@ const PDP = {
         var static_token = $('input[name=token]').val();
             
         var id_product = this.selectedPlanId;
-
-        console.log(id_customization);
                         
         $.ajax({
             type: 'POST',
@@ -187,7 +185,6 @@ const PDP = {
             data: {'action': 'update', 'add': 1, 'ajax': true, 'qty': 1, 'id_product': id_product, 'token': static_token},
             success: function(jsonData,textStatus,jqXHR)
             {
-                ajaxCart.updateCartInformation(jsonData, true);
                 console.log(jsonData);
                 console.log("SUCCESS");
             }
