@@ -175,8 +175,6 @@ const PDP = {
             
         var id_product = this.selectedPlanId;
 
-        var id_customization = PDP.retrieveCustomizationId(this.selectedPlanId);
-
         console.log(id_customization);
                         
         $.ajax({
@@ -186,22 +184,12 @@ const PDP = {
             async: false,
             cache: false,
             dataType : "json",
-            data: {'action': 'update', 'add': 1, 'ajax': true, 'qty': 1, 'id_product': id_product, 'id_customization': id_customization, 'token': static_token},
+            data: {'action': 'update', 'add': 1, 'ajax': true, 'qty': 1, 'id_product': id_product, 'token': static_token},
             success: function(jsonData,textStatus,jqXHR)
             {
                 ajaxCart.updateCartInformation(jsonData, true);
                 console.log(jsonData);
                 console.log("SUCCESS");
-            }
-        });
-    },
-
-    retrieveCustomizationId(selectedPlanId){
-        customizationIds = document.querySelectorAll("customization id");
-        document.querySelectorAll("customization id_product").forEach((customizationElement,index) =>{
-            customizationProductId = parseInt(customizationElement.innerHTML.replace('\x3C!--[CDATA[','').replace(']]-->',''));
-            if (selectedPlanId == customizationProductId) {
-                return parseInt(customizationIds[index].innerHTML.replace('\x3C!--[CDATA[','').replace(']]-->',''))
             }
         });
     },
