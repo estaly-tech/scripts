@@ -116,7 +116,7 @@ const Estaly = {
         selectedOfferId: null
     },
     async getOffers(variantReferenceIds, merchantId) {
-        const url = `${API_URL}/offers?reference_ids=${variantReferenceIds}`
+        const url = `${API_URL}/merchant/offers?reference_ids=${variantReferenceIds}`
         const response = await fetch(url, { headers: { Authorization: merchantId } })
         const data = await response.json()
         return data;
