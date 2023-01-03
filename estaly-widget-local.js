@@ -1,4 +1,4 @@
-API_URL = "https://6dd2-213-215-37-182.eu.ngrok.io"
+API_URL = "https://6229-178-51-35-202.eu.ngrok.io"
 
 OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
