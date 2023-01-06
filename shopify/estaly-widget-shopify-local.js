@@ -1,4 +1,4 @@
-API_URL = "https://api.estaly.co"
+API_URL = "https://0b20-178-51-35-202.eu.ngrok.io"
 
 CART_ITEM_SELECTOR = ".cart-item__details"
 
