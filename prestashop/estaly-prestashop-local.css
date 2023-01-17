@@ -8,13 +8,18 @@
 
 .estaly-flex-col {
     flex-direction: column;
+    text-align: center;
 }
 
 .mt-2 {
     margin-top: 0.25rem;
 }
 
-span {
+.estaly-offer-term-length {
+    text-align: center;
+}
+
+.estaly-offer-price {
     text-align: center;
 }
 
