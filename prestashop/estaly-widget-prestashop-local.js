@@ -3,12 +3,12 @@ API_URL = "https://c901-213-215-37-182.eu.ngrok.io"
 const PDP = {
     selectedPlanId: null,
 
-    async init({variantReferenceId, merchantId, addToCartButtonClass, buyItNowButtonClass, cartId}) {
+    async init({variantReferenceId, merchantId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId}) {
         if (!variantReferenceId) {
             return
         }
 
-        console.log(cartId);
+        console.log(prestashopCartId);
 
         const data = await Estaly.getOffers(variantReferenceId, merchantId);
         const offers = data.offers;
@@ -248,6 +248,7 @@ const Estaly = {
 
         add(widget, params) {
             widget.init(params)
+            console.log(params);
         }
     },
 
