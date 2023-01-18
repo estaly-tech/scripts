@@ -194,13 +194,12 @@ const PDP = {
                     type: 'POST',
                     cache: false,
                     dataType: 'json',
-                    url: 'index.php', // fix this
+                    url: 'index.php',
                     data: {
                       ajax: 1,
                       controller: 'AdminEstalyInsuranceMatching',
                       action: 'createEstalyInsuranceMatching', 
                       token: static_token,
-                      var1: "test",
                     },
                     success: function (data) {
                       console.log("CALL SUCCESS AJAX TO ESTALYMODULE")
