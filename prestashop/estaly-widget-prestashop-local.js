@@ -186,8 +186,27 @@ const PDP = {
             data: {'action': 'update', 'add': 1, 'ajax': true, 'qty': 1, 'id_product': id_product, 'token': static_token},
             success: function(jsonData,textStatus,jqXHR)
             {
+                // create estaly_insurance_matching --> nécessite clé prestashop
                 console.log(jsonData);
                 console.log("SUCCESS");
+                console.log("Call AJAX TO ESTALYMODULE");
+                $.ajax({
+                    type: 'POST',
+                    cache: false,
+                    dataType: 'json',
+                    url: 'index.php', // fix this
+                    data: {
+                      ajax: 1,
+                      controller: 'AdminEstalyInsuranceMatching',
+                      action: 'createEstalyInsuranceMatching', 
+                      token: static_token,
+                      var1: "test",
+                    },
+                    success: function (data) {
+                      console.log("CALL SUCCESS AJAX TO ESTALYMODULE")
+                    }
+                });
+
             }
         });
     },
