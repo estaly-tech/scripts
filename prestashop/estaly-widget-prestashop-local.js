@@ -190,19 +190,18 @@ const PDP = {
                 console.log(jsonData);
                 console.log("SUCCESS");
                 console.log("Call AJAX TO ESTALYMODULE");
+                var id_product = $('input[name="id_product"]').val();
                 $.ajax({
-                    type: 'POST',
+                    type: "POST",
+                    url: '{$link->$this->context->getModuleLink("EstalyInsuranceMatchingController", "default")}',
+                    async: false,
                     cache: false,
-                    dataType: 'json',
-                    url: 'index.php',
-                    data: {
-                      ajax: 1,
-                      controller: 'AdminEstalyInsuranceMatching',
-                      action: 'createEstalyInsuranceMatching', 
-                      token: static_token,
+                    data: "product_id="+id_product+"&ajax=1",
+                    success: function(html){
+                        console.log("SUCCESS");
                     },
-                    success: function (data) {
-                      console.log("CALL SUCCESS AJAX TO ESTALYMODULE")
+                    error: function() {
+                        alert("ERROR:");
                     }
                 });
 
