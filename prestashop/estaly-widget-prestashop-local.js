@@ -193,7 +193,7 @@ const PDP = {
                 var id_product = $('input[name="id_product"]').val();
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8888/prestashop/module/estalymodule/insurancematching?add=1&id_product=1",
+                    url: "http://localhost:8888/prestashop/modules/estalymodule/insurancematching",
                     async: false,
                     cache: false,
                     data: "product_id="+id_product+"&ajax=1",
