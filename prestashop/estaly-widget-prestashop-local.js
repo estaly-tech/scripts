@@ -195,7 +195,7 @@ const PDP = {
                 console.log(cart_id);
                 console.log(insurable_product_id);
                 console.log(insurance_product_id);
-                var formData = {'cart_id': cart_id, 'insurable_product_id': insurable_product_id, 'insurance_product_id': insurance_product_id};
+                var formData = {'ajax': 1,'cart_id': cart_id, 'insurable_product_id': insurable_product_id, 'insurance_product_id': insurance_product_id};
                 console.log(formData);
                 $.ajax({
                     type: 'POST',
