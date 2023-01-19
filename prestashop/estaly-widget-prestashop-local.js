@@ -195,6 +195,22 @@ const PDP = {
                 console.log(cart_id);
                 console.log(insurable_product_id);
                 console.log(insurance_product_id);
+                var formData = {'cart_id': cart_id, 'insurable_product_id': insurable_product_id, 'insurance_product_id': insurance_product_id};
+                console.log(formData);
+                $.ajax({
+                    type: 'POST',
+                    headers: { "cache-control": "no-cache" },
+                    url: "http://localhost:8888/prestashop/module/estalymodule/insurancematching",
+                    async: false,
+                    cache: false,
+                    dataType : "json",
+                    data: formData,
+                    success: function(jsonData,textStatus,jqXHR)
+                    {
+                        console.log("SUCCESS CALL TO MODULE PRESTASHOP");
+                        console.log(jsonData);
+                    }
+                });
             }
         });
     },
