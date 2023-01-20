@@ -145,7 +145,7 @@ const PDP = {
         }
     },
 
-    insertPlans(plans) {
+    async insertPlans(plans) {
         if (plans.length === 0) {
             return
         }
