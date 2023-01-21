@@ -24,15 +24,19 @@
 }
 
 .estaly-headline-buttons {
+    font-weight: bold;
     display: inline;
     font-size: 16px;
 }
 
 .estaly-link-buttons {
-    display: inline;
     color:#363948;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.estaly-logo-full {
+    width: 80px; 
 }
 
 .estaly-modal-dialog {
