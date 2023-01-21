@@ -30,6 +30,7 @@
 }
 
 .estaly-link-buttons {
+    display: inline;
     color:#363948;
     text-decoration: underline;
     cursor: pointer;
@@ -225,6 +226,16 @@
 
 .estaly-offer-button + .estaly-offer-button {
     margin-left: 1rem;
+}
+
+@media (max-width: 800px){
+	.estaly-modal-content { width: 100% !important ;}
+	.estaly-sub-subheading { font-size: 12px !important ; line-height: 25px !important;}
+    .estaly-content-container{ width: 100%;}
+    .estaly-image-container{ width: 0% !important;}
+	.estaly-list-item { font-size: 15px !important ;}
+    .estaly-link-container{ font-size: 14px !important;}
+    .estaly-choice-container button{ font-size: 14px !important;}
 }
 
 @media (hover: hover) and (pointer: fine) {
