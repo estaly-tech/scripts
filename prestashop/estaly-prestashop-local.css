@@ -236,6 +236,7 @@
 	.estaly-list-item { font-size: 15px !important ;}
     .estaly-link-container{ font-size: 14px !important;}
     .estaly-choice-container button{ font-size: 14px !important;}
+    .estaly-merchant-logo { max-width: 1rem !important;}
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -253,7 +254,7 @@
     }
 
     .estaly-offer-button.active {
-        border-color: #fc7c3c;
+        border-color: #fc7c3c !important;
         box-shadow: 0 0 0 1px inset #fc7c3c;
         background-color: #fc7c3c;
         color: #fff;
@@ -261,7 +262,7 @@
     }
     
     .estaly-offer-button:hover {
-        border-color: #fc7c3c;
+        border-color: #fc7c3c !important;
         box-shadow: 0 0 0 1px inset #fc7c3c;
         background-color: #fc7c3c;
         color: #fff;
@@ -283,26 +284,26 @@
     }
     
     .estaly-offer-button:focus {
-        border-color: #fc7c3c;
-        box-shadow: 0 0 0 1px inset #fc7c3c;
+        border-color: #fc7c3c !important;
+        box-shadow: 0 0 0 1px inset #fc7c3c !important;
         background-color: transparent !important;
         color: black !important;
         border: 0.5px solid;
     }
     
     .estaly-offer-button:hover {
-        border-color: #fc7c3c;
-        box-shadow: 0 0 0 1px inset #fc7c3c;
+        border-color: #fc7c3c !important;
+        box-shadow: 0 0 0 1px inset #fc7c3c !important;
         background-color: transparent !important;
         color: black !important;
-        border: 0.5px solid;
+        border: 0.5px solid !important;
     }
     
     .estaly-offer-button.active {
-        border-color: #fc7c3c;
-        box-shadow: 0 0 0 1px inset #fc7c3c;
+        border-color: #fc7c3c !important;
+        box-shadow: 0 0 0 1px inset #fc7c3c !important;
         background-color: #fc7c3c !important;
         color: #fff !important;
-        border: 0.5px solid;
+        border: 0.5px solid !important;
     }
 }
