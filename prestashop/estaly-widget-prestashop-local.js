@@ -26,8 +26,6 @@ const PDP = {
 
     setButtonsState(parentClass = "") {
         const offerButtons = document.querySelectorAll(`${parentClass} .estaly-offer-button`);
-        console.log("SET BUTTONS STATE");
-        console.log(offerButtons);
         offerButtons.forEach((offerButton) => {
             if (offerButton.dataset.planVariantId == this.selectedPlanId) {
                 offerButton.classList.add("active");
@@ -48,17 +46,12 @@ const PDP = {
 
     initButtons(variantReferenceId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId) {
         const offerButtons = document.querySelectorAll(".estaly-offer-button")
-        console.log("INSIDE INIT BUTTONS 1");
-        console.log(offerButtons);
         offerButtons.forEach((offerButton) => {
-            console.log("LOOP 1");
             offerButton.addEventListener("click", () => {
                 if (offerButton.dataset.planVariantId == this.selectedPlanId) {
                     this.selectedPlanId = null;
-                    console.log("LOOP 1.2");
                 } else {
                     this.selectedPlanId = offerButton.dataset.planVariantId;
-                    console.log("LOOP 1.3");
                 }
                 this.setButtonsState();
             })
@@ -175,7 +168,7 @@ const PDP = {
         if (this.selectedPlanId == null) {
             return
         }
-        console.log("ADD TO CART SELECTED WITH ESTALY PLAN");
+
         
         var static_token = $('input[name=token]').val();
             
@@ -196,14 +189,8 @@ const PDP = {
             data: {'action': 'update', 'add': 1, 'ajax': true, 'qty': 1, 'id_product': id_product, 'token': static_token},
             success: function(jsonData,textStatus,jqXHR)
             {
-                // create estaly_insurance_matching --> nécessite clé prestashop
-                console.log(jsonData);
-                console.log("SUCCESS");
-                console.log(cart_id);
-                console.log(insurable_product_id);
-                console.log(insurance_product_id);
+                // create estaly_insurance_matching
                 var formData = {'ajax': 1,'cart_id': cart_id, 'insurable_product_id': insurable_product_id, 'insurance_product_id': insurance_product_id};
-                console.log(formData);
                 $.ajax({
                     type: 'POST',
                     headers: { "cache-control": "no-cache" },
@@ -214,8 +201,6 @@ const PDP = {
                     data: formData,
                     success: function(jsonData,textStatus,jqXHR)
                     {
-                        console.log("SUCCESS CALL TO MODULE PRESTASHOP");
-                        console.log(jsonData);
                     }
                 });
             }
@@ -278,7 +263,6 @@ const Estaly = {
 
         add(widget, params) {
             widget.init(params)
-            console.log(params);
         }
     },
 
