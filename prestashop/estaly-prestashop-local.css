@@ -236,7 +236,7 @@
 	.estaly-list-item { font-size: 15px !important ;}
     .estaly-link-container{ font-size: 14px !important;}
     .estaly-choice-container button{ font-size: 14px !important;}
-    .estaly-merchant-logo { max-width: 1rem !important;}
+    .estaly-merchant-logo { max-width: 10rem !important;}
 }
 
 @media (hover: hover) and (pointer: fine) {
