@@ -25,7 +25,9 @@ const PDP = {
     },
 
     setButtonsState(parentClass = "") {
-        const offerButtons = document.querySelectorAll(`${parentClass} .estaly-offer-button`)
+        const offerButtons = document.querySelectorAll(`${parentClass} .estaly-offer-button`);
+        console.log("SET BUTTONS STATE");
+        console.log(offerButtons);
         offerButtons.forEach((offerButton) => {
             if (offerButton.dataset.planVariantId == this.selectedPlanId) {
                 offerButton.classList.add("active");
@@ -46,12 +48,17 @@ const PDP = {
 
     initButtons(variantReferenceId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId) {
         const offerButtons = document.querySelectorAll(".estaly-offer-button")
+        console.log("INSIDE INIT BUTTONS 1");
+        console.log(offerButtons);
         offerButtons.forEach((offerButton) => {
+            console.log("LOOP 1");
             offerButton.addEventListener("click", () => {
                 if (offerButton.dataset.planVariantId == this.selectedPlanId) {
                     this.selectedPlanId = null;
+                    console.log("LOOP 1.2");
                 } else {
                     this.selectedPlanId = offerButton.dataset.planVariantId;
+                    console.log("LOOP 1.3");
                 }
                 this.setButtonsState();
             })
