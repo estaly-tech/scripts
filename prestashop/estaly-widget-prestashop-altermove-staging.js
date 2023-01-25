@@ -194,7 +194,7 @@ const PDP = {
                 $.ajax({
                     type: 'POST',
                     headers: { "cache-control": "no-cache" },
-                    url: "http://localhost:8888/prestashop/module/estalymodule/insurancematching",
+                    url: "https://clone.altermove.com/module/estalymodule/insurancematching",
                     async: false,
                     cache: false,
                     dataType : "json",
