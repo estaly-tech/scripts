@@ -35,6 +35,13 @@ const PDP = {
         })
     },
 
+    removeButtonsState() {
+        const offerButtons = document.querySelectorAll(`.estaly-offer-button`);
+        offerButtons.forEach((offerButton) => {
+            offerButton.classList.remove("active");
+        })
+    },
+
     fillButtonsMarketing(buttonsMarketingDetails) {
         const buttons = document.querySelector(".estaly-pdp-offering")
 
