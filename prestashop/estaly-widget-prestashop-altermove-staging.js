@@ -342,13 +342,14 @@ const Estaly = {
     },
 
     openModal(withButtons) {
-        const modal = document.querySelector(".estaly-modal-dialog")
-        if (withButtons) {
-            modal.querySelector(".estaly-buttons-container").style.display = "block"
-        } else {
-            modal.querySelector(".estaly-buttons-container").style.display = "none"
-        }
-        modal.style.display = "flex"
+        //const modal = document.querySelector(".estaly-modal-dialog")
+        //if (withButtons) {
+        //    modal.querySelector(".estaly-buttons-container").style.display = "block"
+        //} else {
+        //    modal.querySelector(".estaly-buttons-container").style.display = "none"
+        //}
+        //modal.style.display = "flex"
+        window.open('https://customer.estaly.co/contracts-details', '_blank');
     },
 
     closeModal() {
