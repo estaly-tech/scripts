@@ -1,4 +1,4 @@
-API_URL = "https://localhost:3000"
+API_URL = "http://localhost:3000"
 
 const PDP = {
     selectedPlanId: null,
