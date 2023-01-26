@@ -1,4 +1,4 @@
-API_URL = "https://ca9e-213-215-37-182.eu.ngrok.io"
+API_URL = "https://localhost:3000"
 
 const PDP = {
     selectedPlanId: null,
