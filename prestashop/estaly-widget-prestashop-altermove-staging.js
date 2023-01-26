@@ -9,17 +9,19 @@ const PDP = {
         }
 
         const data = await Estaly.getOffers(variantReferenceId, merchantId);
+        const combinationReferenceId = data.variantReferenceId;
+        console.log(combinationReferenceId);
         const offers = data.offers;
-        const relevantOffer = offers.filter((offer) => offer.productVariantId === variantReferenceId)[0];
+        const relevantOffer = offers.filter((offer) => offer.productVariantId === combinationReferenceId)[0];
         const plans = relevantOffer.plans;
 
         this.insertPlans(plans);
         this.fillButtonsMarketing(data.marketing.buttons);
-        this.initButtons(variantReferenceId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId);
+        this.initButtons(combinationReferenceId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId);
         this.displayButtons();
 
         Estaly.fillModalMarketing(data.marketing.modal);
-        Estaly.initModal({ afterAddToCartCallback: () => {}}, variantReferenceId);
+        Estaly.initModal({ afterAddToCartCallback: () => {}}, combinationReferenceId);
 
         return this;
     },
