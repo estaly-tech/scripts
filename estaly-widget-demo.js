@@ -1,4 +1,4 @@
-API_URL = "https://3d01-213-215-37-182.eu.ngrok.io"
+API_URL = "https://api.demo.estaly.co"
 
 OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
