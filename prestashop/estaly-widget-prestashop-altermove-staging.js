@@ -3,10 +3,12 @@ API_URL = "https://api.staging.estaly.co"
 const PDP = {
     selectedPlanId: null,
 
-    async init({variantReferenceId, merchantId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId}) {
+    async init({variantReferenceId, merchantId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId, parentEstalyComponentClass}) {
         if (!variantReferenceId) {
             return
         }
+
+        this.customEstalyComponentPlacementIfNeeded(parentEstalyComponentClass);
 
         const data = await Estaly.getOffers(variantReferenceId, merchantId);
         const combinationReferenceId = data.variantReferenceId;
@@ -24,6 +26,14 @@ const PDP = {
         Estaly.initModal({ afterAddToCartCallback: () => {}}, combinationReferenceId);
 
         return this;
+    },
+
+    customEstalyComponentPlacementIfNeeded(parentEstalyComponentClass) {
+        if (parentEstalyComponentClass){
+            const parentComponent = document.getElementsByClassName(parentEstalyComponentClass)[0];
+            const estalyComponent = document.getElementsByClassName("estaly-pdp-offering")[0];
+            parentComponent.appendChild(estalyComponent);
+        }
     },
 
     setButtonsState(parentClass = "") {

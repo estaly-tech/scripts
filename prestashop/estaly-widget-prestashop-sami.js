@@ -3,7 +3,7 @@ API_URL = "http://localhost:3000"
 const PDP = {
     selectedPlanId: null,
 
-    async init({variantReferenceId, merchantId, addToCartButtonClass, parentEstalyComponentClass,  buyItNowButtonClass, prestashopCartId}) {
+    async init({variantReferenceId, merchantId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId, parentEstalyComponentClass}) {
         if (!variantReferenceId) {
             return
         }
