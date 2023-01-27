@@ -1,12 +1,14 @@
-API_URL = "https://7af4-213-215-37-182.eu.ngrok.io"
+API_URL = "http://localhost:3000"
 
 const PDP = {
     selectedPlanId: null,
 
-    async init({variantReferenceId, merchantId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId}) {
+    async init({variantReferenceId, merchantId, addToCartButtonClass, parentEstalyComponentClass,  buyItNowButtonClass, prestashopCartId}) {
         if (!variantReferenceId) {
             return
         }
+
+        this.customEstalyComponentPlacementIfNeeded(parentEstalyComponentClass);
 
         const data = await Estaly.getOffers(variantReferenceId, merchantId);
         const offers = data.offers;
@@ -22,6 +24,14 @@ const PDP = {
         Estaly.initModal({ afterAddToCartCallback: () => {}}, variantReferenceId);
 
         return this;
+    },
+
+    customEstalyComponentPlacementIfNeeded(parentEstalyComponentClass) {
+        if (parentEstalyComponentClass){
+            const parentComponent = document.getElementsByClassName(parentEstalyComponentClass)[0];
+            const estalyComponent = document.getElementsByClassName("estaly-pdp-offering")[0];
+            parentComponent.appendChild(estalyComponent);
+        }
     },
 
     setButtonsState(parentClass = "") {
@@ -201,7 +211,7 @@ const PDP = {
                 $.ajax({
                     type: 'POST',
                     headers: { "cache-control": "no-cache" },
-                    url: "http://localhost:8888/prestashop_1.7.8.8/module/estalymodule/insurancematching",
+                    url: "http://localhost:8888/prestashop/module/estalymodule/insurancematching",
                     async: false,
                     cache: false,
                     dataType : "json",
