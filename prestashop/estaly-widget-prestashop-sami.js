@@ -7,7 +7,6 @@ const PDP = {
         if (!variantReferenceId) {
             return
         }
-        console.log(merchantId);
 
         this.customEstalyComponentPlacementIfNeeded(parentEstalyComponentClass);
 
