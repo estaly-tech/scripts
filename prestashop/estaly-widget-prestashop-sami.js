@@ -7,8 +7,12 @@ const PDP = {
         if (!variantReferenceId) {
             return
         }
-
+        console.log(variantReferenceId)
         console.log(merchantId)
+        console.log(addToCartButtonClass)
+        console.log(buyItNowButtonClass)
+        console.log(prestashopCartId)
+        console.log(parentEstalyComponentClass)
 
         this.customEstalyComponentPlacementIfNeeded(parentEstalyComponentClass);
 
