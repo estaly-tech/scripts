@@ -40,7 +40,7 @@ const PDP = {
     setButtonsState(parentClass = "") {
         const offerButtons = document.querySelectorAll(`${parentClass} .estaly-offer-button`);
         offerButtons.forEach((offerButton) => {
-            if (offerButton.dataset.planVariantId == this.selectedPlanId) {
+            if (offerButton.dataset.planVariantId === this.selectedPlanId) {
                 offerButton.classList.add("active");
             } else {
                 offerButton.classList.remove("active");
@@ -68,7 +68,7 @@ const PDP = {
         const offerButtons = document.querySelectorAll(".estaly-offer-button")
         offerButtons.forEach((offerButton) => {
             offerButton.addEventListener("click", () => {
-                if (offerButton.dataset.planVariantId == this.selectedPlanId) {
+                if (offerButton.dataset.planVariantId === this.selectedPlanId) {
                     this.selectedPlanId = null;
                 } else {
                     this.selectedPlanId = offerButton.dataset.planVariantId;
@@ -86,6 +86,7 @@ const PDP = {
         addToCartButton.addEventListener("click", () => {
             if (this.selectedPlanId == null) {
             } else {
+                console.log(variantReferenceId)
                 this.addOfferToCart(variantReferenceId, prestashopCartId);
             }
         })
