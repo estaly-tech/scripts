@@ -394,7 +394,11 @@ const Estaly = {
             modal.querySelector(".estaly-button-link").innerText = modalMarketingDetails.declineText;
             modal.querySelector(".estaly-button-submit").innerText = modalMarketingDetails.buyText;
             modal.querySelector(".estaly-offered-by").innerText = modalMarketingDetails.legalText;
-            modal.querySelector(".estaly-learn-more-image").src = modalMarketingDetails.image;
+
+            const modalLearnMoreImage = modal.querySelector(".estaly-learn-more-image");
+            if (modalLearnMoreImage !== undefined && modalLearnMoreImage !== null){
+                modalLearnMoreImage.src = modalMarketingDetails.image;
+            }
         }
     },
 
