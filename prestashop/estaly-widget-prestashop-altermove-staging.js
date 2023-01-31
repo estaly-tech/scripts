@@ -23,8 +23,8 @@ const PDP = {
         this.initButtons(combinationReferenceId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId);
         this.displayButtons();
 
-        Estaly.fillModalMarketing(data.marketing.modal);
-        Estaly.initModal({ afterAddToCartCallback: () => {}}, combinationReferenceId);
+        //Estaly.fillModalMarketing(data.marketing.modal);
+        //Estaly.initModal({ afterAddToCartCallback: () => {}}, combinationReferenceId);
 
         return this;
     },
@@ -334,7 +334,7 @@ const Estaly = {
                     this.state.selectedOfferId = offerButton.dataset.planVariantId;
                 }
                 offerButtons.forEach((offerButton) => {
-                    if (offerButton.dataset.planVariantId == this.state.selectedOfferId) {
+                    if (offerButton.dataset.planVariantId === this.state.selectedOfferId) {
                         offerButton.classList.add("active");
                     } else {
                         offerButton.classList.remove("active");
