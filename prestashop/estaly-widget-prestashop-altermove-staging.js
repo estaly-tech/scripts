@@ -13,6 +13,7 @@ const PDP = {
         const data = await Estaly.getOffers(variantReferenceId, merchantId);
         const combinationReferenceId = data.variantReferenceId;
         console.log(combinationReferenceId);
+        console.log(prestashopCartId);
         const offers = data.offers;
         const relevantOffer = offers.filter((offer) => offer.productVariantId === combinationReferenceId)[0];
         const plans = relevantOffer.plans;
