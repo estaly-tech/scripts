@@ -217,7 +217,7 @@ const PDP = {
                 $.ajax({
                     type: 'POST',
                     headers: { "cache-control": "no-cache" },
-                    url: "http://localhost:8888/prestashop/module/estalymodule/insurancematching",
+                    url: "http://localhost:8888/prestashop_1.7.8.8/module/estalymodule/insurancematching",
                     async: false,
                     cache: false,
                     dataType : "json",
