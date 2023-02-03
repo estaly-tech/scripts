@@ -1,4 +1,4 @@
-API_URL = "http://localhost:3000"
+API_URL = "https://localhost:3000"
 
 const PDP = {
     selectedPlanId: null,
@@ -7,27 +7,22 @@ const PDP = {
         if (!variantReferenceId) {
             return
         }
-        console.log(variantReferenceId)
-        console.log(merchantId)
-        console.log(addToCartButtonClass)
-        console.log(buyItNowButtonClass)
-        console.log(prestashopCartId)
-        console.log(parentEstalyComponentClass)
 
         this.customEstalyComponentPlacementIfNeeded(parentEstalyComponentClass);
 
         const data = await Estaly.getOffers(variantReferenceId, merchantId);
+        const combinationReferenceId = data.variantReferenceId;
         const offers = data.offers;
-        const relevantOffer = offers.filter((offer) => offer.productVariantId === variantReferenceId)[0];
+        const relevantOffer = offers.filter((offer) => offer.productVariantId === combinationReferenceId)[0];
         const plans = relevantOffer.plans;
 
         this.insertPlans(plans);
         this.fillButtonsMarketing(data.marketing.buttons);
-        this.initButtons(variantReferenceId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId);
+        this.initButtons(combinationReferenceId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId);
         this.displayButtons();
 
-        Estaly.fillModalMarketing(data.marketing.modal);
-        Estaly.initModal({ afterAddToCartCallback: () => {}}, variantReferenceId);
+        //Estaly.fillModalMarketing(data.marketing.modal);
+        //Estaly.initModal({ afterAddToCartCallback: () => {}}, combinationReferenceId);
 
         return this;
     },
@@ -43,7 +38,7 @@ const PDP = {
     setButtonsState(parentClass = "") {
         const offerButtons = document.querySelectorAll(`${parentClass} .estaly-offer-button`);
         offerButtons.forEach((offerButton) => {
-            if (offerButton.dataset.planVariantId == this.selectedPlanId) {
+            if (offerButton.dataset.planVariantId === this.selectedPlanId) {
                 offerButton.classList.add("active");
             } else {
                 offerButton.classList.remove("active");
@@ -71,7 +66,7 @@ const PDP = {
         const offerButtons = document.querySelectorAll(".estaly-offer-button")
         offerButtons.forEach((offerButton) => {
             offerButton.addEventListener("click", () => {
-                if (offerButton.dataset.planVariantId == this.selectedPlanId) {
+                if (offerButton.dataset.planVariantId === this.selectedPlanId) {
                     this.selectedPlanId = null;
                 } else {
                     this.selectedPlanId = offerButton.dataset.planVariantId;
@@ -89,6 +84,7 @@ const PDP = {
         addToCartButton.addEventListener("click", () => {
             if (this.selectedPlanId == null) {
             } else {
+                console.log(variantReferenceId)
                 this.addOfferToCart(variantReferenceId, prestashopCartId);
             }
         })
@@ -217,7 +213,7 @@ const PDP = {
                 $.ajax({
                     type: 'POST',
                     headers: { "cache-control": "no-cache" },
-                    url: "http://localhost:8888/prestashop_1.7.8.8/module/estalymodule/insurancematching",
+                    url: "https://clone.altermove.com/module/estalymodule/insurancematching",
                     async: false,
                     cache: false,
                     dataType : "json",
@@ -337,7 +333,7 @@ const Estaly = {
                     this.state.selectedOfferId = offerButton.dataset.planVariantId;
                 }
                 offerButtons.forEach((offerButton) => {
-                    if (offerButton.dataset.planVariantId == this.state.selectedOfferId) {
+                    if (offerButton.dataset.planVariantId === this.state.selectedOfferId) {
                         offerButton.classList.add("active");
                     } else {
                         offerButton.classList.remove("active");
@@ -365,13 +361,14 @@ const Estaly = {
     },
 
     openModal(withButtons) {
-        const modal = document.querySelector(".estaly-modal-dialog")
-        if (withButtons) {
-            modal.querySelector(".estaly-buttons-container").style.display = "block"
-        } else {
-            modal.querySelector(".estaly-buttons-container").style.display = "none"
-        }
-        modal.style.display = "flex"
+        //const modal = document.querySelector(".estaly-modal-dialog")
+        //if (withButtons) {
+        //    modal.querySelector(".estaly-buttons-container").style.display = "block"
+        //} else {
+        //    modal.querySelector(".estaly-buttons-container").style.display = "none"
+        //}
+        //modal.style.display = "flex"
+        window.open('https://customer.estaly.co/contracts-details', '_blank');
     },
 
     closeModal() {
@@ -397,7 +394,11 @@ const Estaly = {
             modal.querySelector(".estaly-button-link").innerText = modalMarketingDetails.declineText;
             modal.querySelector(".estaly-button-submit").innerText = modalMarketingDetails.buyText;
             modal.querySelector(".estaly-offered-by").innerText = modalMarketingDetails.legalText;
-            modal.querySelector(".estaly-learn-more-image").src = modalMarketingDetails.image;
+
+            const modalLearnMoreImage = modal.querySelector(".estaly-learn-more-image");
+            if (modalLearnMoreImage !== undefined && modalLearnMoreImage !== null){
+                modalLearnMoreImage.src = modalMarketingDetails.image;
+            }
         }
     },
 
