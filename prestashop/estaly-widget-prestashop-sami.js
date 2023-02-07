@@ -8,6 +8,7 @@ const PDP = {
             return
         }
 
+        console.log(parentEstalyComponentClass);
         this.customEstalyComponentPlacementIfNeeded(parentEstalyComponentClass);
 
         const data = await Estaly.getOffers(variantReferenceId, merchantId);
