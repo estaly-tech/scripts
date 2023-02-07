@@ -3,12 +3,12 @@ API_URL = "http://localhost:3000"
 const PDP = {
     selectedPlanId: null,
 
-    async init({variantReferenceId, merchantId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId, parentEstalyComponentClass}) {
+    async init({variantReferenceId, merchantId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId, parentEstalyComponentClass, modalFeatureEnabled}) {
         if (!variantReferenceId) {
             return
         }
 
-        console.log(parentEstalyComponentClass);
+        console.log(modalFeatureEnabled);
         this.customEstalyComponentPlacementIfNeeded(parentEstalyComponentClass);
 
         const data = await Estaly.getOffers(variantReferenceId, merchantId);
