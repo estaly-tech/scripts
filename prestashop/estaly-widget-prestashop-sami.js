@@ -22,8 +22,10 @@ const PDP = {
         this.initButtons(combinationReferenceId, addToCartButtonClass, buyItNowButtonClass, prestashopCartId);
         this.displayButtons();
 
-        //Estaly.fillModalMarketing(data.marketing.modal);
-        //Estaly.initModal({ afterAddToCartCallback: () => {}}, combinationReferenceId);
+        if(modalFeatureEnabled){
+            Estaly.fillModalMarketing(data.marketing.modal);
+            Estaly.initModal({ afterAddToCartCallback: () => {}}, combinationReferenceId);
+        }
 
         return this;
     },
