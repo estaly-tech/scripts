@@ -10,7 +10,7 @@ const PDP = {
 
         this.customEstalyComponentPlacementIfNeeded(parentEstalyComponentClass);
 
-        const data = await Estaly.getOffers(variantReferenceId, merchantId);
+        const data = await Estaly.getOffersRequest(variantReferenceId, merchantId);
         const combinationReferenceId = data.variantReferenceId;
         console.log(variantReferenceId)
         console.log(combinationReferenceId);
@@ -292,13 +292,18 @@ const Estaly = {
         selectedOfferId: null
     },
 
-    async getOffers(variantReferenceIds, merchantId) {
+    async getOffersRequest(variantReferenceIds, merchantId) {
         const url = `${API_URL}/merchant/offers?reference_ids=${variantReferenceIds}`
         const response = await fetch(url, { headers: { Authorization: merchantId } })
         const data = await response.json()
 
         return data;
     },
+
+    async getOffers(variantReferenceIds, merchantId) {
+        return await this.getOffersRequest("PREST_".concat(variantReferenceIds), merchantId)
+    },
+
 
     getSelectedVariantId() {
         if ( ShopifyAnalytics && ShopifyAnalytics.meta && ShopifyAnalytics.meta.selectedVariantId ) {
