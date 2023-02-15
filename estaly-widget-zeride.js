@@ -58,6 +58,12 @@ const PDP = {
         }
     },
     initButtons(variantReferenceId) {
+        const offerButtons = document.querySelectorAll(".offer-button")
+        offerButtons.forEach((offerButton) => {
+            offerButton.addEventListener("click", () => {
+                this.setButtonsState();
+            })
+        })
         const learnMoreButton = document.querySelector(".link-buttons");
         learnMoreButton.addEventListener("click", () => {
             Estaly.openModal(false);
