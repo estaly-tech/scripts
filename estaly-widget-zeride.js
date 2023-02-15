@@ -81,7 +81,7 @@ const PDP = {
             }
         })
     },
-    removeAddToCartButtonEventListener(variantReferenceId) {
+    removeAddToCartButtonEventListener() {
         addToCartButton.removeEventListener("click", () => {
             if (this.selectedPlanId == null) {
             } else {
