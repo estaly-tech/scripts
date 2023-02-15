@@ -3,7 +3,8 @@ API_URL = "https://api.estaly.co"
 OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
 MODAL_DIALOG_SELECTOR = ""
-ADD_TO_CART_CLASS_NAME = "single_add_to_cart_button button"
+ADD_TO_CART_CLASS_NAME = "fiche-tech-product-title"
+//ADD_TO_CART_CLASS_NAME = "single_add_to_cart_button button"
 
 
 function openModal() {  
