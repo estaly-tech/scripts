@@ -78,20 +78,15 @@ const PDP = {
         addToCartButton.addEventListener("click", this.addToCartFunction);
     },
     addToCartFunction(evt) {
-        console.log("VARIANTREFERENCEID");
         const variantReferenceId = evt.currentTarget.estalyVariantSelected;
-        console.log(variantReferenceId);
-        if (PDP.selectedPlanId === null) {
-            console.log("NULL");
-            return
-        }
-        jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+PDP.selectedPlanId+'&productVariantId='+variantReferenceId,
-            async: false
-        });
+        offerButtonActive = document.querySelector(".offer-button.active")
+        if (offerButtonActive !== null) {
+            const selectedPlanId = offerButtonActive.dataset.planVariantId;
+            jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
+                async: false
+            });
+        } 
     }, 
-    test() {
-        console.log("TEST OK");
-    },
     displayButtons() {
         const offerButtonsContainer = document.querySelector(".estaly-pdp-offering");
         if (offerButtonsContainer) {
@@ -112,15 +107,6 @@ const PDP = {
             priceSpan.innerText = plan.price
         })
     },
-
-    addOfferToCart(variantReferenceId) {
-        if (this.selectedPlanId === null) {
-            return
-        }
-        jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
-            async: false
-        });
-    }
 }
 const Estaly = {
     Widgets: {
