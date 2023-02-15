@@ -81,6 +81,14 @@ const PDP = {
             }
         })
     },
+    removeAddToCartButtonEventListener(variantReferenceId) {
+        addToCartButton.removeEventListener("click", () => {
+            if (this.selectedPlanId == null) {
+            } else {
+                this.addOfferToCart(variantReferenceId)
+            }
+        })
+    },
     displayButtons() {
         const offerButtonsContainer = document.querySelector(".estaly-pdp-offering");
         if (offerButtonsContainer) {
