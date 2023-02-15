@@ -58,17 +58,6 @@ const PDP = {
         }
     },
     initButtons(variantReferenceId) {
-        const offerButtons = document.querySelectorAll(".offer-button")
-        offerButtons.forEach((offerButton) => {
-            offerButton.addEventListener("click", () => {
-                if (offerButton.dataset.planVariantId == this.selectedPlanId) {
-                    this.selectedPlanId = null;
-                } else {
-                    this.selectedPlanId = offerButton.dataset.planVariantId;
-                }
-                this.setButtonsState();
-            })
-        })
         const learnMoreButton = document.querySelector(".link-buttons");
         learnMoreButton.addEventListener("click", () => {
             Estaly.openModal(false);
