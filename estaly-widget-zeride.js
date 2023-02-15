@@ -81,8 +81,12 @@ const PDP = {
         console.log("VARIANTREFERENCEID");
         const variantReferenceId = evt.currentTarget.estalyVariantSelected;
         console.log(variantReferenceId);
-        this.addOfferToCart(variantReferenceId);
+        this.test();
+        //this.addOfferToCart(variantReferenceId);
     }, 
+    test() {
+        console.log("TEST OK");
+    },
     displayButtons() {
         const offerButtonsContainer = document.querySelector(".estaly-pdp-offering");
         if (offerButtonsContainer) {
@@ -105,7 +109,7 @@ const PDP = {
     },
 
     addOfferToCart(variantReferenceId) {
-        if (this.selectedPlanId == null) {
+        if (this.selectedPlanId === null) {
             return
         }
         jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
