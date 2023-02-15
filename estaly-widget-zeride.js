@@ -79,8 +79,9 @@ const PDP = {
     },
     addToCartFunction(evt) {
         console.log("VARIANTREFERENCEID");
-        console.log(evt.currentTarget.estalyVariantSelected)
-        this.addOfferToCart(evt.currentTarget.estalyVariantSelected)
+        const variantReferenceId = evt.currentTarget.estalyVariantSelected;
+        console.log(variantReferenceId);
+        this.addOfferToCart(variantReferenceId);
     }, 
     displayButtons() {
         const offerButtonsContainer = document.querySelector(".estaly-pdp-offering");
