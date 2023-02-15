@@ -83,12 +83,8 @@ const PDP = {
     },
     removeAddToCartButtonEventListener() {
         const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
-        addToCartButton.removeEventListener("click", () => {
-            if (this.selectedPlanId == null) {
-            } else {
-                this.addOfferToCart(variantReferenceId)
-            }
-        })
+        var eventlistener = getEventListeners(addToCartButton)['click'][0]
+        addToCartButton.removeEventListener("click", eventlistener.listener)
     },
     displayButtons() {
         const offerButtonsContainer = document.querySelector(".estaly-pdp-offering");
