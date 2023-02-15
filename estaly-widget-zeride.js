@@ -77,9 +77,11 @@ const PDP = {
         addToCartButton.estalyVariantSelected = variantReferenceId;
         addToCartButton.addEventListener("click", this.addToCartFunction)
     },
-    addToCartFunction(evt){
+    addToCartFunction(evt) {
         if (this.selectedPlanId == null) {
         } else {
+            console.log("VARIANTREFERENCEID");
+            console.log(evt.currentTarget.estalyVariantSelected)
             this.addOfferToCart(evt.currentTarget.estalyVariantSelected)
         }
     }, 
