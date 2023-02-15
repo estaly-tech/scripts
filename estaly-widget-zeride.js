@@ -82,6 +82,7 @@ const PDP = {
         })
     },
     removeAddToCartButtonEventListener() {
+        const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
         addToCartButton.removeEventListener("click", () => {
             if (this.selectedPlanId == null) {
             } else {
