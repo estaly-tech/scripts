@@ -81,11 +81,11 @@ const PDP = {
         console.log("VARIANTREFERENCEID");
         const variantReferenceId = evt.currentTarget.estalyVariantSelected;
         console.log(variantReferenceId);
-        if (this.selectedPlanId === null) {
+        if (PDP.selectedPlanId === null) {
             console.log("NULL");
             return
         }
-        jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
+        jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+PDP.selectedPlanId+'&productVariantId='+variantReferenceId,
             async: false
         });
     }, 
