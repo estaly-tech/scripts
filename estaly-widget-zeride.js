@@ -79,6 +79,8 @@ const PDP = {
     },
     addToCartFunction(evt) {
         if (this.selectedPlanId == null) {
+            console.log("VARIANTREFERENCEID");
+            console.log(evt.currentTarget.estalyVariantSelected)
         } else {
             console.log("VARIANTREFERENCEID");
             console.log(evt.currentTarget.estalyVariantSelected)
