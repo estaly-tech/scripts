@@ -73,19 +73,16 @@ const PDP = {
         learnMoreButton.addEventListener("click", () => {
             Estaly.openModal(false);
         })
-        const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
-        addToCartButton.addEventListener("click", () => {
-            if (this.selectedPlanId == null) {
-            } else {
-                this.addOfferToCart(variantReferenceId)
-            }
-        })
+        const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0];
+        addToCartButton.estalyVariantSelected = variantReferenceId;
+        addToCartButton.addEventListener("click", this.addToCartFunction)
     },
-    removeAddToCartButtonEventListener() {
-        const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
-        var eventlistener = getEventListeners(addToCartButton)['click'][0]
-        addToCartButton.removeEventListener("click", eventlistener.listener)
-    },
+    addToCartFunction(evt){
+        if (this.selectedPlanId == null) {
+        } else {
+            this.addOfferToCart(evt.currentTarget.estalyVariantSelected)
+        }
+    }, 
     displayButtons() {
         const offerButtonsContainer = document.querySelector(".estaly-pdp-offering");
         if (offerButtonsContainer) {
