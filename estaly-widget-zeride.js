@@ -61,6 +61,11 @@ const PDP = {
         const offerButtons = document.querySelectorAll(".offer-button")
         offerButtons.forEach((offerButton) => {
             offerButton.addEventListener("click", () => {
+                if (offerButton.dataset.planVariantId == this.selectedPlanId) {
+                    this.selectedPlanId = null;
+                } else {
+                    this.selectedPlanId = offerButton.dataset.planVariantId;
+                }
                 this.setButtonsState();
             })
         })
