@@ -78,14 +78,9 @@ const PDP = {
         addToCartButton.addEventListener("click", this.addToCartFunction)
     },
     addToCartFunction(evt) {
-        if (this.selectedPlanId == null) {
-            console.log("VARIANTREFERENCEID");
-            console.log(evt.currentTarget.estalyVariantSelected)
-        } else {
-            console.log("VARIANTREFERENCEID");
-            console.log(evt.currentTarget.estalyVariantSelected)
-            this.addOfferToCart(evt.currentTarget.estalyVariantSelected)
-        }
+        console.log("VARIANTREFERENCEID");
+        console.log(evt.currentTarget.estalyVariantSelected)
+        this.addOfferToCart(evt.currentTarget.estalyVariantSelected)
     }, 
     displayButtons() {
         const offerButtonsContainer = document.querySelector(".estaly-pdp-offering");
