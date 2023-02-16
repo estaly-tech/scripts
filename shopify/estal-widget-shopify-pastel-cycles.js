@@ -324,10 +324,7 @@ const Estaly = {
     },
 
     getSelectedVariantId() {
-        if ( ShopifyAnalytics && ShopifyAnalytics.meta && ShopifyAnalytics.meta.selectedVariantId ) {
-            return ShopifyAnalytics.meta.selectedVariantId;
-        }
-        return null;
+        return $("select[name='id']").val();
     },
 
     insertPlans(offers) {
