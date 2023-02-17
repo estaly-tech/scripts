@@ -218,7 +218,9 @@ const PDP = {
     },
 
     addOfferToCart(variantReferenceId) {
-        if (this.selectedPlanId == null) {
+        var selectedPlanIdShopify = document.querySelector(".offer-button.active").dataset.planVariantId;
+
+        if (selectedPlanIdShopify == null) {
             return
         }
 
@@ -232,7 +234,7 @@ const PDP = {
         const data = {
             items: [
                 {
-                    id: this.selectedPlanId,
+                    id: selectedPlanIdShopify,
                     quantity: 1,
                     properties: {
                         'VariantId': selectedVariantId
