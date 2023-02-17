@@ -220,7 +220,7 @@ const PDP = {
     addOfferToCart(variantReferenceId) {
         var selectedPlanIdShopify = document.querySelector(".offer-button.active").dataset.planVariantId;
 
-        if (selectedPlanIdShopify == null) {
+        if (selectedPlanIdShopify == '') {
             return
         }
 
