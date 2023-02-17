@@ -325,10 +325,6 @@ const Estaly = {
 
     getSelectedVariantId() {
         selectedOffer = document.querySelector(".offer-button.active");
-        if (selectedOffer) {
-            selectedOffer.classList.remove("active");
-            document.getElementsByClassName("offer-button")[0].classList.add("active");
-        }
         return $("select[name='id']").val();
     },
 
