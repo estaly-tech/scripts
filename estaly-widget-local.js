@@ -85,7 +85,9 @@ const PDP = {
             jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
                 async: false
             });
-        } 
+        } else {
+            Estaly.openModal(true);
+        }
     }, 
     displayButtons() {
         const offerButtonsContainer = document.querySelector(".estaly-pdp-offering");
