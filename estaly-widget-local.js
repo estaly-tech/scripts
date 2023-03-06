@@ -86,7 +86,11 @@ const PDP = {
                 async: false
             });
         } else {
-            Estaly.openModal(true);
+            setTimeout(function () {
+                console.log("TIMEOUT 5 sec");
+                Estaly.openModal(true);
+            }, 5000);
+            
         }
     }, 
     displayButtons() {
