@@ -258,9 +258,9 @@ const Estaly = {
             jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
                 async: false
             });
+            location.reload() 
         } else {            
         }
-        const modal = document.querySelector(".modal-dialog")
-        modal.style.display = "none"
+        
     }, 
 }
