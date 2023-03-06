@@ -260,6 +260,7 @@ const Estaly = {
             });
         } else {            
         }
-        this.closeModal();
+        const modal = document.querySelector(".modal-dialog")
+        modal.style.display = "none"
     }, 
 }
