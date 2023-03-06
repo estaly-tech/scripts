@@ -214,14 +214,7 @@ const Estaly = {
         closeModalButton.addEventListener("click", this.closeModal)
         const protectMyPurchaseButton = document.querySelector(".modal-dialog .button-submit")
         protectMyPurchaseButton.estalyVariantSelected = variantReferenceId;
-        protectMyPurchaseButton.addEventListener("click", () => {
-            if (this.state.selectedOfferId == null) {
-                this.closeModal();
-                return
-            }
-            this.closeModal();
-            addToCartFunction();
-        })
+        protectMyPurchaseButton.addEventListener("click", this.addToCartFunction);
         const declineButton = document.getElementsByName("decline")[0]
         declineButton.addEventListener("click", this.closeModal)
     },
@@ -258,7 +251,8 @@ const Estaly = {
     },
     addToCartFunction(evt) {
         const variantReferenceId = evt.currentTarget.estalyVariantSelected;
-        offerButtonActive = document.querySelector(".offer-button.active")
+        offerButtonActive = document.querySelector(".offer-button.active");
+        console.log("AJAX CALL");
         if (offerButtonActive !== null) {
             const selectedPlanId = offerButtonActive.dataset.planVariantId;
             jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
@@ -266,5 +260,6 @@ const Estaly = {
             });
         } else {            
         }
+        this.closeModal();
     }, 
 }
