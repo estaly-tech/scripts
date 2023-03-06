@@ -18,13 +18,13 @@ function closeModal() {
 }
 
 const Cart = {
-    async init({cartVariantIds}) {
+    async init({cartVariantIds, merchantId}) {
         const variantIds = cartVariantIds.filter(id => id);
 
         if (variantIds.length === 0) {
             return
         }
-        const data = await Estaly.getOffers(variantIds);
+        const data = await Estaly.getOffers(variantIds, merchantId);
         const offers = data.offers
 
         Estaly.fillModalMarketing(data.marketing.modal);
@@ -164,7 +164,7 @@ const Estaly = {
     Widgets: {
         PDP: PDP,
         Cart: Cart,
-        
+
         add(widget, params) {
             widget.init(params)
         }
