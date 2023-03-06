@@ -49,7 +49,7 @@ const Cart = {
             }
             const simpleOfferNode = document.createElement("div");
             simpleOfferNode.innerHTML = `<button class='simple-offer' id='simple_offer' type='button'>${cartMarketingDetails.simpleOfferButtonText} ${offer.plans[0].price}</button>`;
-            cartItem.appendChild(simpleOfferNode);
+            cartItem.querySelector(".product-name").appendChild(simpleOfferNode);
             simpleOfferNode.addEventListener("click", () => {
                 Estaly.initModal({ afterAddToCartCallback: () => {
                     setTimeout(() => location.reload(), 1000);
