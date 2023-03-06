@@ -4,6 +4,7 @@ OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
 MODAL_DIALOG_SELECTOR = ""
 ADD_TO_CART_CLASS_NAME = "single_add_to_cart_button button"
+CART_ITEM_SELECTOR = '.woocommerce-cart-form__cart-item'
 
 
 function openModal() {  
@@ -14,6 +15,50 @@ function openModal() {
 function closeModal() {
     const modal = document.querySelector(".modal-dialog");
     modal.style.display = "none";
+}
+
+const Cart = {
+    async init({cartVariantIds}) {
+        const variantIds = cartVariantIds.filter(id => id);
+
+        if (variantIds.length === 0) {
+            return
+        }
+        const data = await Estaly.getOffers(variantIds);
+        const offers = data.offers
+
+        Estaly.fillModalMarketing(data.marketing.modal);
+
+        this.insertSimpleOffers(offers, variantIds, data.marketing.cart)
+    },
+
+    insertSimpleOffers(offers, variantIds, cartMarketingDetails) {
+        const cartItems = document.querySelectorAll(CART_ITEM_SELECTOR);
+        if (cartItems.length === 0) {
+            return
+        }
+
+        cartItems.forEach((cartItem, index) => {
+            cartItem.querySelector("a").dataset.product_id = variantIds[index];
+        })
+
+        offers.forEach((offer) => {
+            const cartItem = document.querySelector(`[data-product_id="${offer.productVariantId}"]`).parentElement.parentElement;
+            if (cartItem.querySelector(".simple-offer")) {
+                return
+            }
+            const simpleOfferNode = document.createElement("div");
+            simpleOfferNode.innerHTML = `<button class='simple-offer' id='simple_offer' type='button'>${cartMarketingDetails.simpleOfferButtonText} ${offer.plans[0].price}</button>`;
+            cartItem.appendChild(simpleOfferNode);
+            simpleOfferNode.addEventListener("click", () => {
+                Estaly.initModal({ afterAddToCartCallback: () => {
+                    setTimeout(() => location.reload(), 1000);
+                }},offer.productVariantId);
+                Estaly.insertPlans(offer.plans);
+                Estaly.openModal(true);
+            })
+        })
+    },
 }
 
 const PDP = {
@@ -118,6 +163,8 @@ const PDP = {
 const Estaly = {
     Widgets: {
         PDP: PDP,
+        Cart: Cart,
+        
         add(widget, params) {
             widget.init(params)
         }
