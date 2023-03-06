@@ -3,7 +3,7 @@ API_URL = "https://9c97-178-51-69-106.eu.ngrok.io"
 OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
 MODAL_DIALOG_SELECTOR = ""
-ADD_TO_CART_CLASS_NAME = "single_add_to_cart_button button alt wp-element-button"
+ADD_TO_CART_CLASS_NAME = "single_add_to_cart_button button"
 
 
 function openModal() {  
@@ -44,6 +44,12 @@ const PDP = {
             }
         })
     },
+    removeButtonsState() {
+        const offerButtons = document.querySelectorAll(`.offer-button`);
+        offerButtons.forEach((offerButton) => {
+            offerButton.classList.remove("active");
+        })
+    },
     fillButtonsMarketing(buttonsMarketingDetails) {
         const buttons = document.querySelector(".estaly-pdp-offering")
         if (buttons) {
@@ -67,14 +73,20 @@ const PDP = {
         learnMoreButton.addEventListener("click", () => {
             Estaly.openModal(false);
         })
-        const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
-        addToCartButton.addEventListener("click", () => {
-            if (this.selectedPlanId == null) {
-            } else {
-                this.addOfferToCart(variantReferenceId)
-            }
-        })
+        const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0];
+        addToCartButton.estalyVariantSelected = variantReferenceId;
+        addToCartButton.addEventListener("click", this.addToCartFunction);
     },
+    addToCartFunction(evt) {
+        const variantReferenceId = evt.currentTarget.estalyVariantSelected;
+        offerButtonActive = document.querySelector(".offer-button.active")
+        if (offerButtonActive !== null) {
+            const selectedPlanId = offerButtonActive.dataset.planVariantId;
+            jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
+                async: false
+            });
+        } 
+    }, 
     displayButtons() {
         const offerButtonsContainer = document.querySelector(".estaly-pdp-offering");
         if (offerButtonsContainer) {
@@ -95,15 +107,6 @@ const PDP = {
             priceSpan.innerText = plan.price
         })
     },
-
-    addOfferToCart(variantReferenceId) {
-        if (this.selectedPlanId == null) {
-            return
-        }
-        jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
-            async: false
-        });
-    }
 }
 const Estaly = {
     Widgets: {
@@ -189,8 +192,8 @@ const Estaly = {
             bulletPoints.forEach((bulletPoint, index) => {
                 bulletPoint.innerText = modalMarketingDetails.bulletPoints[index];
             })
-            modal.querySelector(".terms-link").innerText = modalMarketingDetails.linkText;
-            modal.querySelector(".terms-link").href = modalMarketingDetails.planDetailsUrl;
+            modal.querySelector(".terms-link-estaly").innerText = modalMarketingDetails.linkText;
+            modal.querySelector(".terms-link-estaly").href = modalMarketingDetails.planDetailsUrl;
             modal.querySelector(".merchant-logo").src = modalMarketingDetails.merchantLogo;
             modal.querySelector(".button-link").innerText = modalMarketingDetails.declineText;
             modal.querySelector(".button-submit").innerText = modalMarketingDetails.buyText;
