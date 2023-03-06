@@ -193,7 +193,7 @@ const Estaly = {
         })
     },
     initModal({afterAddToCartCallback}, variantReferenceId) {
-        const offerButtons = document.querySelectorAll(".modal-dialog .offer-button")
+        const offerButtons = document.querySelectorAll(".modal-dialog .offer-button");
         offerButtons.forEach((offerButton) => {
             offerButton.addEventListener("click", () => {
                 if (offerButton.dataset.planVariantId == this.state.selectedOfferId) {
@@ -213,13 +213,14 @@ const Estaly = {
         const closeModalButton = document.querySelector(".modal-dialog .close")
         closeModalButton.addEventListener("click", this.closeModal)
         const protectMyPurchaseButton = document.querySelector(".modal-dialog .button-submit")
+        protectMyPurchaseButton.estalyVariantSelected = variantReferenceId;
         protectMyPurchaseButton.addEventListener("click", () => {
             if (this.state.selectedOfferId == null) {
                 this.closeModal();
                 return
             }
             this.closeModal();
-            afterAddToCartCallback();
+            addToCartFunction();
         })
         const declineButton = document.getElementsByName("decline")[0]
         declineButton.addEventListener("click", this.closeModal)
@@ -255,4 +256,15 @@ const Estaly = {
             modal.querySelector(".learn-more-image").src = modalMarketingDetails.image;
         }
     },
+    addToCartFunction(evt) {
+        const variantReferenceId = evt.currentTarget.estalyVariantSelected;
+        offerButtonActive = document.querySelector(".offer-button.active")
+        if (offerButtonActive !== null) {
+            const selectedPlanId = offerButtonActive.dataset.planVariantId;
+            jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
+                async: false
+            });
+        } else {            
+        }
+    }, 
 }
