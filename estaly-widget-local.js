@@ -86,6 +86,7 @@ const PDP = {
                 async: false
             });
         } else {
+            console.log("TIMEOUT START")
             setTimeout(function () {
                 console.log("TIMEOUT 5 sec");
                 Estaly.openModal(true);
