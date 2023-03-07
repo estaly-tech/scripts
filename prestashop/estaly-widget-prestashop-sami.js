@@ -294,7 +294,12 @@ const Estaly = {
         let data = null
         await fetch(url, { headers: { Authorization: merchantId } })
             .then((response) => {
-                data = response.json();
+                if(response.ok){
+                    data = response.json();
+                }
+            })
+            .catch((error) => {
+                console.log(error)
             });
 
         return data;
