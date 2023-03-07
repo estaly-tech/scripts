@@ -1,4 +1,4 @@
-API_URL = "https://9c97-178-51-69-106.eu.ngrok.io"
+API_URL = "https://1b14-85-68-75-249.eu.ngrok.io"
 
 OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
@@ -49,7 +49,7 @@ const Cart = {
             }
             const simpleOfferNode = document.createElement("div");
             simpleOfferNode.innerHTML = `<button class='simple-offer' id='simple_offer' type='button'>${cartMarketingDetails.simpleOfferButtonText} ${offer.plans[0].price}</button>`;
-            cartItem.appendChild(simpleOfferNode);
+            cartItem.querySelector(".product-name").appendChild(simpleOfferNode);
             simpleOfferNode.addEventListener("click", () => {
                 Estaly.initModal({ afterAddToCartCallback: () => {
                     setTimeout(() => location.reload(), 1000);
@@ -193,7 +193,7 @@ const Estaly = {
         })
     },
     initModal({afterAddToCartCallback}, variantReferenceId) {
-        const offerButtons = document.querySelectorAll(".modal-dialog .offer-button")
+        const offerButtons = document.querySelectorAll(".modal-dialog .offer-button");
         offerButtons.forEach((offerButton) => {
             offerButton.addEventListener("click", () => {
                 if (offerButton.dataset.planVariantId == this.state.selectedOfferId) {
@@ -213,14 +213,8 @@ const Estaly = {
         const closeModalButton = document.querySelector(".modal-dialog .close")
         closeModalButton.addEventListener("click", this.closeModal)
         const protectMyPurchaseButton = document.querySelector(".modal-dialog .button-submit")
-        protectMyPurchaseButton.addEventListener("click", () => {
-            if (this.state.selectedOfferId == null) {
-                this.closeModal();
-                return
-            }
-            this.closeModal();
-            afterAddToCartCallback();
-        })
+        protectMyPurchaseButton.estalyVariantSelected = variantReferenceId;
+        protectMyPurchaseButton.addEventListener("click", this.addToCartFunction);
         const declineButton = document.getElementsByName("decline")[0]
         declineButton.addEventListener("click", this.closeModal)
     },
@@ -255,4 +249,18 @@ const Estaly = {
             modal.querySelector(".learn-more-image").src = modalMarketingDetails.image;
         }
     },
+    addToCartFunction(evt) {
+        const variantReferenceId = evt.currentTarget.estalyVariantSelected;
+        offerButtonActive = document.querySelector(".offer-button.active");
+        console.log("AJAX CALL");
+        if (offerButtonActive !== null) {
+            const selectedPlanId = offerButtonActive.dataset.planVariantId;
+            jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
+                async: false
+            });
+            location.reload() 
+        } else {            
+        }
+        
+    }, 
 }
