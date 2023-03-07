@@ -228,6 +228,16 @@
     margin-left: 1rem;
 }
 
+.estaly-cart-insurance-suggestion-button {
+    border-style: solid;
+    border-radius: 6px;
+    border-color: dodgerblue;
+    color: green;
+    background-color: azure;
+    font-weight: 700;
+    font-size: small;
+}
+
 @media (max-width: 800px){
     .estaly-modal-content { width: 100% !important ;}
     .estaly-sub-subheading { font-size: 12px !important ; line-height: 25px !important;}
