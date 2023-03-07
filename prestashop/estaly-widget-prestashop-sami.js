@@ -84,9 +84,7 @@ const PDP = {
 
         const addToCartButton = document.getElementsByClassName(addToCartButtonClass)[0];
         addToCartButton.addEventListener("click", () => {
-            if (this.selectedPlanId == null) {
-            } else {
-                console.log(variantReferenceId)
+            if (this.selectedPlanId !== null) {
                 this.addOfferToCart(variantReferenceId);
             }
         })
@@ -292,8 +290,12 @@ const Estaly = {
 
     async getOffers(variantReferenceIds, merchantId) {
         const url = `${API_URL}/merchant/offers?reference_ids=${variantReferenceIds}`
-        const response = await fetch(url, { headers: { Authorization: merchantId } })
-        const data = await response.json()
+
+        let data = null
+        await fetch(url, { headers: { Authorization: merchantId } })
+            .then((response) => {
+                data = response.json();
+            });
 
         return data;
     },
