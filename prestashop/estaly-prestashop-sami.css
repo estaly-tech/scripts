@@ -9,38 +9,11 @@
 
 .estaly-flex-col {
     flex-direction: column;
+    text-align: center;
 }
 
 .mt-2 {
-    margin-top: 0.25rem;
-}
-
-.estaly-offer-term-length {
-    text-align: center;
-}
-
-.estaly-offer-price {
-    text-align: center;
-}
-
-.estaly-headline-buttons {
-    display: inline;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-}
-
-.estaly-link-buttons {
-    font-size: 75%;
-    white-space: nowrap;
-    margin-left: 5px;
-    display: inline;
-    color: #1bb0ad;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.estaly-logo-full {
-    width: 80px;
+    margin-top: 0.25rem !important;
 }
 
 .estaly-modal-dialog {
@@ -62,25 +35,19 @@
 }
 
 .estaly-modal-content {
-    z-index: 200;
     background: white;
     border-radius: 0.5rem;
     box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 50%);
     display: flex;
     overflow: auto;
     position: relative;
-    width: 50%;
+    z-index: 200;
+    width: 40%;
 }
 
 .estaly-content-container {
     padding: 3.8rem 3rem;
     text-align: left;
-    width: 62.5%;
-}
-
-.estaly-image-container {
-    overflow: hidden;
-    width: 38%;
 }
 
 .estaly-close {
@@ -119,7 +86,7 @@
 }
 
 .estaly-merchant-logo {
-    max-height: 2rem;
+    max-height: 5rem;
     max-width: 17rem;
 }
 
@@ -136,17 +103,18 @@
 }
 
 .estaly-list {
-    margin-top: 30px;
+    margin: 0 0 1.5rem;
+    overflow: hidden;
     padding-left: 1.7rem;
     text-overflow: ellipsis;
     width: 100%;
 }
 
 .estaly-list-item {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: normal;
-    line-height: 1.0rem;
-    margin-top: 12px;
+    line-height: 2.0rem;
+    margin: 0.2rem 0;
     text-align: left;
 }
 
@@ -160,11 +128,6 @@
     text-decoration: underline;
 }
 
-.estaly-learn-more-image {
-    height: 100%;
-    object-fit: cover;
-}
-
 .estaly-link-container {
     margin-top: 15px;
     display: flex;
@@ -172,7 +135,7 @@
     font-size: 9px;
 }
 
-.estaly-link-out {
+.link-out {
     margin-left: 0.4rem;
 }
 
@@ -255,45 +218,55 @@
     color: #fff !important;
 }
 
+.estaly-headline-buttons {
+    font-weight: bold;
+    display: inline;
+    font-size: 16px;
+}
+
+.estaly-link-buttons {
+    display: inline;
+    color:#363948;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.estaly-logo-full {
+    width: 15%;
+}
+
 @media (max-width: 800px){
     .estaly-modal-content { width: 100% !important ;}
-    .estaly-sub-subheading { font-size: 12px !important ; line-height: 25px !important;}
     .estaly-content-container{ width: 100%;}
-    .estaly-image-container{ width: 0% !important;}
-    .estaly-list-item { font-size: 15px !important ;}
     .estaly-link-container{ font-size: 14px !important;}
     .estaly-choice-container button{ font-size: 14px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
 }
 
 @media (hover: hover) and (pointer: fine) {
-
     .estaly-offer-button {
-        min-width: 0px !important;
-        padding: 6px !important;
+        padding: 0.8rem;
         text-align: center;
         background: transparent;
+        border: 1px solid #b2bcc3;
         border-radius: 4px;
         color: black;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
-        border: 0.5px solid;
     }
 
     .estaly-offer-button.active {
-        border-color: #fc7c3c !important;
-        box-shadow: 0 0 0 1px inset #fc7c3c;
-        background-color: #fc7c3c;
+        border-color: #1bb0ad;
+        box-shadow: 0 0 0 1px inset #1bb0ad;
+        background-color: #1bb0ad;
         color: #fff;
-        border: 0.5px solid;
     }
 
     .estaly-offer-button:hover {
-        border-color: #fc7c3c !important;
-        box-shadow: 0 0 0 1px inset #fc7c3c;
-        background-color: #fc7c3c;
+        border-color: #1bb0ad;
+        box-shadow: 0 0 0 1px inset #1bb0ad;
+        background-color: #1bb0ad;
         color: #fff;
-        border: 0.5px solid;
     }
 }
 
@@ -328,13 +301,11 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .cart-modal-content {
+    .estaly-modal-content {
         width: 100% !important;
     }
-    .content-container {
+
+    .estaly-content-container {
         width: 100% !important;
-    }
-    .image-container {
-        display: none !important;
     }
 }
