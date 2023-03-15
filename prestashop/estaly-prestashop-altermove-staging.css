@@ -209,14 +209,14 @@
 }
 
 .estaly-cart-insurance-suggestion-button:hover {
-    border-color: #1bb0ad;
+    border-color: darkorange;
     box-shadow: 0 0 0 1px inset #1bb0ad;
     background-color: #1bb0ad !important;
     color: #fff !important;
 }
 
 .estaly-cart-insurance-suggestion-button:active {
-    border-color: #1bb0ad;
+    border-color: darkorange;
     box-shadow: 0 0 0 1px inset #1bb0ad;
     background-color: #1bb0ad !important;
     color: #fff !important;
