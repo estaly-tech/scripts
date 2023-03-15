@@ -16,31 +16,6 @@
     margin-top: 0.25rem !important;
 }
 
-.estaly-offer-term-length {
-    text-align: center;
-}
-
-.estaly-offer-price {
-    text-align: center;
-}
-
-.estaly-headline-buttons {
-    font-weight: bold;
-    display: inline;
-    font-size: 16px;
-}
-
-.estaly-link-buttons {
-    display: inline;
-    color:#363948;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.estaly-logo-full {
-    width: 80px; 
-}
-
 .estaly-modal-dialog {
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
@@ -77,11 +52,6 @@
     padding-bottom: 3rem;
     text-align: left;
     width: 62.5%;
-}
-
-.estaly-image-container {
-    overflow: hidden;
-    width: 38%;
 }
 
 .estaly-close {
@@ -139,6 +109,7 @@
     width: 100%;
 }
 
+
 .estaly-list-item {
     font-size: 1rem;
     font-weight: normal;
@@ -152,14 +123,13 @@
     text-decoration: none;
 }
 
-.estaly-terms-link:hover {
-    text-decoration: underline;
+.estaly-offered-by {
+    font-size:14px !important;
+    text-decoration: none;
 }
 
-.estaly-learn-more-image {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+.estaly-terms-link:hover {
+    text-decoration: underline;
 }
 
 .estaly-link-container {
@@ -167,12 +137,12 @@
     justify-content: space-between;
 }
 
-.estaly-link-out {
+.link-out {
     margin-left: 0.4rem;
 }
 
 .estaly-buttons-container {
-    display: none;
+    display: block;
 }
 
 .estaly-horizontal-line {
@@ -227,6 +197,48 @@
 
 .estaly-offer-button + .estaly-offer-button {
     margin-left: 1rem;
+}
+
+.estaly-cart-insurance-suggestion-button {
+    background: transparent;
+    border: 1px solid #b2bcc3;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    transition: border 200ms, box-shadow 200ms;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.estaly-cart-insurance-suggestion-button:hover {
+    border-color: #1bb0ad;
+    box-shadow: 0 0 0 1px inset #1bb0ad;
+    background-color: #1bb0ad !important;
+    color: #fff !important;
+}
+
+.estaly-cart-insurance-suggestion-button:active {
+    border-color: #1bb0ad;
+    box-shadow: 0 0 0 1px inset #1bb0ad;
+    background-color: #1bb0ad !important;
+    color: #fff !important;
+}
+
+.estaly-headline-buttons {
+    font-weight: bold;
+    display: inline;
+    font-size: 16px;
+}
+
+.estaly-link-buttons {
+    display: inline;
+    color:#363948;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.estaly-logo-full {
+    width: 15%;
 }
 
 @media (max-width: 800px){
