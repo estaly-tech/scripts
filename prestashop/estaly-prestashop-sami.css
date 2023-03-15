@@ -141,6 +141,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 9px;
+    flex-direction: row;
 }
 
 .link-out {

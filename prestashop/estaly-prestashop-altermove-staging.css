@@ -133,6 +133,7 @@
 .estaly-link-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .link-out {
