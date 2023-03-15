@@ -201,7 +201,7 @@
     background: #FC7C3C;
     border: 1px solid #FC7C3C;
     border-radius: 4px;
-    color: black;
+    color: #fff;
     cursor: pointer;
     transition: border 200ms, box-shadow 200ms;
     font-size: 0.875rem;
