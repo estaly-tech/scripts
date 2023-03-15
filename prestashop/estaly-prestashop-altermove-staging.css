@@ -35,7 +35,6 @@
 }
 
 .estaly-modal-content {
-    width: 80%;
     background: white;
     border-radius: 0.5rem;
     box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 50%);
@@ -51,7 +50,6 @@
     padding-right: 4rem;
     padding-bottom: 3rem;
     text-align: left;
-    width: 62.5%;
 }
 
 .estaly-close {
