@@ -208,6 +208,7 @@
     font-size: 0.875rem;
     font-weight: 600;
     padding: 8px;
+    white-space: normal;
 }
 
 .estaly-cart-insurance-suggestion-button:hover {
