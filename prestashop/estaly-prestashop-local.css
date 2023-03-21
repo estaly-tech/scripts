@@ -228,6 +228,14 @@
     margin-left: 1rem;
 }
 
+.estaly-choice-validation {
+    font-weight: 700;
+    color: red;
+    padding-top: 4%;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
 @media (max-width: 800px){
 	.estaly-modal-content { width: 100% !important ;}
 	.estaly-sub-subheading { font-size: 12px !important ; line-height: 25px !important;}
