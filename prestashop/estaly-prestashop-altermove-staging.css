@@ -178,7 +178,7 @@
     border-width: 0rem;
     color: white;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: bold;
     line-height: 100%;
     transition: 250ms opacity;
@@ -207,6 +207,7 @@
     transition: border 200ms, box-shadow 200ms;
     font-size: 0.875rem;
     font-weight: 600;
+    padding: 4px;
 }
 
 .estaly-cart-insurance-suggestion-button:hover {
