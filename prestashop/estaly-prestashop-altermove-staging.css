@@ -243,7 +243,7 @@
 
 @media (max-width: 800px){
 	.estaly-modal-content { width: 100% !important ;}
-	.estaly-sub-subheading { font-size: 12px !important ; line-height: 25px !important;}
+	.estaly-subheading { font-size: 12px !important ; line-height: 25px !important;}
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
 	.estaly-list-item { font-size: 15px !important ;}
