@@ -250,6 +250,7 @@
     .estaly-link-container{ font-size: 14px !important;}
     .estaly-choice-container button{ font-size: 14px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
+    .estaly-modal-dialog { z-index: 100 }
 }
 
 @media (hover: hover) and (pointer: fine) {
