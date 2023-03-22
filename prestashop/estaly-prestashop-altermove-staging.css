@@ -260,7 +260,7 @@
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
 	.estaly-list-item{ font-size: 15px !important ;}
-    .estaly-link-container{ font-size: 14px !important;}
+    .estaly-link-container{ font-size: 14px !important; text-align: center;}
     .estaly-choice-container button{ font-size: 14px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
     .estaly-modal-dialog { z-index: 100 }
