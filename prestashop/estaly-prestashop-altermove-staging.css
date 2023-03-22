@@ -123,7 +123,6 @@
 }
 
 .estaly-offered-by {
-    font-size: 16px !important;
     text-decoration: none;
     font-weight: bold;
 }
@@ -133,6 +132,7 @@
 }
 
 .estaly-link-container {
+    font-size: 16px !important;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -256,10 +256,10 @@
 
 @media (max-width: 800px){
 	.estaly-modal-content { width: 100% !important ;}
-	.estaly-subheading { font-size: 12px !important ; line-height: 25px !important;}
+	.estaly-subheading{ font-size: 1.1rem !important ; line-height: 25px !important;}
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
-	.estaly-list-item { font-size: 15px !important ;}
+	.estaly-list-item{ font-size: 15px !important ;}
     .estaly-link-container{ font-size: 14px !important;}
     .estaly-choice-container button{ font-size: 14px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
