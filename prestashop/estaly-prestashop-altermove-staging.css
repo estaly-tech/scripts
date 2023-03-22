@@ -123,8 +123,9 @@
 }
 
 .estaly-offered-by {
-    font-size: 15px !important;
+    font-size: 16px !important;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .estaly-terms-link:hover {
@@ -135,6 +136,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    font-weight: bold
 }
 
 .link-out {
