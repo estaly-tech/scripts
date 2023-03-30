@@ -68,6 +68,7 @@ const Cart = {
         cartItems.forEach((cartItem) => {
             productTitle = cartItem.querySelector(".product-name a").innerHTML;
             if (productTitle.match(/Assurance/i)) {
+                console.log("true");
                 return true;
             }
         })
