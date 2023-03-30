@@ -39,6 +39,7 @@ const Cart = {
         }
 
         if (this.IsEstalyPresentInCart(cartItems)) {
+            console.log("yoyo");
             return
         }
 
