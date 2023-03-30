@@ -65,7 +65,7 @@ const Cart = {
     },
 
     IsEstalyPresentInCart(cartItems) {
-        for (cartItem in cartItems) {
+        for (let cartItem in cartItems) {
             productTitle = cartItem.querySelector(".product-name a").innerHTML;
             if (productTitle.match(/Assurance/i)) {
                 return true;
