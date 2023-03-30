@@ -52,7 +52,7 @@ const Cart = {
                 return
             }
             const simpleOfferNode = document.createElement("div");
-            simpleOfferNode.innerHTML = `<button class='simple-offer' id='simple_offer' type='button'>${cartMarketingDetails.simpleOfferButtonText} ${offer.plans[0].price}</button>`;
+            simpleOfferNode.innerHTML = `<button class='simple-offer' id='simple_offer' type='button'>${cartMarketingDetails.simpleOfferButtonText} ${this.computeMonthlyPrice(offer.plans[0].price)}€/mois</button>`;
             cartItem.querySelector(".product-name").appendChild(simpleOfferNode);
             simpleOfferNode.addEventListener("click", () => {
                 Estaly.initModal({ afterAddToCartCallback: () => {
@@ -62,6 +62,11 @@ const Cart = {
                 Estaly.openModal(true);
             })
         })
+    },
+
+    computeMonthlyPrice(offerPrice) {
+        price = offerPrice.replace("€","")
+        return parseInt(price/12);
     },
 
     IsEstalyPresentInCart(cartItems) {
