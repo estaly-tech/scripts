@@ -38,6 +38,10 @@ const Cart = {
             return
         }
 
+        if (this.IsEstalyPresentInCart(cartItems)) {
+            return
+        }
+
         cartItems.forEach((cartItem, index) => {
             cartItem.querySelector("a").dataset.product_id = variantIds[index];
         })
@@ -59,6 +63,16 @@ const Cart = {
             })
         })
     },
+
+    IsEstalyPresentInCart(cartItems) {
+        cartItems.forEach((cartItem) => {
+            productTitle = cartItem.querySelector(".product-name a").innerHTML;
+            if (productTitle.match(/Assurance/i)) {
+                return true;
+            }
+        })
+        return false;
+    }
 }
 
 const PDP = {
@@ -130,13 +144,6 @@ const PDP = {
             jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
                 async: false
             });
-        } else {
-            console.log("TIMEOUT START")
-            setTimeout(function () {
-                console.log("TIMEOUT 5 sec");
-                Estaly.openModal(true);
-            }, 5000);
-            
         }
     }, 
     displayButtons() {
