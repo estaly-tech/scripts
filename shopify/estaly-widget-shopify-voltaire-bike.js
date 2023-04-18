@@ -260,6 +260,7 @@ const PDP = {
 const Estaly = {
     Widgets: {
         PDP: PDP,
+        
         add(widget, params) {
             widget.init(params)
         }
