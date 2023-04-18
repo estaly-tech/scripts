@@ -152,11 +152,7 @@ const PDP = {
             return
         }
 
-        const offerButtonsNodeList = document.querySelectorAll(".offer-button")
-        const offerButtons = Array.from(offerButtonsNodeList).slice(1)
-        const noneButton = document.querySelectorAll(".offer-button")[0];
-
-       noneButton.dataset.planVariantId = "";
+        const offerButtons = document.querySelectorAll(".offer-button")
 
         offerButtons.forEach((offerButton, index) => {
             const plan = plans[index % plans.length]
@@ -260,7 +256,7 @@ const PDP = {
 const Estaly = {
     Widgets: {
         PDP: PDP,
-        
+
         add(widget, params) {
             widget.init(params)
         }
