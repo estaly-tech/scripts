@@ -15,12 +15,11 @@ const PDP = {
         const plans = relevantOffer.plans;
 
         this.insertPlans(plans);
-        this.fillButtonsMarketing(data.marketing.buttons);
         this.initButtons(variantReferenceId, addToCartButtonClass, buyItNowButtonClass);
         this.displayButtons();
 
-        Estaly.fillModalMarketing(data.marketing.modal);
-        Estaly.initModal({ afterAddToCartCallback: () => {}}, variantReferenceId);
+        //Estaly.fillModalMarketing(data.marketing.modal);
+        //Estaly.initModal({ afterAddToCartCallback: () => {}}, variantReferenceId);
 
         return this;
     },
@@ -34,15 +33,6 @@ const PDP = {
                 offerButton.classList.remove("active");
             }
         })
-    },
-
-    fillButtonsMarketing(buttonsMarketingDetails) {
-        const buttons = document.querySelector(".estaly-pdp-offering")
-
-        if (buttons) {
-            buttons.querySelector(".headline-buttons").innerText = buttonsMarketingDetails.headline
-            buttons.querySelector(".link-buttons").innerText = buttonsMarketingDetails.linkText
-        }
     },
 
     initButtons(variantReferenceId, addToCartButtonClass, buyItNowButtonClass) {
