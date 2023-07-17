@@ -190,7 +190,6 @@
 
 .estaly-button-group {
     display: flex;
-    justify-content: center;
     margin-top: 10px;
     align-items: center;
 }
@@ -287,7 +286,6 @@
         color: black;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
-        justify-content: normal;
     }
 
     .estaly-offer-button.active {
