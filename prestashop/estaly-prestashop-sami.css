@@ -270,7 +270,6 @@
         color: black;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
-        display: none;
     }
 
     .estaly-offer-button.active {
