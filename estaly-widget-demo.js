@@ -4,16 +4,80 @@ OFFER_BUTTON_SELECTOR = ""
 PDP_OFFERING_SELECTOR = ""
 MODAL_DIALOG_SELECTOR = ""
 ADD_TO_CART_CLASS_NAME = "single_add_to_cart_button button alt wp-element-button"
+CART_ITEM_SELECTOR = '.woocommerce-cart-form__cart-item'
 
 
-function openModal() {
+function openModal() {  
     const modal = document.querySelector(".modal-dialog");
-    modal.style.display = "flex";
+    modal.style.display = "flex"; 
 }
 
 function closeModal() {
     const modal = document.querySelector(".modal-dialog");
     modal.style.display = "none";
+}
+
+const Cart = {
+    async init({cartVariantIds, merchantId}) {
+        const variantIds = cartVariantIds.filter(id => id);
+
+        if (variantIds.length === 0) {
+            return
+        }
+        const data = await Estaly.getOffers(variantIds, merchantId);
+        const offers = data.offers
+
+        Estaly.fillModalMarketing(data.marketing.modal);
+
+        this.insertSimpleOffers(offers, variantIds, data.marketing.cart)
+    },
+
+    insertSimpleOffers(offers, variantIds, cartMarketingDetails) {
+        const cartItems = document.querySelectorAll(CART_ITEM_SELECTOR);
+        if (cartItems.length === 0) {
+            return
+        }
+
+        if (this.IsEstalyPresentInCart(cartItems)) {
+            return
+        }
+
+        cartItems.forEach((cartItem, index) => {
+            cartItem.querySelector("a").dataset.product_id = variantIds[index];
+        })
+
+        offers.forEach((offer) => {
+            const cartItem = document.querySelector(`[data-product_id="${offer.productVariantId}"]`).parentElement.parentElement;
+            if (cartItem.querySelector(".simple-offer")) {
+                return
+            }
+            const simpleOfferNode = document.createElement("div");
+            simpleOfferNode.innerHTML = `<button class='simple-offer' id='simple_offer' type='button'>${cartMarketingDetails.simpleOfferButtonText} ${this.computeMonthlyPrice(offer.plans[0].price)}€/mois</button>`;
+            cartItem.querySelector(".product-name").appendChild(simpleOfferNode);
+            simpleOfferNode.addEventListener("click", () => {
+                Estaly.initModal({ afterAddToCartCallback: () => {
+                    setTimeout(() => location.reload(), 1000);
+                }},offer.productVariantId);
+                Estaly.insertPlans(offer.plans);
+                Estaly.openModal(true);
+            })
+        })
+    },
+
+    computeMonthlyPrice(offerPrice) {
+        price = offerPrice.replace("€","")
+        return parseInt(price/12);
+    },
+
+    IsEstalyPresentInCart(cartItems) {
+        for (let i = 0; i < cartItems.length; i++) {
+            productTitle = cartItems[i].querySelector(".product-name a").innerHTML;
+            if (productTitle.match(/Assurance/i)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 const PDP = {
@@ -44,6 +108,12 @@ const PDP = {
             }
         })
     },
+    removeButtonsState() {
+        const offerButtons = document.querySelectorAll(`.offer-button`);
+        offerButtons.forEach((offerButton) => {
+            offerButton.classList.remove("active");
+        })
+    },
     fillButtonsMarketing(buttonsMarketingDetails) {
         const buttons = document.querySelector(".estaly-pdp-offering")
         if (buttons) {
@@ -67,14 +137,20 @@ const PDP = {
         learnMoreButton.addEventListener("click", () => {
             Estaly.openModal(false);
         })
-        const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0]
-        addToCartButton.addEventListener("click", () => {
-            if (this.selectedPlanId == null) {
-            } else {
-                this.addOfferToCart(variantReferenceId)
-            }
-        })
+        const addToCartButton = document.getElementsByClassName(ADD_TO_CART_CLASS_NAME)[0];
+        addToCartButton.estalyVariantSelected = variantReferenceId;
+        addToCartButton.addEventListener("click", this.addToCartFunction);
     },
+    addToCartFunction(evt) {
+        const variantReferenceId = evt.currentTarget.estalyVariantSelected;
+        offerButtonActive = document.querySelector(".offer-button.active")
+        if (offerButtonActive !== null) {
+            const selectedPlanId = offerButtonActive.dataset.planVariantId;
+            jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
+                async: false
+            });
+        } 
+    }, 
     displayButtons() {
         const offerButtonsContainer = document.querySelector(".estaly-pdp-offering");
         if (offerButtonsContainer) {
@@ -95,19 +171,12 @@ const PDP = {
             priceSpan.innerText = plan.price
         })
     },
-
-    addOfferToCart(variantReferenceId) {
-        if (this.selectedPlanId == null) {
-            return
-        }
-        jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+this.selectedPlanId+'&productVariantId='+variantReferenceId,
-            async: false
-        });
-    }
 }
 const Estaly = {
     Widgets: {
         PDP: PDP,
+        Cart: Cart,
+
         add(widget, params) {
             widget.init(params)
         }
@@ -136,7 +205,7 @@ const Estaly = {
         })
     },
     initModal({afterAddToCartCallback}, variantReferenceId) {
-        const offerButtons = document.querySelectorAll(".modal-dialog .offer-button")
+        const offerButtons = document.querySelectorAll(".modal-dialog .offer-button");
         offerButtons.forEach((offerButton) => {
             offerButton.addEventListener("click", () => {
                 if (offerButton.dataset.planVariantId == this.state.selectedOfferId) {
@@ -156,14 +225,8 @@ const Estaly = {
         const closeModalButton = document.querySelector(".modal-dialog .close")
         closeModalButton.addEventListener("click", this.closeModal)
         const protectMyPurchaseButton = document.querySelector(".modal-dialog .button-submit")
-        protectMyPurchaseButton.addEventListener("click", () => {
-            if (this.state.selectedOfferId == null) {
-                this.closeModal();
-                return
-            }
-            this.closeModal();
-            afterAddToCartCallback();
-        })
+        protectMyPurchaseButton.estalyVariantSelected = variantReferenceId;
+        protectMyPurchaseButton.addEventListener("click", this.addToCartFunction);
         const declineButton = document.getElementsByName("decline")[0]
         declineButton.addEventListener("click", this.closeModal)
     },
@@ -189,8 +252,8 @@ const Estaly = {
             bulletPoints.forEach((bulletPoint, index) => {
                 bulletPoint.innerText = modalMarketingDetails.bulletPoints[index];
             })
-            modal.querySelector(".terms-link").innerText = modalMarketingDetails.linkText;
-            modal.querySelector(".terms-link").href = modalMarketingDetails.planDetailsUrl;
+            modal.querySelector(".terms-link-estaly").innerText = modalMarketingDetails.linkText;
+            modal.querySelector(".terms-link-estaly").href = modalMarketingDetails.planDetailsUrl;
             modal.querySelector(".merchant-logo").src = modalMarketingDetails.merchantLogo;
             modal.querySelector(".button-link").innerText = modalMarketingDetails.declineText;
             modal.querySelector(".button-submit").innerText = modalMarketingDetails.buyText;
@@ -198,4 +261,17 @@ const Estaly = {
             modal.querySelector(".learn-more-image").src = modalMarketingDetails.image;
         }
     },
+    addToCartFunction(evt) {
+        const variantReferenceId = evt.currentTarget.estalyVariantSelected;
+        offerButtonActive = document.querySelector(".offer-button.active");
+        if (offerButtonActive !== null) {
+            const selectedPlanId = offerButtonActive.dataset.planVariantId;
+            jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
+                async: false
+            });
+            location.reload() 
+        } else {            
+        }
+        
+    }, 
 }

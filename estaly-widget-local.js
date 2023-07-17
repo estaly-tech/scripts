@@ -38,6 +38,10 @@ const Cart = {
             return
         }
 
+        if (this.IsEstalyPresentInCart(cartItems)) {
+            return
+        }
+
         cartItems.forEach((cartItem, index) => {
             cartItem.querySelector("a").dataset.product_id = variantIds[index];
         })
@@ -48,7 +52,7 @@ const Cart = {
                 return
             }
             const simpleOfferNode = document.createElement("div");
-            simpleOfferNode.innerHTML = `<button class='simple-offer' id='simple_offer' type='button'>${cartMarketingDetails.simpleOfferButtonText} ${offer.plans[0].price}</button>`;
+            simpleOfferNode.innerHTML = `<button class='simple-offer' id='simple_offer' type='button'>${cartMarketingDetails.simpleOfferButtonText} ${this.computeMonthlyPrice(offer.plans[0].price)}€/mois</button>`;
             cartItem.querySelector(".product-name").appendChild(simpleOfferNode);
             simpleOfferNode.addEventListener("click", () => {
                 Estaly.initModal({ afterAddToCartCallback: () => {
@@ -59,6 +63,21 @@ const Cart = {
             })
         })
     },
+
+    computeMonthlyPrice(offerPrice) {
+        price = offerPrice.replace("€","")
+        return parseInt(price/12);
+    },
+
+    IsEstalyPresentInCart(cartItems) {
+        for (let i = 0; i < cartItems.length; i++) {
+            productTitle = cartItems[i].querySelector(".product-name a").innerHTML;
+            if (productTitle.match(/Assurance/i)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 const PDP = {
@@ -130,13 +149,6 @@ const PDP = {
             jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
                 async: false
             });
-        } else {
-            console.log("TIMEOUT START")
-            setTimeout(function () {
-                console.log("TIMEOUT 5 sec");
-                Estaly.openModal(true);
-            }, 5000);
-            
         }
     }, 
     displayButtons() {
@@ -252,7 +264,6 @@ const Estaly = {
     addToCartFunction(evt) {
         const variantReferenceId = evt.currentTarget.estalyVariantSelected;
         offerButtonActive = document.querySelector(".offer-button.active");
-        console.log("AJAX CALL");
         if (offerButtonActive !== null) {
             const selectedPlanId = offerButtonActive.dataset.planVariantId;
             jQuery.ajax({url: '/wp/?post_type=product&add-to-cart='+selectedPlanId+'&productVariantId='+variantReferenceId,
