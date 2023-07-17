@@ -275,7 +275,7 @@
     .estaly-offer-button.uniq {
         padding: 0.8rem;
         text-align: center;
-        background: red;
+        background: transparent;
         border: 1px solid #b2bcc3;
         border-radius: 4px;
         color: black;
