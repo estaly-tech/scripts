@@ -188,9 +188,31 @@
     cursor: pointer;
 }
 
-.estaly-button-group {
+.estaly-button-group.multiple {
     display: flex;
     margin-top: 10px;
+    align-items: center;
+    border: 1px solid #24b9d7;
+}
+
+.estaly-button-group.uniq {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    border: 1px solid #24b9d7;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(72 72 173 / 15%);
+}
+
+estaly-learn-more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+estaly-title {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -235,7 +257,8 @@
 
 .estaly-link-buttons {
     display: inline;
-    color:#363948;
+    font-size: 12px;
+    color: #24b9d7;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -282,7 +305,7 @@
         background: transparent;
         border: 1px solid #b2bcc3;
         border-radius: 4px;
-        max-width: 5%;
+        max-width: 22px;
         color: transparent;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
