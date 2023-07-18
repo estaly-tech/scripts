@@ -211,12 +211,12 @@
     align-items: center;
 }
 
-estaly-learn-more {
+.estaly-learn-more {
     display: flex;
     justify-content: flex-end;
 }
 
-estaly-title {
+.estaly-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -313,7 +313,7 @@ estaly-title {
         border: 1px solid #b2bcc3;
         border-radius: 4px;
         width: 22px;
-        margin-right: 10px
+        margin-right: 10px;
         color: transparent;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
