@@ -277,13 +277,13 @@
     }
 
     .estaly-offer-button.uniq {
-        padding: 0.8rem;
+        height: 22px;
         text-align: center;
         background: transparent;
         border: 1px solid #b2bcc3;
         border-radius: 4px;
         max-width: 5%;
-        color: black;
+        color: transparent;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
     }
