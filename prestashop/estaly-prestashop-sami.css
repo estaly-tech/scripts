@@ -197,6 +197,7 @@
 
 .estaly-button-group.uniq {
     display: flex;
+    justify-content: space-between;
     margin-top: 5px;
     align-items: center;
     border: 1px solid #24b9d7;
