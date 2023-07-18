@@ -206,6 +206,11 @@
     box-shadow: 0px 0px 10px rgb(72 72 173 / 15%);
 }
 
+.estaly-offer-button-data {
+    display: flex;
+    align-items: center;
+}
+
 estaly-learn-more {
     display: flex;
     justify-content: flex-end;
@@ -269,7 +274,8 @@ estaly-title {
 }
 
 .estaly-offer-description {
-    margin-left: 3%
+    margin-left: 3%;
+    font-weight: bold;
 }
 
 .estaly-choice-validation {
@@ -306,7 +312,8 @@ estaly-title {
         background: transparent;
         border: 1px solid #b2bcc3;
         border-radius: 4px;
-        max-width: 22px;
+        width: 22px;
+        margin-right: 10px
         color: transparent;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
