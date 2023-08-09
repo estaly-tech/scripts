@@ -194,14 +194,6 @@
     margin-top: 10px;
 }
 
-.estaly-button-group > .estaly-offer-button {
-    flex: 1;
-}
-
-.estaly-offer-button + .estaly-offer-button {
-    margin-left: 0.3rem;
-}
-
 .estaly-button-group.multiple {
     display: flex;
     margin-top: 10px;
@@ -217,6 +209,14 @@
     border-radius: 0px;
     padding: 10px;
     box-shadow: 0px 0px 10px rgb(72 72 173 / 15%);
+}
+
+.estaly-button-group > .estaly-offer-button {
+    flex: 1;
+}
+
+.estaly-offer-button + .estaly-offer-button {
+    margin-left: 0.3rem;
 }
 
 .estaly-offer-term-length {
