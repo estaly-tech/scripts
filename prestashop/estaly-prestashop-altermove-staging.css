@@ -222,6 +222,11 @@
     font-weight: bold !important;
 }
 
+.estaly-offer-button-data {
+    display: flex;
+    align-items: center;
+}
+
 .estaly-cart-insurance-suggestion-button {
     background: #FC7C3C;
     border: 1px solid #FC7C3C;
