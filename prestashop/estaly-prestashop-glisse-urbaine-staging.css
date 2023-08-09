@@ -255,7 +255,7 @@
     background: #fabb00;
     border: 1px solid #fabb00;
     border-radius: 4px;
-    color: #fff;
+    color: black;
     cursor: pointer;
     transition: border 200ms, box-shadow 200ms;
     font-size: 0.875rem;
@@ -265,16 +265,16 @@
 }
 
 .estaly-cart-insurance-suggestion-button:hover {
-    border-color: yellow;
+    border-color: #fabb00;
     box-shadow: 0 0 0 1px inset #fabb00;
-    background-color: yellow !important;
+    background-color: #fabb00 !important;
     color: #fff !important;
 }
 
 .estaly-cart-insurance-suggestion-button:active {
-    border-color: yellow;
-    box-shadow: 0 0 0 1px inset yellow;
-    background-color: yellow !important;
+    border-color: #fabb00;
+    box-shadow: 0 0 0 1px inset #fabb00;
+    background-color: #fabb00 !important;
     color: #fff !important;
 }
 
