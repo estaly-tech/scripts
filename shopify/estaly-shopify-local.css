@@ -1,19 +1,13 @@
 .estaly-pdp-offering {
     display: none;
-    margin-bottom: 20px;
 }
 
-.estaly-flex {
+.flex {
     display: flex;
 }
 
-.estaly-logo-full {
-    vertical-align: bottom;
-}
-
-.estaly-flex-col {
+.flex-col {
     flex-direction: column;
-    text-align: center;
 }
 
 .mt-2 {
@@ -24,67 +18,13 @@ span {
     text-align: center;
 }
 
-.estaly-headline-buttons {
-    font-weight: bold;
-    display: inline;
-    font-size: 16px;
+.headline-buttons {
+    display: flex;
+    align-items: center;
 }
 
 .logo-pdp {
     padding-left: 5px;
-}
-
-.estaly-link-buttons {
-    display: inline;
-    font-size: 12px;
-    color: #647259;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.estaly-offer-button-data {
-    display: flex;
-    align-items: center;
-}
-
-.estaly-learn-more {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.estaly-button-link {
-    background-color: transparent;
-    border: none;
-    color: #6d7278;
-    cursor: pointer;
-}
-
-.estaly-button-link:hover {
-    text-decoration: underline;
-}
-
-.estaly-button-submit {
-    border-width: 0rem;
-    background-color: #647259 !important;
-    color: #fff !important;
-    cursor: pointer;
-}
-
-.estaly-button-group.multiple {
-    display: flex;
-    margin-top: 10px;
-    align-items: center;
-}
-
-.estaly-button-group.uniq {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-    align-items: center;
-    border: 0.1px solid #647259;
-    border-radius: 0px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgb(72 72 173 / 15%);
 }
 
 .headline-buttons {
@@ -189,8 +129,6 @@ span {
     font-size: 17px;
     font-weight: normal;
     line-height: 2.4rem;
-    padding-top: 25px;
-    padding-bottom: 20px;
 }
 
 .coverage-header {
@@ -214,7 +152,7 @@ span {
 }
 
 .terms-link {
-    color: #647259;
+    color: #487358;
     text-decoration: none;
 }
 
@@ -264,7 +202,7 @@ span {
     box-shadow: none;
     background-color: transparent;
     border: none;
-    color: #647259;
+    color: #6d7278;
     cursor: pointer;
     font-size: 13px !important;
 }
@@ -280,7 +218,7 @@ span {
 }
 
 .button-submit {
-    background: #647259;
+    background: #487358;
     border-width: 0rem;
     color: white;
     cursor: pointer;
@@ -291,44 +229,47 @@ span {
 }
 
 .button-submit:hover{
-    color: #647259;
+    color: #487358;
     background-color: white;
 }
 
-.estaly-button-group > .estaly-offer-button {
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button-group > .offer-button {
     flex: 1;
 }
 
-.estaly-offer-button + .estaly-offer-button {
-    margin-left: 0.3rem;
+.offer-button + .offer-button {
+    margin-left: 1rem;
 }
 
-.estaly-offer-term-length {
-    font-family: var(--typeHeaderPrimary),var(--typeHeaderFallback);
-    font-weight: var(--typeHeaderWeight) !important;
-    font-size: 1rem !important;
-    font-weight: bold !important;
+/* CART */
+
+.simple-offer {
+    border-radius: 5px;
+    background: transparent;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #487358;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.estaly-offer-description {
-    font-family: var(--typeHeaderPrimary),var(--typeHeaderFallback);
-    font-weight: var(--typeHeaderWeight) !important;
-    font-size: 1rem !important;
-    font-weight: bold !important; 
+.simple-offer:hover {
+    background-color:#487358;
+    color: #fff;
 }
 
-.estaly-offer-price {
-    font-family: var(--typeHeaderPrimary),var(--typeHeaderFallback);
-    font-weight: var(--typeHeaderWeight) !important;
-    font-size: 1rem !important;
-    font-weight: bold !important;
-}
-
-.estaly-offer-button-text {
-    font-family: var(--typeHeaderPrimary),var(--typeHeaderFallback);
-    font-weight: var(--typeHeaderWeight) !important;
-    font-size: 1rem !important;
-    font-weight: bold !important;
+.simple-offer:active {
+    background-color: #487358;
+    color: #fff;
 }
 
 @media (max-width: 800px){
@@ -342,127 +283,62 @@ span {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .estaly-offer-button.multiple {
-        padding: 0.8rem;
+    .offer-button {
+        min-width: 0px !important;
+        padding: 6px !important;
         text-align: center;
         background: transparent;
-        border: 0.1px solid #647259;
-        border-radius: 0px;
+        border-radius: 4px;
         color: black;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
     }
 
-    .estaly-offer-button.uniq {
-        height: 22px;
-        text-align: center;
-        background: transparent;
-        border: 1px solid #647259;
-        border-radius: 0px;
-        width: 22px;
-        margin-right: 10px;
-        color: transparent;
-        cursor: pointer;
-        transition: border 200ms, box-shadow 200ms;
-    }
-
-    .estaly-offer-button.multiple.active {
-        border-color: black;
-        border: 1px solid black;
-        box-shadow: 0 0 0 1px inset #647259;
-        background-color: transparent;
-        color: black;
-    }
-
-    .estaly-offer-button.uniq.active {
-        border-color: black;
-        box-shadow: 0 0 0 1px inset #647259;
-        background-color: black;
+    .offer-button.active {
+        border-color: #487358;
+        box-shadow: 0 0 0 1px inset #487358;
+        background-color: #487358;
         color: #fff;
     }
-
-    .estaly-offer-button.uniq:hover {
-        border-color: black;
-        box-shadow: 0 0 0 1px inset #647259;
-        background-color: black;
+    
+    .offer-button:hover {
+        border-color: #487358;
+        box-shadow: 0 0 0 1px inset #487358;
+        background-color: #487358;
         color: #fff;
-    }
-
-    .estaly-offer-button.multiple:hover {
-        border-color: #647259;
-        box-shadow: 0 0 0 1px inset #647259;
-        background-color: transparent;
-        color: black;
-    }
-
-    .estaly-terms-and-conditions {
-        margin-left: 10px;
-        font-size: 11px;
-        display: block;
-        font-style: italic;
     }
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .estaly-offer-button.multiple {
-        padding: 0.8rem;
+    .offer-button {
+        min-width: 0px !important;
+        padding: 6px !important;
         text-align: center;
         background: transparent;
-        border: 0.1px solid #647259;
-        border-radius: 0px;
+        border-radius: 4px;
         color: black;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
     }
-
-    .estaly-offer-button.uniq {
-        height: 22px;
-        text-align: center;
-        background: transparent;
-        border: 1px solid #647259;
-        border-radius: 0px;
-        width: 22px;
-        margin-right: 10px;
-        color: transparent;
-        cursor: pointer;
-        transition: border 200ms, box-shadow 200ms;
-    }
-
-    .estaly-offer-button.multiple:focus {
+    
+    .offer-button:focus {
+        border-color: #487358;
+        box-shadow: 0 0 0 1px inset #487358;
         background-color: transparent !important;
         color: black !important;
-        border: 0.1px solid black;
     }
-
-    .estaly-offer-button.multiple:hover {
+    
+    .offer-button:hover {
+        border-color: #487358;
+        box-shadow: 0 0 0 1px inset #487358;
         background-color: transparent !important;
         color: black !important;
-        border: 0.1px solid black;
     }
-
-    .estaly-offer-button.uniq:focus {
-        background-color: transparent !important;
-        color: white !important;
-    }
-
-    .estaly-offer-button.uniq:hover {
-        background-color: transparent !important;
-        color: white !important;
-    }
-
-
-    .estaly-offer-button.multiple.active {
-        border-color: black;
-        border: 1px solid black;
-        box-shadow: 0 0 0 1px inset #647259;
-        background-color: transparent;
-        color: black;
-    }
-
-    .estaly-offer-button.uniq.active {
-        border-color: #647259;
-        box-shadow: 0 0 0 1px inset #647259;
-        background-color: black !important;
+    
+    .offer-button.active {
+        border-color: #487358;
+        box-shadow: 0 0 0 1px inset #487358;
+        background-color: #487358 !important;
         color: #fff !important;
     }
 }
