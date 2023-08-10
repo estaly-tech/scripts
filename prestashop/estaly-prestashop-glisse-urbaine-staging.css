@@ -264,6 +264,10 @@
     margin-right: 10px
 }
 
+.estaly-offer-button.uniq.active > .estaly-offer-uniq-button-checkbox {
+    background-color: black;
+}
+
 .estaly-cart-insurance-suggestion-button {
     background: #fabb00;
     border: 1px solid #fabb00;
