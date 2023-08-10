@@ -264,7 +264,7 @@
     margin-right: 10px
 }
 
-.estaly-offer-button.uniq.active > .estaly-offer-uniq-button-checkbox {
+.estaly-offer-button.uniq.active > estaly-offer-uniq-button-left-side > .estaly-offer-uniq-button-checkbox {
     background-color: black;
 }
 
