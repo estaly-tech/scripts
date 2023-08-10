@@ -368,15 +368,12 @@
 
     .estaly-offer-button.uniq.active {
         border-color: black;
-        box-shadow: 0 0 0 1px inset #647259;
     }
 
     .estaly-offer-button.uniq:hover {
         border-color: black;
         box-shadow: 0 0 0 1px inset #647259;
     }
-
-
 
     .estaly-terms-and-conditions {
         margin-left: 10px;
@@ -432,7 +429,6 @@
 
     .estaly-offer-button.uniq.active {
         border-color: #647259;
-        box-shadow: 0 0 0 1px inset #647259;
         background-color: black !important;
         color: #fff !important;
     }
