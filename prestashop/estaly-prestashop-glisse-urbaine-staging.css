@@ -355,6 +355,8 @@
         margin-right: 10px;
         color: black;
         width: 99%;
+        height: 30px;
+        align-items: center;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
     }
