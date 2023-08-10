@@ -218,17 +218,18 @@
 
 .estaly-offer-button.uniq {
     justify-content: space-between;
+    height: 40px;
 }
-
 
 .estaly-offer-term-length {
     font-size: 1rem !important;
     font-weight: bold !important;
 }
 
-.estaly-offer-description {
+.estaly-offer-uniq-button-price {
     font-size: 1rem !important;
     font-weight: bold !important;
+    padding-left: 15px;
 }
 
 .estaly-offer-price {
@@ -236,17 +237,17 @@
     font-weight: bold !important;
 }
 
-.estaly-offer-button-text {
-    font-size: 1rem !important;
-    font-weight: bold !important;
-}
-
-.estaly-offer-button-data {
+.estaly-offer-uniq-button-title {
     display: flex;
     align-items: center;
 }
 
-.estaly-offer-button-checkbox {
+.estaly-offer-uniq-button-left-side {
+    display: flex;
+    padding: 15px;
+}
+
+.estaly-offer-uniq-button-checkbox {
     width: 22px;
     border: 1px solid #647259;
     border-radius: 0px;
@@ -428,7 +429,6 @@
 
 
     .estaly-offer-button.multiple.active {
-        border-color: black;
         border: 1px solid black;
         box-shadow: 0 0 0 1px inset #647259;
         background-color: transparent;
