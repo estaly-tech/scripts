@@ -334,7 +334,6 @@
     }
 
     .estaly-offer-button.multiple.active {
-        border-color: black;
         border: 1px solid black;
         box-shadow: 0 0 0 1px inset #647259;
         background-color: #fabb00;
@@ -356,7 +355,6 @@
         margin-right: 10px;
         color: black;
         width: 99%;
-        height: 30px;
         align-items: center;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
