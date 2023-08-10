@@ -403,13 +403,13 @@
     }
 
     .estaly-offer-button.multiple:focus {
-        background-color: transparent !important;
+        background-color: #fabb00;
         color: black !important;
         border: 0.1px solid black;
     }
 
     .estaly-offer-button.multiple:hover {
-        background-color: transparent !important;
+        background-color: #fabb00;
         color: black !important;
         border: 0.1px solid black;
     }
