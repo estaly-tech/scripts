@@ -367,7 +367,7 @@
     .estaly-offer-button.multiple:hover {
         border-color: #647259;
         box-shadow: 0 0 0 1px inset #647259;
-        background-color: transparent;
+        background-color: #fabb00;
         color: black;
     }
 
