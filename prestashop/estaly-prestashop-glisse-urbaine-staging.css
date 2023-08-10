@@ -217,7 +217,7 @@
 
 .estaly-button-group > .estaly-offer-button {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 
@@ -247,7 +247,11 @@
 }
 
 .estaly-offer-button-checkbox {
-    width: 15%;
+    width: 22px;
+    border: 1px solid #647259;
+    border-radius: 0px;
+    height: 22px;
+    margin-right: 10px
 }
 
 .estaly-cart-insurance-suggestion-button {
@@ -402,6 +406,7 @@
     .estaly-offer-button.uniq {
         text-align: center;
         background: transparent;
+        justify-content: space-between;
         border: 1px solid #647259;
         border-radius: 0px;
         margin-right: 10px;
