@@ -261,11 +261,13 @@
     border: 1px solid #647259;
     border-radius: 0px;
     height: 22px;
-    margin-right: 10px
+    margin-right: 10px;
+    color: transparent;
 }
 
 .estaly-offer-button.uniq.active > .estaly-offer-uniq-button-left-side > .estaly-offer-uniq-button-checkbox {
-    background-color: black;
+    background-color: #fabb00;
+    color: black;
 }
 
 .estaly-cart-insurance-suggestion-button {
