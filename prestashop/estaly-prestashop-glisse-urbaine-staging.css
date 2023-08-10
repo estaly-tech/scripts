@@ -219,6 +219,15 @@
 .estaly-offer-button.uniq {
     justify-content: space-between;
     height: 40px;
+    cursor: pointer;
+    text-align: center;
+    background: transparent;
+    border-radius: 0px;
+    margin-right: 10px;
+    color: black;
+    transition: border 200ms, box-shadow 200ms;
+    width: 99%;
+    align-items: center;
 }
 
 .estaly-offer-term-length {
@@ -348,16 +357,7 @@
     }
 
     .estaly-offer-button.uniq {
-        text-align: center;
-        background: transparent;
         border: 0.1px solid #647259;
-        border-radius: 0px;
-        margin-right: 10px;
-        color: black;
-        width: 99%;
-        align-items: center;
-        cursor: pointer;
-        transition: border 200ms, box-shadow 200ms;
         box-shadow: 0px 0px 10px rgb(72 72 173 / 15%);
     }
 
@@ -406,15 +406,7 @@
     }
 
     .estaly-offer-button.uniq {
-        text-align: center;
-        background: transparent;
         border: 1px solid #647259;
-        border-radius: 0px;
-        margin-right: 10px;
-        color: black;
-        width: 99%;
-        cursor: pointer;
-        transition: border 200ms, box-shadow 200ms;
     }
 
     .estaly-offer-button.uniq:focus {
