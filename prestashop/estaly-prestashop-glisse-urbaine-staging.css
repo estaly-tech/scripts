@@ -430,13 +430,13 @@
     .estaly-offer-button.multiple.active {
         border: 1px solid black;
         box-shadow: 0 0 0 1px inset #647259;
-        background-color: transparent;
-        color: black;
+        background-color: #fabb00;
+        color: #fff;
     }
 
     .estaly-offer-button.uniq.active {
         border-color: #647259;
-        background-color: black !important;
+        background-color: #fabb00 !important;
         color: #fff !important;
     }
 }
