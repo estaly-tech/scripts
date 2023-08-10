@@ -246,6 +246,10 @@
     align-items: center;
 }
 
+.estaly-offer-button-checkbox {
+    width: 15%;
+}
+
 .estaly-cart-insurance-suggestion-button {
     background: #fabb00;
     border: 1px solid #fabb00;
@@ -354,13 +358,11 @@
     .estaly-offer-button.uniq.active {
         border-color: black;
         box-shadow: 0 0 0 1px inset #647259;
-        color: #fff;
     }
 
     .estaly-offer-button.uniq:hover {
         border-color: black;
         box-shadow: 0 0 0 1px inset #647259;
-        color: #fff;
     }
 
 
@@ -411,12 +413,10 @@
 
     .estaly-offer-button.uniq:focus {
         background-color: transparent !important;
-        color: white !important;
     }
 
     .estaly-offer-button.uniq:hover {
         background-color: transparent !important;
-        color: white !important;
     }
 
 
