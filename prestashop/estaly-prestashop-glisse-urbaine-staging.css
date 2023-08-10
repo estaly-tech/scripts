@@ -229,6 +229,16 @@
     align-items: center;
 }
 
+.estaly-offer-button.multiple {
+    flex: 1;
+    border: 0.1px solid #647259;
+    border-radius: 0.25rem;
+}
+
+.estaly-offer-button.multiple + .estaly-offer-button.multiple {
+    margin-left: 0.3rem;
+}
+
 .estaly-offer-term-length {
     font-size: 1rem !important;
     font-weight: bold !important;
