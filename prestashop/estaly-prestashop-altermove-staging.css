@@ -207,7 +207,8 @@
 }
 
 .estaly-link-buttons {
-    display: inline;
+    font-size: 13px;
+    text-align: right;
     color: var(--primary-color);
     text-decoration: underline;
     cursor: pointer;
