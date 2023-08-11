@@ -332,6 +332,10 @@
     text-align: center;
 }
 
+.estaly-protection-logo {
+    width: 20px;
+}
+
 @media (max-width: 800px){
     .estaly-modal-content { width: 100% !important ;}
     .estaly-subheading{ font-size: 1.1rem !important ; line-height: 25px !important; padding-bottom: 1rem;}
