@@ -21,6 +21,11 @@
     display: flex;
 }
 
+.estaly-learn-more {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Multiple offers style */
 
 .estaly-offer-button.multiple {
