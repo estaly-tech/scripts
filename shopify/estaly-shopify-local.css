@@ -66,6 +66,7 @@
 .estaly-offer-uniq-button-left-side {
     display: flex;
     padding: 15px;
+    align-items: center;
 }
 
 
@@ -245,10 +246,7 @@
 }
 
 .estaly-content-container {
-    padding-top: 4.8rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 3rem;
+    padding: 5rem;
     text-align: left;
 }
 
@@ -286,16 +284,13 @@
 }
 
 .estaly-coverage-header {
-    font-size: 1.1rem;
     font-weight: bold;
     height: 2rem;
     text-align: left;
 }
 
 .estaly-list {
-    margin: 0 0 1.5rem;
     overflow: hidden;
-    padding-left: 1.7rem;
     text-overflow: ellipsis;
     width: 100%;
 }
@@ -309,7 +304,6 @@
 }
 
 .estaly-list-item {
-    font-size: 1rem;
     font-weight: normal;
     line-height: 2.0rem;
     margin: 0.2rem 0;
