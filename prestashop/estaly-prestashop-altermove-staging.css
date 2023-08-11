@@ -28,6 +28,10 @@
 
 /* Multiple offers style */
 
+.estaly-button-group.uniq {
+    margin-bottom: 8px;
+}
+
 .estaly-offer-button.multiple {
     flex: 1;
     border: 0.1px solid var(--border-color);
