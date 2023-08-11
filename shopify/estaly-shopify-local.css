@@ -36,7 +36,6 @@
 
 .estaly-offer-term-length,
 .estaly-offer-price {
-    font-size: 1rem !important;
     font-weight: bold !important;
 }
 
@@ -85,7 +84,6 @@
 }
 
 .estaly-offer-uniq-button-price {
-    font-size: 1rem !important;
     font-weight: bold !important;
     padding: 15px;
 }
