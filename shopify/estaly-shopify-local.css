@@ -415,7 +415,6 @@
     color: var(--active-multiple-button-text-color);
     cursor: pointer;
     transition: border 200ms, box-shadow 200ms;
-    font-size: 0.875rem;
     font-weight: 600;
     padding: 8px;
     white-space: normal;
