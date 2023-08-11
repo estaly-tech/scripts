@@ -117,6 +117,7 @@
 
     .estaly-link-buttons:hover {
         color: blue;
+        font-weight: bold;
     }
 
     /* Multiple */
