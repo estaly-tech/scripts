@@ -1,5 +1,6 @@
 :root {
     --primary-color: #fc7c3c; /* Active buttons & links color */
+    --hover-color: darkorange; /* Hover button color */
     --border-color: #647259; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
@@ -400,6 +401,7 @@
 
 .estaly-button-link:hover {
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .estaly-button-submit {
@@ -411,6 +413,10 @@
     font-weight: bold;
     line-height: 100%;
     transition: 250ms opacity;
+}
+
+.estaly-button-submit:hover {
+    background: var(--hover-color);
 }
 
 /* Mobile Modal */
@@ -448,7 +454,7 @@
 .estaly-cart-insurance-suggestion-button:active {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 1px inset var(--primary-color);
-    background-color: darkorange;
+    background-color: var(--hover-color);
     color: #fff !important;
 }
 
