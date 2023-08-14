@@ -1,5 +1,6 @@
 :root {
     --primary-color: #fabb00; /* Active buttons & links color */
+    --hover-color: #fadd00; /* Hover button color */
     --border-color: #647259; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
@@ -411,6 +412,10 @@
     font-weight: bold;
     line-height: 100%;
     transition: 250ms opacity;
+}
+
+.estaly-button-submit:hover {
+    background: var(--hover-color);
 }
 
 /* Mobile Modal */
