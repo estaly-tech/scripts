@@ -228,6 +228,13 @@
     cursor: pointer;
 }
 
+.estaly-terms-and-conditions {
+    margin-left: 10px;
+    font-size: 11px;
+    display: block;
+    font-style: italic;
+}
+
 /* --- Modal --- */
 
 /* Basic modal styles */
