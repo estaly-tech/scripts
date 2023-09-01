@@ -226,6 +226,11 @@
     font-style: italic;
 }
 
+.estaly-terms-and-conditions:hover > a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* --- Modal --- */
 
 /* Basic modal styles */
