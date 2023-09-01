@@ -108,14 +108,6 @@
 
 @media (hover: hover) and (pointer: fine) {
     /* General */
-
-    .estaly-terms-and-conditions {
-        margin-left: 10px;
-        font-size: 11px;
-        display: block;
-        font-style: italic;
-    }
-
     .estaly-link-buttons:hover {
         color: dodgerblue;
         font-weight: bold;
@@ -229,7 +221,6 @@
 }
 
 .estaly-terms-and-conditions {
-    margin-left: 10px;
     font-size: 11px;
     display: block;
     font-style: italic;
