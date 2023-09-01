@@ -229,6 +229,7 @@
 .estaly-terms-and-conditions:hover > a {
     color: var(--primary-color);
     font-weight: bold;
+    text-decoration: underline;
 }
 
 /* --- Modal --- */
