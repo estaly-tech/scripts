@@ -226,7 +226,7 @@
     font-style: italic;
 }
 
-.estaly-terms-and-conditions:hover > a {
+.estaly-terms-and-conditions:hover > p > a {
     color: var(--primary-color);
     font-weight: bold;
     text-decoration: underline;
