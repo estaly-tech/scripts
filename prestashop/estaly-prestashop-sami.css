@@ -221,9 +221,12 @@
 }
 
 .estaly-terms-and-conditions {
-    font-size: 11px;
     display: none;
     font-style: italic;
+}
+
+.estaly-terms-and-conditions:hover > p {
+    font-size: 11px;
 }
 
 .estaly-terms-and-conditions:hover > p > a {
