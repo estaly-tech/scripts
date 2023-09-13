@@ -108,14 +108,6 @@
 
 @media (hover: hover) and (pointer: fine) {
     /* General */
-
-    .estaly-terms-and-conditions {
-        margin-left: 10px;
-        font-size: 11px;
-        display: block;
-        font-style: italic;
-    }
-
     .estaly-link-buttons:hover {
         color: dodgerblue;
         font-weight: bold;
@@ -226,6 +218,21 @@
     color: var(--primary-color);
     text-decoration: underline;
     cursor: pointer;
+}
+
+.estaly-terms-and-conditions {
+    display: none;
+    font-style: italic;
+}
+
+.estaly-terms-and-conditions > p {
+    font-size: 11px;
+}
+
+.estaly-terms-and-conditions:hover > p > a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* --- Modal --- */
