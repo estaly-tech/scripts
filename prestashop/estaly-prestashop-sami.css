@@ -466,3 +466,8 @@
 .estaly-protection-logo {
     width: 20px;
 }
+
+.estaly-order-button-block {
+    pointer-events: none;
+    cursor: default;
+}
