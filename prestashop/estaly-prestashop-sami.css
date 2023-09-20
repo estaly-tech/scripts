@@ -470,5 +470,8 @@
 .estaly-order-button-block {
     pointer-events: none;
     cursor: default;
-    background-color: #6d7278;
+}
+
+.checkboxContainer {
+    text-align: left;
 }
