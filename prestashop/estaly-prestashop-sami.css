@@ -518,7 +518,7 @@
     font-weight: bold;
 }
 
-.estaly-crosselling-offer-add-to-cart > .estaly-insurance-added {
+.estaly-crosselling-offer-add-to-cart.estaly-insurance-added {
     cursor: not-allowed;
     background-color: grey;
 }
