@@ -78,7 +78,6 @@
     padding: 15px;
 }
 
-
 .estaly-offer-button.uniq.active > .estaly-offer-uniq-button-left-side > .estaly-offer-uniq-button-checkbox {
     background-color: var(--primary-color);
     color: var(--active-uniq-button-text-color);
@@ -474,4 +473,45 @@
 
 .checkboxContainer {
     text-align: left;
+}
+
+/* --- Crosselling --- */
+.estaly-crosselling-modal-component {
+    argin: 15px;
+    background-color: #F8F8F8;
+}
+
+.estaly-crosselling-offer-information {
+    padding: 10px;
+}
+
+.estaly-crosselling-offer-incentive {
+    color: black;
+}
+
+.estaly-crosselling-offer-details {
+    line-height: 15px;
+}
+
+.estaly-crosselling-marketing-page-redirection {
+    text-decoration: underline;
+    color: dodgerblue;
+    font-weight: bold
+}
+
+.estaly-crosselling-offer-content {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.estaly-crosselling-offers {
+    display: flex;
+}
+
+.estaly-crosselling-offer-add-to-cart {
+    color: white;
+    background-color: black;
+    border: 2px solid #111;
+    font-weight: bold;
 }
