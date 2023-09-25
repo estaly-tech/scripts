@@ -522,3 +522,19 @@
     cursor: not-allowed;
     background-color: grey;
 }
+
+.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon_check {
+    display: block;
+}
+
+.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon_plus {
+    display: none;
+}
+
+.estaly-crosselling-offer-add-to-cart > .icon_check {
+    display: none;
+}
+
+.estaly-crosselling-offer-add-to-cart > .icon_plus {
+    display: block;
+}
