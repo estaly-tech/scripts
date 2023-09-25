@@ -521,6 +521,7 @@
 .estaly-crosselling-offer-add-to-cart.estaly-insurance-added {
     cursor: not-allowed;
     background-color: grey;
+    border: 2px solid grey;
 }
 
 .estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon_check {
