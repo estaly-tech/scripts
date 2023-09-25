@@ -524,11 +524,11 @@
     border: 2px solid grey;
 }
 
-.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon_check {
+.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon-check {
     display: block;
 }
 
-.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon_plus {
+.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon-plus {
     display: none;
 }
 
