@@ -532,10 +532,10 @@
     display: none;
 }
 
-.estaly-crosselling-offer-add-to-cart > .icon-check {
+.estaly-crosselling-offer-add-to-cart:not(.estaly-insurance-added) > .icon-check {
     display: none;
 }
 
-.estaly-crosselling-offer-add-to-cart > .icon-plus {
+.estaly-crosselling-offer-add-to-cart:not(.estaly-insurance-added) > .icon-plus {
     display: block;
 }
