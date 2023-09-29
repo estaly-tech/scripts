@@ -446,6 +446,8 @@
     font-weight: 600;
     padding: 8px;
     white-space: normal;
+    position: relative;
+    z-index: 10;
 }
 
 .estaly-cart-insurance-suggestion-button:hover,
