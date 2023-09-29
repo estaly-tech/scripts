@@ -432,3 +432,30 @@
     .estaly-horizontal-line { margin-top: 5px; }
     .estaly-coverage-header { font-size: 1rem; }
 }
+
+/* --- Cart ---- */
+
+.estaly-cart-insurance-suggestion-button {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--active-multiple-button-text-color);
+    cursor: pointer;
+    transition: border 200ms, box-shadow 200ms;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 8px;
+    white-space: normal;
+}
+
+.estaly-cart-insurance-suggestion-button:hover,
+.estaly-cart-insurance-suggestion-button:active {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px inset var(--primary-color);
+    background-color: var(--hover-color);
+    color: #fff !important;
+}
+
+.estaly-protection-logo {
+    width: 20px;
+}
