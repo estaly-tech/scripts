@@ -232,6 +232,7 @@
 /* Basic modal styles */
 
 .estaly-modal-dialog {
+    z-index: 10000000;
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
     display: none;
@@ -260,6 +261,7 @@
 }
 
 .estaly-content-container {
+    color: black;
     padding-top: 4.8rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -428,7 +430,7 @@
     .estaly-link-container{ font-size: 14px !important; text-align: center;}
     .estaly-choice-container button{ font-size: 14px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
-    .estaly-modal-dialog { z-index: 100 }
+    .estaly-modal-dialog { z-index: 1000000 }
     .estaly-horizontal-line { margin-top: 5px; }
     .estaly-coverage-header { font-size: 1rem; }
 }
