@@ -468,3 +468,45 @@
 .estaly-terms-and-conditions {
     display: none;
 }
+
+/* --- Cart display offer --- **/
+
+.estaly-cart-container {
+    margin-top: -15px; 
+    margin-bottom: 12px; 
+    background: #009ce617
+}
+
+.estaly-cart-titles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.estaly-cart-subheading-title {
+    font-weight: 700; font-size: 16px;
+}
+
+.estaly-cart-subheading-price {
+    font-size: 19px; 
+    font-weight: 700; 
+    color: #009ce6;
+}
+
+.estaly-cart-coverage-header {
+    font-size: 16px !important;
+}
+
+.estaly-cart-choice-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.estaly-cart-buttons-container {
+    display: block;
+}
+
+.estaly-button-cart-submit {
+    font-size: 16px !important; 
+    padding: 10px 10px;
+}
