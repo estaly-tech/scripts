@@ -302,10 +302,14 @@
     max-width: 17rem;
 }
 
+.estaly-cart-sub-subheading {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
 .estaly-coverage-header {
     font-size: 1.1rem;
-    font-weight: bold;
-    height: 2rem;
     text-align: left;
 }
 
@@ -318,18 +322,39 @@
 }
 
 .estaly-subheading {
-    padding-top: 1rem;
     font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.estaly-sub-subheading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.estaly-list-item-footer {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.estaly-claim-heading {
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.estaly-claim-point {
+    font-size: 1rem;
     font-weight: normal;
-    line-height: 2.4rem;
-    padding-bottom: 2.5rem;
+    line-height: 2.0rem;
+    margin: 0.2rem 0;
+    text-align: left;
+    list-style: disc;
 }
 
 .estaly-list-item {
     font-size: 1rem;
     font-weight: normal;
     line-height: 2.0rem;
-    margin: 0.2rem 0;
     text-align: left;
     list-style: disc;
 }
