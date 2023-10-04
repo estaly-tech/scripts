@@ -499,7 +499,7 @@
     color: black;
     margin-top: -15px; 
     margin-bottom: 12px; 
-    background: #009ce617;
+    background: #8080801c;
     padding: 1.5rem;
     text-align: left;
 }
@@ -516,7 +516,7 @@
 .estaly-cart-subheading-price {
     font-size: 19px; 
     font-weight: 700; 
-    color: #009ce6;
+    color: black;
 }
 
 .estaly-cart-coverage-header {
