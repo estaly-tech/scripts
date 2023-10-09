@@ -446,11 +446,11 @@
     background: transparent;
     border: 1px solid #df0d0d;
     border-radius: 4px;
-    color:  #df0d0d;
+    color:  white;
     cursor: pointer;
     transition: border 200ms, box-shadow 200ms;
     font-size: 0.875rem;
-    font-weight: 400;
+    font-weight: 500;
     white-space: normal;
     text-transform: none !important;
 }
@@ -458,8 +458,9 @@
 .estaly-cart-insurance-suggestion-button:hover,
 .estaly-cart-insurance-suggestion-button:active {
     border-color:  #df0d0d;
+    background: transparent;
     box-shadow: 0 0 0 1px inset  #df0d0d;
-    color: #fff !important;
+    color: #df0d0d !important;
 }
 
 .estaly-protection-logo {
