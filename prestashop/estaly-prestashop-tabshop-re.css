@@ -233,7 +233,7 @@
 }
 
 .estaly-terms-and-conditions:hover > p > a {
-    color: var(--primary-color);
+    color: gray;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -443,7 +443,7 @@
 /* --- Cart ---- */
 
 .estaly-cart-insurance-suggestion-button {
-    background: transparent;
+    background: #df0d0d;
     border: 1px solid #df0d0d;
     border-radius: 4px;
     color:  white;
