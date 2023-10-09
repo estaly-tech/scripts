@@ -398,8 +398,8 @@
 
 .estaly-choice-container button {
     border-radius: 0.2rem;
-    height: 4.2rem;
-    width: 19.2rem;
+    height: 3rem;
+    width: 14rem;
 }
 
 .estaly-button-link {
@@ -414,7 +414,7 @@
 }
 
 .estaly-button-submit {
-    background: var(--primary-color);
+    background: #df0d0d;
     border-width: 0rem;
     color: white;
     cursor: pointer;
@@ -422,10 +422,6 @@
     font-weight: bold;
     line-height: 100%;
     transition: 250ms opacity;
-}
-
-.estaly-button-submit:hover {
-    background: var(--hover-color);
 }
 
 /* Mobile Modal */
