@@ -443,6 +443,8 @@
 /* --- Cart ---- */
 
 .estaly-cart-insurance-suggestion-button {
+    height: 100% !important;
+    line-height: 16px !important;
     background: #df0d0d;
     border: 1px solid #df0d0d;
     border-radius: 4px;
