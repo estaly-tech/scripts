@@ -36,7 +36,6 @@
 .estaly-offer-button.multiple {
     flex: 1;
     border: 0.1px solid var(--border-color);
-    border-radius: 0.25rem;
     justify-content: center;
 }
 
@@ -46,7 +45,7 @@
 
 .estaly-offer-term-length,
 .estaly-offer-price {
-    font-size: 1rem !important;
+    font-size: 12px !important;
     font-weight: bold !important;
 }
 
@@ -124,17 +123,17 @@
     }
 
     .estaly-offer-button.multiple.active {
-        border: 1px solid var(--primary-color);
+        border-color: #df0d0d;
         box-shadow: 0 0 0 1px inset  var(--primary-color);
-        background-color: var(--primary-color);
-        color: var(--active-multiple-button-text-color);
+        background-color: transparent;
+        color: black;
     }
 
     .estaly-offer-button.multiple:hover {
-        border-color: #647259;
+        border-color: #df0d0d;
         box-shadow: 0 0 0 1px inset  var(--primary-color);
-        background-color: var(--primary-color);
-        color: var(--active-multiple-button-text-color);
+        background-color: transparent;
+        color: black;
     }
 
     /* Uniq */
@@ -164,16 +163,16 @@
         padding: 0.8rem;
         text-align: center;
         background: transparent;
-        color: var(--multiple-button-text-color);
+        color: black;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
     }
 
     .estaly-offer-button.multiple.active {
-        border: 1px solid var(--primary-color);
+        border-color: #df0d0d;
         box-shadow: 0 0 0 1px inset  var(--primary-color);
-        background-color: var(--primary-color);
-        color: #fff;
+        background-color: transparent;
+        color: black;
     }
 
     /* Uniq */
@@ -202,19 +201,24 @@
 }
 
 .estaly-headline-buttons {
-    font-weight: bold;
-    display: inline;
-    font-size: 16px;
+    color: black;
+    font-family: "Open Sans", Tahoma, sans-serif, Arial;
+    font-weight: 400;
+    font-size: .75rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    display: inline;;
 }
 
 .estaly-logo-full {
-    width: 12%;
+    width: 20%;
 }
 
 .estaly-link-buttons {
-    font-size: 13px;
+    font-size: 10px;
     text-align: right;
-    color: var(--primary-color);
+    color: #df0d0d;
     text-decoration: underline;
     cursor: pointer;
 }
