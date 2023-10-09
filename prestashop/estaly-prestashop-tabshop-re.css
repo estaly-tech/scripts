@@ -117,7 +117,7 @@
         padding: 0.8rem;
         text-align: center;
         background: transparent;
-        color: var(--text-color);
+        color: black;
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
     }
@@ -125,15 +125,15 @@
     .estaly-offer-button.multiple.active {
         border-color: #df0d0d;
         box-shadow: 0 0 0 1px inset  #df0d0d;
-        background-color: transparent;
-        color: black;
+        background-color:  #df0d0d;
+        color: white;
     }
 
     .estaly-offer-button.multiple:hover {
         border-color: #df0d0d;
         box-shadow: 0 0 0 1px inset  #df0d0d;
-        background-color: transparent;
-        color: black;
+        background-color: #df0d0d;
+        color: white;
     }
 
     /* Uniq */
@@ -171,8 +171,8 @@
     .estaly-offer-button.multiple.active {
         border-color: #df0d0d;
         box-shadow: 0 0 0 1px inset  #df0d0d;
-        background-color: transparent;
-        color: black;
+        background-color: #df0d0d;
+        color: white;
     }
 
     /* Uniq */
@@ -203,7 +203,7 @@
 .estaly-headline-buttons {
     color: black;
     font-family: "Open Sans", Tahoma, sans-serif, Arial;
-    font-weight: 400;
+    font-weight: bold;
     font-size: .75rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
