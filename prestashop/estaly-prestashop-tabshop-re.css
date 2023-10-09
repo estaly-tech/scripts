@@ -124,14 +124,14 @@
 
     .estaly-offer-button.multiple.active {
         border-color: #df0d0d;
-        box-shadow: 0 0 0 1px inset  var(--primary-color);
+        box-shadow: 0 0 0 1px inset  #df0d0d;
         background-color: transparent;
         color: black;
     }
 
     .estaly-offer-button.multiple:hover {
         border-color: #df0d0d;
-        box-shadow: 0 0 0 1px inset  var(--primary-color);
+        box-shadow: 0 0 0 1px inset  #df0d0d;
         background-color: transparent;
         color: black;
     }
@@ -170,7 +170,7 @@
 
     .estaly-offer-button.multiple.active {
         border-color: #df0d0d;
-        box-shadow: 0 0 0 1px inset  var(--primary-color);
+        box-shadow: 0 0 0 1px inset  #df0d0d;
         background-color: transparent;
         color: black;
     }
