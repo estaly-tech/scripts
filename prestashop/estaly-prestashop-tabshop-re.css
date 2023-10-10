@@ -276,7 +276,6 @@
 }
 
 .estaly-close {
-    color: black;
     line-height: 25px;
     position: absolute;
     top: 5px;
@@ -284,14 +283,8 @@
     text-align: center;
     width: 24px;
     text-decoration: none;
-    font-weight: normal;
-    padding-left: 1px;
     font-size: x-large;
     cursor: pointer;
-}
-
-.estaly-close:hover {
-    font-weight: bolder;
 }
 
 .estaly-logo-container {
