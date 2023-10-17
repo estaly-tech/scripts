@@ -101,6 +101,7 @@
 }
 
 .estaly-offer-uniq-button-title {
+    font-size: 12px;
     display: flex;
     align-items: center;
 }
@@ -109,13 +110,6 @@
 
 @media (hover: hover) and (pointer: fine) {
     /* General */
-
-    .custom-text {
-        background-color: var(--white);
-        border: 1px solid var(--light-gray);
-        margin-top: 5px;
-        padding: 5px;
-    }
 
     .estaly-terms-and-conditions {
         margin-left: 10px;
@@ -211,9 +205,15 @@
 
 /* --- Product --- */
 
+.custom-text {
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    margin-top: 5px;
+    padding: 5px;
+}
+
 .estaly-pdp-offering {
     display: none;
-    margin-bottom: 20px;
 }
 
 .estaly-flex-col {
