@@ -205,15 +205,12 @@
 
 /* --- Product --- */
 
-.custom-text {
+.estaly-pdp-offering {
+    display: none;
     background-color: var(--white);
     border: 1px solid var(--light-gray);
     margin-top: 5px;
     padding: 5px;
-}
-
-.estaly-pdp-offering {
-    display: none;
 }
 
 .estaly-flex-col {
