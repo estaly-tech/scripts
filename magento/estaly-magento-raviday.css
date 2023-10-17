@@ -23,6 +23,7 @@
 }
 
 .estaly-learn-more {
+    margin-left: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -220,13 +221,14 @@
 }
 
 .estaly-headline-buttons {
+    margin-left: 5px;
     font-weight: bold;
     display: inline;
     font-size: 16px;
 }
 
 .estaly-logo-full {
-    width: 12%;
+    width: 15%;
 }
 
 .estaly-link-buttons {
