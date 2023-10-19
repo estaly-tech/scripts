@@ -477,6 +477,7 @@
 
 /* --- Crosselling --- */
 .estaly-crosselling-modal-component {
+    display: none;
     margin: 15px;
     background-color: #F8F8F8;
 }
