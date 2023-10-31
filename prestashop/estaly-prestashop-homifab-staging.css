@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #1bb0ad; /* Active buttons & links color */
-    --hover-color:  #1bb0ad; /* Hover button color */
-    --border-color: #647259; /* Border buttons color */
+    --primary-color: #a83b03; /* Active buttons & links color */
+    --hover-color: #a83b03 !important; /* Hover button color */
+    --border-color: #a83b03; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
     --active-multiple-button-text-color: white; /* Active multiple buttons text color */
