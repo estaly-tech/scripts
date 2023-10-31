@@ -160,6 +160,10 @@
 
     /* Multiple */
 
+    .estaly-pdp-offering {
+        margin-bottom: 20px;
+    }
+
     .estaly-offer-button.multiple {
         padding: 0.8rem;
         text-align: center;
@@ -438,7 +442,7 @@
     .estaly-link-container{ font-size: 14px !important; text-align: center;}
     .estaly-choice-container button{ font-size: 14px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
-    .estaly-modal-dialog { z-index: 100 }
+    .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
     .estaly-coverage-header { font-size: 1rem; }
 }
