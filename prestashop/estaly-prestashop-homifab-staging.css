@@ -307,10 +307,11 @@
 }
 
 .estaly-coverage-header {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     height: 2rem;
     text-align: left;
+    color: black;
 }
 
 .estaly-list {
@@ -323,19 +324,21 @@
 
 .estaly-subheading {
     padding-top: 1rem;
-    font-size: 1.4rem;
-    font-weight: normal;
+    font-size: 2rem;
+    font-weight: 500;
     line-height: 2.4rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    color: black;
 }
 
 .estaly-list-item {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: normal;
     line-height: 2.0rem;
-    margin: 0.2rem 0;
+    margin: 0.4rem 0;
     text-align: left;
     list-style: disc;
+    color: black;
 }
 
 .estaly-offered-by {
@@ -444,11 +447,10 @@
 .estaly-cart-insurance-suggestion-button {
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
-    border-radius: 4px;
     color: var(--active-multiple-button-text-color);
     cursor: pointer;
     transition: border 200ms, box-shadow 200ms;
-    font-size: 0.875rem;
+    font-size: 1.3rem;
     font-weight: 600;
     padding: 8px;
     white-space: normal;
