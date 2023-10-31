@@ -445,6 +445,10 @@
 
 /* --- Cart ---- */
 
+.estaly-cart-insurance-suggestion {
+    margin-top: 10px;
+}
+
 .estaly-cart-insurance-suggestion-button {
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -466,6 +470,7 @@
 
 .estaly-protection-logo {
     width: 20px;
+    vertical-align: middle;
 }
 
 .estaly-order-button-block {
