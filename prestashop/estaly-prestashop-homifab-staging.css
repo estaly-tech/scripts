@@ -93,7 +93,7 @@
 }
 
 .estaly-offer-uniq-button-price {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
     font-weight: bold !important;
     padding: 15px;
 }
@@ -192,7 +192,6 @@
 
 .estaly-pdp-offering {
     display: none;
-    margin-bottom: 15px;
 }
 
 .estaly-flex-col {
