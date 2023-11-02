@@ -336,6 +336,13 @@
     color: black;
 }
 
+.estaly-sub-subheading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
 .estaly-list-item {
     font-size: 1.3rem;
     font-weight: normal;
@@ -445,7 +452,6 @@
     .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
     .estaly-coverage-header { font-size: 1.3rem; }
-    .estaly-cart-insurance-suggestion-button { font-size: 1rem; }
 }
 
 /* --- Cart ---- */
