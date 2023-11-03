@@ -280,7 +280,7 @@
 
 .estaly-modal-content {
     background: white;
-    border-radius: 0.5rem;
+    border-radius: 3rem;
     box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 50%);
     display: flex;
     overflow: auto;
@@ -300,8 +300,8 @@
     color: black;
     line-height: 25px;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 12px;
+    right: 12px;
     text-align: center;
     width: 24px;
     text-decoration: none;
@@ -427,7 +427,7 @@
 }
 
 .estaly-choice-container button {
-    border-radius: 0.2rem;
+    border-radius: 1.4rem;
     height: 4.2rem;
     width: 19.2rem;
     font-size: 1.4rem;
