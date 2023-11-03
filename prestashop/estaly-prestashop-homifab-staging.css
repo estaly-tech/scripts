@@ -337,9 +337,10 @@
 }
 
 .estaly-sub-subheading {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: var(--primary-color);
 }
 
 
@@ -404,6 +405,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
+    font-size: 1.4rem;
 }
 
 .estaly-choice-container button {
