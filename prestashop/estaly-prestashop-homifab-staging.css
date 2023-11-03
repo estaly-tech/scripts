@@ -455,6 +455,7 @@
     .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
     .estaly-coverage-header { font-size: 1.3rem; }
+    .estaly-cart-insurance-suggestion-button { font-size: 1.1rem; }
 }
 
 /* --- Cart ---- */
