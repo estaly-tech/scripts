@@ -333,6 +333,10 @@
     font-weight: 700;
 }
 
+.estaly-cart-container .estaly-sub-subheading{
+    font-size: 14px;
+}
+
 .estaly-sub-subheading {
     font-size: 20px;
     font-weight: 700;
@@ -521,7 +525,7 @@
 }
 
 .estaly-cart-subheading-title {
-    font-weight: 700; font-size: 16px;
+    font-weight: 700; font-size: 19px;
 }
 
 .estaly-cart-subheading-price {
