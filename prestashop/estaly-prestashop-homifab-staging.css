@@ -476,7 +476,6 @@
 .estaly-cart-insurance-suggestion-button:active {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 1px inset var(--primary-color);
-    color: #fff !important;
 }
 
 .estaly-protection-logo {
