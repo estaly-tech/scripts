@@ -329,15 +329,6 @@
     max-width: 17rem;
 }
 
-.estaly-coverage-header {
-    font-size: 1.5rem;
-    font-weight: bold;
-    height: 2rem;
-    text-align: left;
-    color: black;
-    margin-bottom: 1rem;
-}
-
 .estaly-list {
     margin: 0 0 1.5rem;
     overflow: hidden;
@@ -358,7 +349,7 @@
 .estaly-sub-subheading {
     font-size: 17px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: var(--primary-color);
 }
 
@@ -473,7 +464,6 @@
     .estaly-merchant-logo { max-width: 10rem !important;}
     .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
-    .estaly-coverage-header { font-size: 1.3rem; }
     .estaly-cart-insurance-suggestion-button { font-size: 1.1rem; }
 }
 
