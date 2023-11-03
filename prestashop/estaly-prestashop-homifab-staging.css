@@ -205,6 +205,10 @@
         border: 1px solid var(--primary-color);
         box-shadow: 0 0 0 1px inset var(--border-color);
     }
+
+    .estaly-modal-content .estaly-offer-uniq-button-title {
+        font-size: 12px;
+    }
 }
 
 /* --- Product --- */
