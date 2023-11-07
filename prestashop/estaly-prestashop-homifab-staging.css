@@ -71,6 +71,7 @@
     transition: border 200ms, box-shadow 200ms;
     width: 99%;
     align-items: center;
+    border-radius: 5px;
 }
 
 .estaly-offer-uniq-button-left-side {
@@ -82,6 +83,7 @@
 .estaly-offer-button.uniq.active > .estaly-offer-uniq-button-left-side > .estaly-offer-uniq-button-checkbox {
     background-color: var(--primary-color);
     color: var(--active-uniq-button-text-color);
+    border-radius: 5px;
 }
 
 .estaly-offer-uniq-button-checkbox {
@@ -225,7 +227,7 @@
 
 .estaly-headline-buttons {
     font-weight: bold;
-    display: inline;
+    display: none;
     font-size: 16px;
 }
 
