@@ -367,6 +367,7 @@
 
 .estaly-offered-by {
     display: flex;
+    align-items: center;
 }
 
 .estaly-offered-by-text {
