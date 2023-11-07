@@ -366,8 +366,13 @@
 }
 
 .estaly-offered-by {
+    display: flex;
+}
+
+.estaly-offered-by-text {
     text-decoration: none;
     font-weight: bold;
+    margin-roght: 8px;
 }
 
 .estaly-link-container {
