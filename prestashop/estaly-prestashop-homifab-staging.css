@@ -369,6 +369,10 @@
 .estaly-offered-by {
     display: flex;
     align-items: center;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .estaly-offered-by-text {
@@ -379,10 +383,11 @@
 
 .estaly-link-container {
     font-size: 16px !important;
+    position: relative;
+    text-align: center;
+    justify-content: center;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    font-weight: bold
+    flex-direction: column;
 }
 
 .estaly-terms-link {
