@@ -78,6 +78,7 @@
 .estaly-offer-uniq-button-left-side {
     display: flex;
     padding: 15px;
+    align-items: center;
 }
 
 
@@ -87,6 +88,8 @@
 }
 
 .estaly-offer-uniq-button-checkbox {
+    min-width: 22px;
+    min-height: 22px;
     width: 22px;
     border: 1px solid var(--border-color);
     border-radius: 0px;
@@ -102,7 +105,7 @@
 }
 
 .estaly-offer-uniq-button-title {
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     align-items: center;
 }
