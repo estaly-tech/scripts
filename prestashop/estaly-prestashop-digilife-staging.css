@@ -1,6 +1,6 @@
 :root {
     --primary-color: #06c; /* Active buttons & links color */
-    --hover-color: #06c !important; /* Hover button color */
+    --hover-color: #007C07 !important; /* Hover button color */
     --border-color: #06c; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
@@ -248,11 +248,11 @@
 }
 
 .estaly-terms-and-conditions > p {
-    font-size: 11px;
+    font-size: 0.9rem;
 }
 
 .estaly-terms-and-conditions:hover > p > a {
-    color: var(--primary-color);
+    color: var(--hover-color);
     font-weight: bold;
     text-decoration: underline;
 }
@@ -478,6 +478,7 @@
     .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
     .estaly-cart-insurance-suggestion-button { font-size: 1.1rem; }
+    .estaly-terms-and-conditions > p { font-size: 0.75rem }
 }
 
 /* --- Cart ---- */
