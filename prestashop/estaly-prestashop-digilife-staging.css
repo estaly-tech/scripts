@@ -335,8 +335,6 @@
     margin: 0 0 1.5rem;
     overflow: hidden;
     padding-left: 1.7rem;
-    text-overflow: ellipsis;
-    width: 100%;
 }
 
 .estaly-subheading {
@@ -344,7 +342,7 @@
     font-size: 2rem;
     font-weight: 500;
     line-height: 2.4rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     color: black;
 }
 
@@ -360,7 +358,7 @@
 .estaly-list-item {
     font-size: 1.4rem;
     font-weight: normal;
-    line-height: 3rem;
+    line-height: 2.5rem;
     margin: 0.4rem 0;
     text-align: left;
     list-style: disc;
@@ -433,10 +431,10 @@
 }
 
 .estaly-choice-container button {
-    border-radius: 1.4rem;
+    border-radius: 5px;
     height: 4.2rem;
     width: 19.2rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .estaly-button-link {
@@ -473,9 +471,9 @@
     .estaly-sub-subheading{ margin-bottom: 15px; font-size: 13px;}
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
-    .estaly-list-item{ font-size: 12px !important ; line-height: 1.6rem}
+    .estaly-list-item{ font-size: 15px !important ; line-height: 1.6rem}
     .estaly-link-container{ font-size: 14px !important; text-align: center;}
-    .estaly-choice-container button{ font-size: 14px !important;}
+    .estaly-choice-container button{ font-size: 15px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
     .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
