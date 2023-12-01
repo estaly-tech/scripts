@@ -495,10 +495,11 @@
     color: var(--active-multiple-button-text-color);
     cursor: pointer;
     transition: border 200ms, box-shadow 200ms;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     font-weight: 600;
     padding: 8px;
     white-space: normal;
+    border-radius: 5px;
 }
 
 .estaly-cart-insurance-suggestion-button:hover,
