@@ -29,7 +29,8 @@
 /* Multiple offers style */
 
 .estaly-button-group.multiple {
-    margin-bottom: 10px;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
 }
 
 .estaly-offer-button.multiple {
@@ -45,7 +46,7 @@
 
 .estaly-offer-term-length,
 .estaly-offer-price {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     font-weight: bolder !important;
 }
 
@@ -227,7 +228,7 @@
 
 .estaly-headline-buttons {
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .estaly-logo-full {
@@ -475,6 +476,7 @@
     .estaly-horizontal-line { margin-top: 5px; }
     .estaly-cart-insurance-suggestion-button { font-size: 1.1rem; }
     .estaly-terms-and-conditions > p { font-size: 0.75rem }
+    .estaly-headline-buttons { font-size: 1.1rem }
 }
 
 /* --- Cart ---- */
