@@ -1,6 +1,6 @@
 :root {
     --primary-color: #06c; /* Active buttons & links color */
-    --hover-color: #007C07 !important; /* Hover button color */
+    --hover-color: #007bff !important; /* Hover button color */
     --border-color: #06c; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
@@ -290,10 +290,7 @@
 }
 
 .estaly-content-container {
-    padding-top: 2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
     text-align: left;
 }
 
@@ -342,7 +339,6 @@
     font-size: 2rem;
     font-weight: 500;
     line-height: 2.4rem;
-    padding-bottom: 1rem;
     color: black;
 }
 
