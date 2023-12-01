@@ -46,7 +46,7 @@
 .estaly-offer-term-length,
 .estaly-offer-price {
     font-size: 1rem !important;
-    font-weight: bold !important;
+    font-weight: bolder !important;
 }
 
 .estaly-offer-price {
@@ -226,7 +226,7 @@
 }
 
 .estaly-headline-buttons {
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1.2rem;
 }
 
