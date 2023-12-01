@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #a83b03; /* Active buttons & links color */
-    --hover-color: #a83b03 !important; /* Hover button color */
-    --border-color: #a83b03; /* Border buttons color */
+    --primary-color: #06c; /* Active buttons & links color */
+    --hover-color: #06c !important; /* Hover button color */
+    --border-color: #06c; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
     --active-multiple-button-text-color: white; /* Active multiple buttons text color */
@@ -216,6 +216,7 @@
 
 .estaly-pdp-offering {
     display: none;
+    margin-top: 2.5rem;
 }
 
 .estaly-flex-col {
