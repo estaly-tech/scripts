@@ -281,7 +281,7 @@
 
 .estaly-modal-content {
     background: white;
-    border-radius: 3rem;
+    border-radius: 1rem;
     box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 50%);
     display: flex;
     overflow: auto;
