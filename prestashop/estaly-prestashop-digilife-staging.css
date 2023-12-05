@@ -46,7 +46,7 @@
 
 .estaly-offer-term-length,
 .estaly-offer-price {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     font-weight: bolder !important;
 }
 
@@ -337,10 +337,11 @@
 
 .estaly-subheading {
     padding-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.4rem;
     color: black;
+    text-align: center;
 }
 
 .estaly-sub-subheading {
@@ -353,9 +354,9 @@
 
 
 .estaly-list-item {
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: normal;
-    line-height: 2.5rem;
+    line-height: 2rem;
     margin: 0.4rem 0;
     text-align: left;
     list-style: disc;
