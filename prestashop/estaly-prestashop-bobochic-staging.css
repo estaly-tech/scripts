@@ -152,6 +152,11 @@
         border-color: var(--primary-color);
         box-shadow: 0 0 0 1px inset #647259;
     }
+
+    /* Uniq Modal */ 
+    .estaly-content-container .estaly-offer-button.uniq {
+        font-size: 12px;
+    }
 }
 
 /* Ipad Offers */
@@ -382,7 +387,6 @@
     text-align: center;
     position: relative;
     justify-content: center;
-    margin-bottom: 15px;
 }
 
 .estaly-offered-by-text {
@@ -401,6 +405,7 @@
 }
 
 .estaly-terms-link {
+    color: #337ab7 !important;
     font-size: 10px;
 }
 
@@ -462,7 +467,7 @@
     border-width: 0rem;
     color: white;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 14px !important;
     font-weight: bold;
     line-height: 100%;
     transition: 250ms opacity;
@@ -480,11 +485,15 @@
     .estaly-sub-subheading{ margin-bottom: 15px; font-size: 13px;}
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
-    .estaly-choice-container button{ font-size: 15px !important;}
+    .estaly-choice-container button{ font-size: 12px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
     .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
-    .estaly-cart-insurance-suggestion-button { font-size: 1.1rem; }
+    .estaly-cart-insurance-suggestion-button { 
+        padding: 5px 5px !important;
+        line-height: 15px;
+        font-size: 10px;
+    }
     .estaly-terms-and-conditions > p { font-size: 0.75rem }
     .estaly-headline-buttons { font-size: 1.1rem }
 }
