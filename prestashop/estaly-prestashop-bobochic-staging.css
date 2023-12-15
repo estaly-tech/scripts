@@ -72,6 +72,7 @@
     width: 99%;
     align-items: center;
     border-radius: 5px;
+    border: 1px solid var(--border-color);
 }
 
 .estaly-offer-uniq-button-left-side {
