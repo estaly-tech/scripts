@@ -284,6 +284,7 @@
 }
 
 .estaly-modal-content {
+    font-family: 'Jost', serif;
     background: white;
     border-radius: 1rem;
     box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 50%);
@@ -387,7 +388,6 @@
 .estaly-offered-by-text {
     font-size: 10px;
     text-decoration: none;
-    font-weight: bold;
     margin-right: 4px;
 }
 
@@ -402,9 +402,6 @@
 
 .estaly-terms-link {
     font-size: 10px;
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
 }
 
 .estaly-terms-link:hover {
