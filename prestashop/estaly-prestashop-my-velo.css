@@ -46,7 +46,6 @@
 
 .estaly-offer-term-length,
 .estaly-offer-price {
-    font-size: 1rem !important;
     font-weight: bolder !important;
 }
 
@@ -354,7 +353,6 @@
 
 
 .estaly-list-item {
-    font-size: 1rem;
     font-weight: normal;
     line-height: 2rem;
     margin: 0.4rem 0;
