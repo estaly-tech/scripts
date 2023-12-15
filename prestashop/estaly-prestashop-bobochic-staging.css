@@ -1,7 +1,7 @@
 :root {
     --primary-color: black; /* Active buttons & links color */
-    --hover-color: #black !important; /* Hover button color */
-    --border-color: #black; /* Border buttons color */
+    --hover-color: black !important; /* Hover button color */
+    --border-color: black; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
     --active-multiple-button-text-color: white; /* Active multiple buttons text color */
