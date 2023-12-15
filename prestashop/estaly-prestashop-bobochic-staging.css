@@ -111,12 +111,6 @@
 /* PC Offers */
 
 @media (hover: hover) and (pointer: fine) {
-    /* General */
-    .estaly-link-buttons:hover {
-        color: dodgerblue;
-        font-weight: bold;
-    }
-
     /* Multiple */
 
     .estaly-offer-button.multiple {
@@ -307,8 +301,7 @@
     color: black;
     line-height: 25px;
     position: absolute;
-    top: 12px;
-    right: 12px;
+    right: 0px;
     text-align: center;
     width: 24px;
     text-decoration: none;
@@ -325,6 +318,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.estaly-logo {
+    height: 16px !important;
+    width: 16px !important;
+}
+
+.close-img {
+    height: 8px !important;
+    width: 8px !important;
 }
 
 .estaly-plus {
@@ -362,7 +365,7 @@
 
 
 .estaly-list-item {
-    font-size: 1rem;
+    font-size: 12px;
     font-weight: normal;
     line-height: 2rem;
     margin: 0.4rem 0;
@@ -381,21 +384,23 @@
 }
 
 .estaly-offered-by-text {
+    font-size: 10px;
     text-decoration: none;
     font-weight: bold;
-    margin-right: 8px;
+    margin-right: 4px;
 }
 
 .estaly-link-container {
     font-size: 16px !important;
     position: relative;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
 }
 
 .estaly-terms-link {
+    font-size: 10px;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
@@ -477,8 +482,6 @@
     .estaly-sub-subheading{ margin-bottom: 15px; font-size: 13px;}
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
-    .estaly-list-item{ font-size: 15px !important ; line-height: 1.6rem}
-    .estaly-link-container{ font-size: 14px !important; text-align: center;}
     .estaly-choice-container button{ font-size: 15px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
     .estaly-modal-dialog { z-index: 999 }
