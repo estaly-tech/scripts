@@ -44,10 +44,6 @@
     margin-left: 0.3rem;
 }
 
-.estaly-offer-term-length,
-.estaly-offer-price {
-    font-weight: bolder !important;
-}
 
 .estaly-offer-price {
     margin-top: 0.25rem !important;
@@ -235,7 +231,7 @@
 }
 
 .estaly-link-buttons {
-    font-size: 13px;
+    font-size: 11px;
     text-align: right;
     color: var(--primary-color);
     text-decoration: underline;
@@ -336,7 +332,6 @@
 
 .estaly-subheading {
     padding-top: 1rem;
-    font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.4rem;
     color: black;
@@ -371,13 +366,13 @@
 }
 
 .estaly-offered-by-text {
+    font-size: 13px;
     text-decoration: none;
     font-weight: bold;
     margin-right: 8px;
 }
 
 .estaly-link-container {
-    font-size: 16px !important;
     position: relative;
     text-align: center;
     justify-content: center;
@@ -386,6 +381,7 @@
 }
 
 .estaly-terms-link {
+    font-size: 13px;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
@@ -467,8 +463,7 @@
     .estaly-sub-subheading{ margin-bottom: 15px; font-size: 13px;}
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
-    .estaly-list-item{ font-size: 15px !important ; line-height: 1.6rem}
-    .estaly-link-container{ font-size: 14px !important; text-align: center;}
+    .estaly-link-container{ text-align: center;}
     .estaly-choice-container button{ font-size: 15px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
     .estaly-modal-dialog { z-index: 999 }
@@ -490,11 +485,7 @@
     color: var(--active-multiple-button-text-color);
     cursor: pointer;
     transition: border 200ms, box-shadow 200ms;
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding: 8px;
     white-space: normal;
-    border-radius: 5px;
 }
 
 .estaly-cart-insurance-suggestion-button:hover,
