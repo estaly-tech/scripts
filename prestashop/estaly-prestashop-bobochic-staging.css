@@ -497,8 +497,9 @@
         line-height: 15px !important;
         font-size: 10px !important;
     }
-    .estaly-terms-and-conditions > p { font-size: 0.75rem }
+    .estaly-terms-and-conditions > p { font-size: 1.05rem }
     .estaly-headline-buttons { font-size: 1.1rem }
+    .estaly-logo-full { width: 10%;}
 }
 
 /* --- Cart ---- */
