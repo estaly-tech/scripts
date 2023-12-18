@@ -153,7 +153,7 @@
         box-shadow: 0 0 0 1px inset #647259;
     }
 
-    /* Uniq Modal */ 
+    /* Uniq Modal */
     .estaly-content-container .estaly-offer-button.uniq {
         font-size: 12px;
     }
@@ -251,13 +251,18 @@
     cursor: pointer;
 }
 
+.estaly-link-buttons:hover {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
 .estaly-terms-and-conditions {
     display: none;
     font-style: italic;
 }
 
 .estaly-terms-and-conditions > p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 .estaly-terms-and-conditions:hover > p > a {
@@ -405,7 +410,6 @@
 
 .estaly-terms-link {
     color: #337ab7 !important;
-    font-size: 3rem;
 }
 
 .estaly-terms-link:hover {
@@ -488,7 +492,7 @@
     .estaly-merchant-logo { max-width: 10rem !important;}
     .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
-    .estaly-cart-insurance-suggestion-button { 
+    .estaly-cart-insurance-suggestion-button {
         padding: 5px 5px !important;
         line-height: 15px !important;
         font-size: 10px !important;
