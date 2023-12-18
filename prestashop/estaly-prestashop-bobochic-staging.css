@@ -395,7 +395,6 @@
     text-align: center;
     position: relative;
     justify-content: center;
-    margin-bottom: 15px;
 }
 
 .estaly-offered-by-text {
@@ -410,6 +409,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2.5rem;
 }
 
 .estaly-terms-link {
@@ -429,6 +429,7 @@
 }
 
 .estaly-buttons-container {
+    margin-top: 2rem;
     display: block;
 }
 
