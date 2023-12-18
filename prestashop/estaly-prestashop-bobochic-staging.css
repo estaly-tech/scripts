@@ -240,7 +240,7 @@
 }
 
 .estaly-logo-full {
-    width: 12%;
+    width: 5%;
 }
 
 .estaly-link-buttons {
@@ -372,9 +372,9 @@
 
 
 .estaly-list-item {
-    font-size: 12px;
+    font-size: 1.5rem;
     font-weight: normal;
-    line-height: 2rem;
+    line-height: 3rem;
     margin: 0.4rem 0;
     text-align: left;
     list-style: disc;
@@ -390,7 +390,6 @@
 }
 
 .estaly-offered-by-text {
-    font-size: 10px;
     text-decoration: none;
     margin-right: 4px;
 }
@@ -406,7 +405,7 @@
 
 .estaly-terms-link {
     color: #337ab7 !important;
-    font-size: 10px;
+    font-size: 3rem;
 }
 
 .estaly-terms-link:hover {
