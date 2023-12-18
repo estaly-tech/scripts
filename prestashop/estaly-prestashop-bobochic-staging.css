@@ -1,6 +1,6 @@
 :root {
     --primary-color: black; /* Active buttons & links color */
-    --hover-color: black !important; /* Hover button color */
+    --hover-color: dodgerblue !important; /* Hover button color */
     --border-color: black; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
@@ -254,7 +254,7 @@
 }
 
 .estaly-link-buttons:hover {
-    color: dodgerblue;
+    color: var(--hover-color);
     font-weight: bold;
 }
 
@@ -417,7 +417,7 @@
 }
 
 .estaly-terms-link:hover {
-    color: dodgerblue;
+    color: var(--hover-color);
     font-weight: bold;
     text-decoration: underline;
 }
@@ -575,7 +575,7 @@
 }
 
 .estaly-crosselling-marketing-page-redirection:hover {
-    color: dodgerblue;
+    color: var(--hover-color);
     font-weight: bold
 }
 
