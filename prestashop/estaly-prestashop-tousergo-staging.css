@@ -66,12 +66,11 @@
     cursor: pointer;
     text-align: center;
     background: transparent;
-    border-radius: 0px;
     color: var(--text-color);
     transition: border 200ms, box-shadow 200ms;
     width: 99%;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 0.6rem;
 }
 
 .estaly-offer-uniq-button-left-side {
@@ -258,7 +257,6 @@
 
 .estaly-terms-and-conditions:hover > p > a {
     color: var(--hover-color);
-    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -400,11 +398,11 @@
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
-    color: dodgerblue;
 }
 
 .estaly-terms-link:hover {
     text-decoration: underline;
+    color: dodgerblue;
 }
 
 /* Modal offers styles */
