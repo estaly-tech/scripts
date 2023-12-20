@@ -4,8 +4,8 @@
     --border-color: #27295a; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
-    --active-multiple-button-text-color: white; /* Active multiple buttons text color */
-    --active-uniq-button-text-color: white; /* Active uniq buttons text color */
+    --active-multiple-button-text-color: #f8dfc1; /* Active multiple buttons text color */
+    --active-uniq-button-text-color: #f8dfc1; /* Active uniq buttons text color */
 }
 
 /* --- Offers --- */
@@ -497,7 +497,7 @@
     font-weight: 600;
     padding: 8px;
     white-space: normal;
-    border-radius: 5px;
+    border-radius: 2rem;
 }
 
 .estaly-cart-insurance-suggestion-button:hover,
