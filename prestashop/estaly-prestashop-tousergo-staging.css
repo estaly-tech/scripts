@@ -373,6 +373,11 @@
     margin-bottom: 15px;
 }
 
+.estaly-offered-by:hover {
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
 .estaly-offered-by-text {
     text-decoration: none;
     font-weight: bold;
