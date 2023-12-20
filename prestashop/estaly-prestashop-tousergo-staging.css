@@ -230,6 +230,10 @@
 .estaly-headline-buttons {
     font-weight: bolder;
     font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #27295a;
+    margin-bottom: 0.5rem;
+    font-family: 'Figtree';
 }
 
 .estaly-logo-full {
@@ -246,7 +250,6 @@
 
 .estaly-terms-and-conditions {
     display: none;
-    font-style: italic;
 }
 
 .estaly-terms-and-conditions > p {
