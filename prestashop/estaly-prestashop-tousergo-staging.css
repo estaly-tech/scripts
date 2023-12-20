@@ -106,7 +106,7 @@
 .estaly-offer-uniq-button-title {
     display: flex;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
 }
 
 /* PC Offers */
@@ -292,7 +292,7 @@
 }
 
 .estaly-content-container {
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: left;
 }
 
