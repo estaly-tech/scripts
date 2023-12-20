@@ -98,7 +98,7 @@
 }
 
 .estaly-offer-uniq-button-price {
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
     font-weight: bold !important;
     padding: 10px;
 }
@@ -106,6 +106,7 @@
 .estaly-offer-uniq-button-title {
     display: flex;
     align-items: center;
+    font-size: 0.8rem;
 }
 
 /* PC Offers */
@@ -217,7 +218,7 @@
 
 .estaly-pdp-offering {
     display: none;
-    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .estaly-flex-col {
@@ -228,7 +229,7 @@
 
 .estaly-headline-buttons {
     font-weight: bolder;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .estaly-logo-full {
@@ -249,7 +250,7 @@
 }
 
 .estaly-terms-and-conditions > p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .estaly-terms-and-conditions:hover > p > a {
