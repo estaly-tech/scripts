@@ -167,6 +167,10 @@
     .estaly-offer-button.uniq {
         height: 60px;
     }
+
+    .estaly-logo-full {
+        width: 10%;
+    }
 }
 
 /* Mobile Offers */
