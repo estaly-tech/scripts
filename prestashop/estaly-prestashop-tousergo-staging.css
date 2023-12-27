@@ -160,12 +160,8 @@
 /* Ipad Offers */
 
 @media screen and (min-width: 768px) and (max-width: 1018px) {
-    .estaly-offer-uniq-button-title {
-        font-size: 12px;
-    }
-
     .estaly-offer-button.uniq {
-        height: 60px;
+        height: 43px;
     }
 
     .estaly-logo-full {
