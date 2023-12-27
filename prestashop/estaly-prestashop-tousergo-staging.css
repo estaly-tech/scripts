@@ -1,7 +1,7 @@
 :root {
     --primary-color: #27295a; /* Active buttons & links color */
     --hover-color: #42447b !important; /* Hover button color */
-    --border-color: #42447b; /* Border buttons color */
+    --border-color: #27295a; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
     --active-multiple-button-text-color: #f8dfc1; /* Active multiple buttons text color */
@@ -67,9 +67,9 @@
     text-align: center;
     background: transparent;
     transition: border 200ms, box-shadow 200ms;
-    width: 99%;
+    width: 100%;
     align-items: center;
-    border-radius: 0.6rem;
+    border-radius: 0.7rem;
     border: 1px solid #27295a;
 }
 
