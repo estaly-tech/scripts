@@ -58,7 +58,6 @@
 
 .estaly-button-group.uniq {
     margin-bottom: 5px;
-    background-color: #f2f4f7;
 }
 
 .estaly-offer-button.uniq {
@@ -234,6 +233,7 @@
     color: #27295a;
     margin-bottom: 0.5rem;
     font-family: 'Figtree';
+    display: none;
 }
 
 .estaly-logo-full {
