@@ -213,10 +213,6 @@
         font-size: 1rem !important;
     }
 
-    .estaly-custom-insurance-proposition-marketing-item {
-        font-size: smaller;
-    }
-
     .estaly-custom-insurance-proposition-block-add-to-cart-button {
         font-size: x-small !important;
     }
@@ -687,4 +683,8 @@
 
 .estaly-custom-insurance-proposition-brand-image {
     margin-left: 6px;
+}
+
+.estaly-custom-insurance-proposition-marketing-item {
+    font-size: smaller;
 }
