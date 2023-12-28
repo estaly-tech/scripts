@@ -670,4 +670,14 @@
 
 .estaly-custom-insurance-proposition-terms-and-condition-paragraph {
     font-size: xx-small;
+    margin-bottom: 0.3rem;
+}
+
+.estaly-custom-insurance-proposition-brand {
+    display: flex;
+    font-size: x-small;
+}
+
+.estaly-custom-insurance-proposition-brand-image {
+    margin-left: 6px;
 }
