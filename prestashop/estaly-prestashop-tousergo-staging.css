@@ -678,6 +678,10 @@
     font-size: x-small;
 }
 
+.estaly-custom-insurance-proposition-brand:hover {
+    color: var(--hover-color);
+}
+
 .estaly-custom-insurance-proposition-brand-image {
     margin-left: 6px;
 }
