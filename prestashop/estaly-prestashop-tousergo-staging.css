@@ -679,7 +679,8 @@
 }
 
 .estaly-custom-insurance-proposition-brand:hover {
-    color: var(--hover-color);
+    color: dodgerblue;
+    text-decoration: underline;
 }
 
 .estaly-custom-insurance-proposition-brand-image {
