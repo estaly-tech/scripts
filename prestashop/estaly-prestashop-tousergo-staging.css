@@ -208,6 +208,22 @@
     .estaly-modal-content .estaly-offer-uniq-button-title {
         font-size: 12px;
     }
+
+    .estaly-custom-insurance-proposition-block-title {
+        font-size: 1rem;
+    }
+
+    .estaly-custom-insurance-proposition-marketing-item {
+        font-size: smaller;
+    }
+
+    .estaly-custom-insurance-proposition-block-add-to-cart-button {
+        font-size: smaller;
+    }
+
+    .estaly-custom-insurance-proposition-block-price-span {
+        font-size: 0.7rem;
+    }
 }
 
 /* --- Product --- */
