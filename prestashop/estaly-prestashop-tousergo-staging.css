@@ -597,3 +597,57 @@
 .estaly-crosselling-offer-add-to-cart:not(.estaly-insurance-added) > .icon-plus {
     display: inline-block;
 }
+
+.estaly-custom-insurance-proposition-block {
+    padding: 10px 20px;
+    background-color: #f8dfc1;
+    margin-bottom: 10px;
+}
+.estaly-custom-insurance-proposition-block-title {
+    text-transform: uppercase;
+    color: #27295a;
+    margin-bottom: 0.5rem;
+    font-family: Figtree,-apple-system,blinkmacsystemfont,Segoe UI,Helvetica Neue,arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 1.25rem;
+}
+.estaly-custom-insurance-proposition-block-price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.estaly-custom-insurance-proposition-block-price-span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+}
+.estaly-custom-insurance-proposition-block-add-to-cart-button {
+    margin-left: 1rem;
+    display: inline-block;
+    font-family: Figtree,-apple-system,blinkmacsystemfont,Segoe UI,Helvetica Neue,arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    text-align: center;
+    white-space: wrap;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    border-radius: 10rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #27295a;
+    border-color: #27295a;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f8dfc1;
+    padding: 0.625rem 1rem;
+    font-size: .875rem;
+    line-height: 1.3;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+.estaly-custom-insurance-proposition-detail-information {
+    margin-right: 1rem;
+}
