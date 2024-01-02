@@ -611,7 +611,7 @@
 }
 
 .estaly-custom-insurance-proposition-block {
-    padding: 10px 20px;
+    padding: 10px 25px;
     background-color: #f8dfc1;
     margin-bottom: 10px;
 }
@@ -687,4 +687,5 @@
 
 .estaly-custom-insurance-proposition-marketing-item {
     font-size: smaller;
+    list-style: disc;
 }
