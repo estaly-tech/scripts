@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #fabb00; /* Active buttons & links color */
-    --hover-color: #fadd00; /* Hover button color */
+    --primary-color: #0182c6; /* Active buttons & links color */
+    --hover-color:  #1bb0ad; /* Hover button color */
     --border-color: #647259; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
@@ -77,7 +77,6 @@
     display: flex;
     padding: 15px;
 }
-
 
 .estaly-offer-button.uniq.active > .estaly-offer-uniq-button-left-side > .estaly-offer-uniq-button-checkbox {
     background-color: var(--primary-color);
@@ -249,7 +248,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 100;
+    z-index: 50000;
 }
 
 .estaly-modal-dialog:target {
@@ -450,7 +449,7 @@
     color: var(--active-multiple-button-text-color);
     cursor: pointer;
     transition: border 200ms, box-shadow 200ms;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 600;
     padding: 8px;
     white-space: normal;
@@ -465,4 +464,86 @@
 
 .estaly-protection-logo {
     width: 20px;
+    vertical-align: middle;
+}
+
+.estaly-order-button-block {
+    pointer-events: none;
+    cursor: default;
+}
+
+.checkboxContainer {
+    text-align: left;
+}
+
+/* --- Crosselling --- */
+.estaly-crosselling-modal-component {
+    display: none;
+    margin: 15px;
+    background-color: #F8F8F8;
+}
+
+.estaly-crosselling-offer-information {
+    padding: 20px 20px 0px 20px;
+}
+
+.estaly-crosselling-offer-incentive {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.estaly-crosselling-offer-details {
+    line-height: 15px;
+}
+
+.estaly-crosselling-marketing-page-redirection {
+    text-decoration: underline;
+    color: gray;
+}
+
+.estaly-crosselling-marketing-page-redirection:hover {
+    color: dodgerblue;
+    font-weight: bold
+}
+
+.estaly-crosselling-offer-content {
+    display: flex;
+    padding: 0px 20px 10px 20px;
+    justify-content: space-between;
+}
+
+.estaly-crosselling-offers {
+    display: flex;
+}
+
+.estaly-crosselling-offer-add-to-cart {
+    color: white;
+    background-color: black;
+    border: 2px solid #111;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+}
+
+.estaly-crosselling-offer-add-to-cart.estaly-insurance-added {
+    cursor: not-allowed;
+    background-color: grey;
+    border: 2px solid grey;
+}
+
+.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon-check {
+    display: inline-block;
+}
+
+.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon-plus {
+    display: none;
+}
+
+.estaly-crosselling-offer-add-to-cart:not(.estaly-insurance-added) > .icon-check {
+    display: none;
+}
+
+.estaly-crosselling-offer-add-to-cart:not(.estaly-insurance-added) > .icon-plus {
+    display: inline-block;
 }
