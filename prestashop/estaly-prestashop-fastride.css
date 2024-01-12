@@ -98,7 +98,7 @@
 }
 
 .estaly-offer-uniq-button-price {
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
     font-weight: bold !important;
     padding: 10px;
 }
@@ -165,10 +165,6 @@
     .estaly-offer-uniq-button-title {
         font-size: 12px;
     }
-
-    .estaly-offer-button.uniq {
-        height: 60px;
-    }
 }
 
 /* Mobile Offers */
@@ -217,7 +213,8 @@
 
 .estaly-pdp-offering {
     display: none;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .estaly-flex-col {
@@ -228,7 +225,8 @@
 
 .estaly-headline-buttons {
     font-weight: bolder;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .estaly-logo-full {
@@ -245,11 +243,10 @@
 
 .estaly-terms-and-conditions {
     display: none;
-    font-style: italic;
 }
 
 .estaly-terms-and-conditions > p {
-    font-size: 0.9rem;
+    font-size: 0.65rem;
 }
 
 .estaly-terms-and-conditions:hover > p > a {
@@ -465,7 +462,7 @@
 
 @media (max-width: 800px){
     .estaly-modal-content { width: 100% !important ;}
-    .estaly-subheading{ font-size: 1.3rem !important ; line-height: 25px !important; padding-bottom: 0.8rem;}
+    .estaly-subheading{ font-size: 1rem !important ; line-height: 25px !important; padding-bottom: 0.8rem; font-weight: bold;}
     .estaly-sub-subheading{ margin-bottom: 15px; font-size: 13px;}
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
@@ -477,7 +474,7 @@
     .estaly-horizontal-line { margin-top: 5px; }
     .estaly-cart-insurance-suggestion-button { font-size: 1.1rem; }
     .estaly-terms-and-conditions > p { font-size: 0.75rem }
-    .estaly-headline-buttons { font-size: 1.1rem }
+    .estaly-headline-buttons { font-size: 0.9rem }
 }
 
 /* --- Cart ---- */
