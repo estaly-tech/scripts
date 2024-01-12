@@ -230,7 +230,7 @@
 }
 
 .estaly-logo-full {
-    width: 12%;
+    width: 8%;
 }
 
 .estaly-link-buttons {
@@ -475,6 +475,7 @@
     .estaly-cart-insurance-suggestion-button { font-size: 1.1rem; }
     .estaly-terms-and-conditions > p { font-size: 0.75rem }
     .estaly-headline-buttons { font-size: 0.9rem }
+    .estaly-logo-full { width: 12% }
 }
 
 /* --- Cart ---- */
