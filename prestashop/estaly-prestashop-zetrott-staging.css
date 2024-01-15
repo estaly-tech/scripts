@@ -98,7 +98,7 @@
 }
 
 .estaly-offer-uniq-button-price {
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
     font-weight: bold !important;
     padding: 10px;
 }
@@ -228,11 +228,12 @@
 
 .estaly-headline-buttons {
     font-weight: bolder;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .estaly-logo-full {
-    width: 12%;
+    width: 10%;
 }
 
 .estaly-link-buttons {
@@ -245,11 +246,10 @@
 
 .estaly-terms-and-conditions {
     display: none;
-    font-style: italic;
 }
 
 .estaly-terms-and-conditions > p {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 .estaly-terms-and-conditions:hover > p > a {
