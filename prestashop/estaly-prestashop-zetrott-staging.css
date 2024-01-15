@@ -167,7 +167,7 @@
     }
 
     .estaly-offer-button.uniq {
-        height: 60px;
+        height: 45px;
     }
 }
 
@@ -229,7 +229,7 @@
 .estaly-headline-buttons {
     font-weight: bolder;
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .estaly-logo-full {
@@ -432,7 +432,7 @@
     border-radius: 5px;
     height: 4.2rem;
     width: 19.2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .estaly-button-link {
@@ -492,7 +492,7 @@
     color: var(--active-multiple-button-text-color);
     cursor: pointer;
     transition: border 200ms, box-shadow 200ms;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
     padding: 8px;
     white-space: normal;
