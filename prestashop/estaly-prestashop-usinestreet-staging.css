@@ -162,12 +162,8 @@
 /* Ipad Offers */
 
 @media screen and (min-width: 768px) and (max-width: 1018px) {
-    .estaly-offer-uniq-button-title {
-        font-size: 12px;
-    }
-
     .estaly-offer-button.uniq {
-        height: 60px;
+        height: 45px;
     }
 }
 
@@ -208,8 +204,19 @@
         box-shadow: 0 0 0 1px inset var(--border-color);
     }
 
+    .estaly-offer-uniq-button-price {
+        font-size: 1rem;
+    }
+
     .estaly-modal-content .estaly-offer-uniq-button-title {
         font-size: 12px;
+    }
+
+    /* Other */
+
+
+    .estaly-logo-full {
+        width: 11%
     }
 }
 
@@ -228,7 +235,7 @@
 
 .estaly-headline-buttons {
     font-weight: bolder;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
 }
 
 .estaly-logo-full {
@@ -248,7 +255,7 @@
 }
 
 .estaly-terms-and-conditions > p {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 .estaly-terms-and-conditions:hover > p > a {
