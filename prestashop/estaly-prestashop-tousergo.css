@@ -114,7 +114,6 @@
     /* General */
     .estaly-link-buttons:hover {
         color: dodgerblue;
-        font-weight: bold;
     }
 
     /* Multiple */
@@ -678,7 +677,6 @@
 .estaly-custom-insurance-proposition-brand:hover {
     color: dodgerblue;
     text-decoration: underline;
-    font-weight: bold;
 }
 
 .estaly-custom-insurance-proposition-brand-image {
