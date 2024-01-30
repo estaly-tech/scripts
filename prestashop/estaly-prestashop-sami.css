@@ -592,3 +592,8 @@
 .estaly-crosselling-offer-add-to-cart:not(.estaly-insurance-added) > .icon-plus {
     display: inline-block;
 }
+
+.estaly-marketing-content-bullet-point-container {
+    list-style: disc;
+    margin-left: 2rem;
+}
