@@ -105,7 +105,11 @@
 .estaly-offer-uniq-button-title {
     display: flex;
     align-items: center;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
+}
+
+.estaly-headline-custom-selected-choice {
+    font-size: 0.85rem;
 }
 
 /* PC Offers */
@@ -114,7 +118,6 @@
     /* General */
     .estaly-link-buttons:hover {
         color: dodgerblue;
-        font-weight: bold;
     }
 
     /* Multiple */
@@ -678,7 +681,6 @@
 .estaly-custom-insurance-proposition-brand:hover {
     color: dodgerblue;
     text-decoration: underline;
-    font-weight: bold;
 }
 
 .estaly-custom-insurance-proposition-brand-image {
