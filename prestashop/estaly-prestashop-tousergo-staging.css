@@ -163,6 +163,7 @@
     }
 
     .estaly-logo-full {
+        display: full;
         width: 8% !important;
     }
 }
@@ -244,6 +245,7 @@
 }
 
 .estaly-logo-full {
+    display: none;
     width: 12%;
 }
 
