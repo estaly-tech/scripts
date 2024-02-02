@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #06c; /* Active buttons & links color */
-    --hover-color: #007bff !important; /* Hover button color */
-    --border-color: #06c; /* Border buttons color */
+    --primary-color: #E85522; /* Active buttons & links color */
+    --hover-color: #DE5F33FF !important; /* Hover button color */
+    --border-color: #E85522; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
     --active-multiple-button-text-color: white; /* Active multiple buttons text color */
@@ -38,6 +38,7 @@
     border: 0.1px solid var(--border-color);
     border-radius: 0.25rem;
     justify-content: center;
+    font-weight: bolder;
 }
 
 .estaly-offer-button.multiple + .estaly-offer-button.multiple {
@@ -212,7 +213,8 @@
 
 .estaly-pdp-offering {
     display: none;
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .estaly-flex-col {
@@ -223,7 +225,7 @@
 
 .estaly-headline-buttons {
     font-weight: bolder;
-    font-size: 1.4rem;
+    font-size: 1.15rem;
 }
 
 .estaly-logo-full {
