@@ -197,6 +197,10 @@
 
     /* Uniq */
 
+    .estaly-offer-uniq-button-title {
+        font-size: 0.96rem;
+    }
+
     .estaly-offer-button.uniq {
         border: 1px solid var(--border-color);
     }
