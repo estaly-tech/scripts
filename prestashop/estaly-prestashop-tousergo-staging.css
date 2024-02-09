@@ -105,6 +105,7 @@
 .estaly-offer-uniq-button-title {
     display: flex;
     align-items: center;
+    font-size: 0.99rem;
 }
 
 /* PC Offers */
