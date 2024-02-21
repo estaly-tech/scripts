@@ -116,7 +116,7 @@
     /* Multiple */
 
     .estaly-offer-button.multiple {
-        padding: 0.8rem;
+        padding: 0.4rem;
         text-align: center;
         background: transparent;
         color: var(--text-color);
@@ -164,6 +164,10 @@
 
     .estaly-offer-button.uniq {
         height: 60px;
+    }
+
+    .estaly-logo-full {
+        width: 8%
     }
 }
 
