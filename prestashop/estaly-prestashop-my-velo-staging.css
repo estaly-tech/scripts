@@ -47,6 +47,7 @@
 
 .estaly-offer-price {
     margin-top: 0.1rem !important;
+    font-weight: bold;
 }
 
 /* Uniq offers style */
@@ -227,6 +228,7 @@
 }
 
 .estaly-headline-buttons {
+    font-weight: bold;
 }
 
 .estaly-logo-full {
