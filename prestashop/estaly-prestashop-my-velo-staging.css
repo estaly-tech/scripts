@@ -36,9 +36,7 @@
 .estaly-offer-button.multiple {
     flex: 1;
     border: 0.1px solid var(--border-color);
-    border-radius: 0.25rem;
     justify-content: center;
-    font-weight: bolder;
 }
 
 .estaly-offer-button.multiple + .estaly-offer-button.multiple {
@@ -47,7 +45,7 @@
 
 
 .estaly-offer-price {
-    margin-top: 0.2rem !important;
+    margin-top: 0.1rem !important;
 }
 
 /* Uniq offers style */
@@ -228,8 +226,7 @@
 }
 
 .estaly-headline-buttons {
-    font-weight: bolder;
-    font-size: 1.15rem;
+    font-size: unset;
 }
 
 .estaly-logo-full {
