@@ -29,7 +29,7 @@
 /* Multiple offers style */
 
 .estaly-button-group.multiple {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
     margin-top: 0.3rem;
     font-size: small;
 }
@@ -246,7 +246,7 @@
 }
 
 .estaly-terms-and-conditions > p {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
 }
 
 .estaly-terms-and-conditions:hover > p > a {
