@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #e74141; /* Active buttons & links color */
+    --primary-color: #054e79; /* Active buttons & links color */
     --hover-color: red !important; /* Hover button color */
     --border-color: black; /* Border buttons color */
     --text-color: black; /* Text color */
@@ -98,12 +98,13 @@
 }
 
 .estaly-offer-uniq-button-price {
-    font-size: 1.3rem !important;
+    font-size: 0.9rem !important;
     font-weight: bold !important;
     padding: 10px;
 }
 
 .estaly-offer-uniq-button-title {
+    font-size: 0.9rem !important;
     display: flex;
     align-items: center;
 }
@@ -195,6 +196,14 @@
 
     /* Uniq */
 
+    .estaly-offer-uniq-button-title {
+        font-size: 0.7rem !important;
+    }
+
+    .estaly-offer-uniq-button-price {
+        font-size: 0.8rem !important;
+    }
+
     .estaly-offer-button.uniq {
         border: 1px solid var(--border-color);
     }
@@ -202,10 +211,6 @@
     .estaly-offer-button.uniq.active {
         border: 1px solid var(--primary-color);
         box-shadow: 0 0 0 1px inset var(--border-color);
-    }
-
-    .estaly-offer-uniq-button-price {
-        font-size: 1rem;
     }
 
     .estaly-modal-content .estaly-offer-uniq-button-title {
