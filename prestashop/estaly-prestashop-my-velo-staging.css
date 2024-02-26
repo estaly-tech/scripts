@@ -17,10 +17,6 @@
     justify-content: center;
 }
 
-.estaly-offer-button {
-    display: flex;
-}
-
 .estaly-learn-more {
     display: flex;
     justify-content: space-between;
@@ -37,16 +33,13 @@
 .estaly-offer-button.multiple {
     flex: 1;
     border: 0.1px solid var(--border-color);
-    justify-content: center;
 }
 
 .estaly-offer-button.multiple + .estaly-offer-button.multiple {
     margin-left: 0.3rem;
 }
 
-
-.estaly-offer-price {
-    margin-top: 0.1rem !important;
+.estaly-offer-term-length {
     font-weight: bold;
 }
 
@@ -116,7 +109,7 @@
     /* Multiple */
 
     .estaly-offer-button.multiple {
-        padding: 0.2rem;
+        padding: 0.5rem;
         text-align: center;
         background: transparent;
         color: var(--text-color);
@@ -182,7 +175,7 @@
     }
 
     .estaly-offer-button.multiple {
-        padding: 0.2rem;
+        padding: 0.5rem;
         text-align: center;
         background: transparent;
         color: var(--multiple-button-text-color);
@@ -223,8 +216,8 @@
 
 .estaly-flex-col {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .estaly-headline-buttons {
