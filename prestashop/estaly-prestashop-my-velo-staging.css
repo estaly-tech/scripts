@@ -43,6 +43,10 @@
     font-weight: bold;
 }
 
+.estaly-offer-price {
+    margin-top: 0rem !important;
+}
+
 /* Uniq offers style */
 
 .estaly-button-group.uniq {
