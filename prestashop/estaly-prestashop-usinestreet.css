@@ -1,6 +1,6 @@
 :root {
     --primary-color: #054e79; /* Active buttons & links color */
-    --hover-color: red !important; /* Hover button color */
+    --hover-color: #0070ba !important; /* Hover button color */
     --border-color: black; /* Border buttons color */
     --text-color: black; /* Text color */
     --multiple-button-text-color: black; /* Multiple buttons text color */
