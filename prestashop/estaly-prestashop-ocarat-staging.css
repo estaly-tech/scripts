@@ -367,7 +367,6 @@
 .estaly-offered-by {
     display: flex;
     align-items: center;
-    text-align: center;
     position: relative;
     justify-content: center;
     margin-bottom: 15px !important;
@@ -528,14 +527,6 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-}
-
-.estaly-cart-insurance-suggestion-button:hover,
-.estaly-cart-insurance-suggestion-button:active {
-    border-color: var(--estaly-hover-color);
-    background: var(--estaly-hover-color);
-    box-shadow: 0 0 0 1px inset var(--estaly-primary-color);
-    color: var(--estaly-active-multiple-button-text-color);
 }
 
 .estaly-protection-logo {
