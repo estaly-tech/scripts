@@ -573,7 +573,9 @@
 }
 
 .estaly-crosselling-offer-details {
-    margin-bottom: 9px;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.4rem;
+    color: #393C3F;
 }
 
 .estaly-crosselling-marketing-page-redirection {
