@@ -477,18 +477,18 @@
 
 @media (max-width: 800px){
     .estaly-modal-content { width: 100% !important ;}
-    .estaly-subheading{ font-size: 1.3rem !important ; line-height: 25px !important; padding-bottom: 0.8rem;}
+    .estaly-subheading{ font-size: 1.5rem !important ; line-height: 25px !important; padding-bottom: 0.8rem;}
     .estaly-sub-subheading{ margin-bottom: 15px; font-size: 13px;}
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
-    .estaly-list-item{ font-size: 15px !important ; line-height: 1.6rem}
+    .estaly-list-item{ font-size: 14px !important ; line-height: 1.6rem}
     .estaly-link-container{ font-size: 14px !important; text-align: center;}
-    .estaly-choice-container button{ font-size: 15px !important;}
+    .estaly-choice-container button{ font-size: 12px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
     .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
     .estaly-cart-insurance-suggestion-button { font-size: 1.1rem; }
-    .estaly-terms-and-conditions > p { font-size: 0.75rem }
+    .estaly-terms-and-conditions > p { font-size: 0.85rem }
     .estaly-headline-buttons { font-size: 1.1rem }
 }
 
@@ -548,6 +548,7 @@
     font-family: 'Century Gothic', sans-serif;
     font-size: 1.4rem;
     color: #393C3F;
+    margin-bottom: 2.5rem;
 }
 
 .estaly-crosselling-marketing-page-redirection {
@@ -570,6 +571,7 @@
 }
 
 .estaly-crosselling-offers {
+    margin-top: 2rem;
     display: flex;
 }
 
@@ -620,4 +622,11 @@
     list-style: disc;
     margin-left: 3rem;
     margin-bottom: 0px;
+}
+
+.estaly-crosselling-uniq-offer-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--estaly-primary-color);
+    font-family: 'Century Gothic', sans-serif;
 }
