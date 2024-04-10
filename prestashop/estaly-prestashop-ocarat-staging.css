@@ -593,6 +593,8 @@
 }
 
 .estaly-crosselling-offer-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .estaly-crosselling-offers {
