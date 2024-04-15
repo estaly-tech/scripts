@@ -560,8 +560,8 @@
 }
 
 .estaly-crosselling-marketing-page-redirection:hover {
-    color: dodgerblue;
-    font-weight: bold
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .estaly-crosselling-offer-content {
@@ -601,22 +601,6 @@
     cursor: not-allowed;
     background-color: grey;
     border: 2px solid grey;
-}
-
-.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon-check {
-    display: inline-block;
-}
-
-.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon-plus {
-    display: none;
-}
-
-.estaly-crosselling-offer-add-to-cart:not(.estaly-insurance-added) > .icon-check {
-    display: none;
-}
-
-.estaly-crosselling-offer-add-to-cart:not(.estaly-insurance-added) > .icon-plus {
-    display: inline-block;
 }
 
 .estaly-marketing-content-bullet-point-container {
