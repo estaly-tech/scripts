@@ -320,6 +320,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0 2rem 0;
 }
 
 .estaly-plus {
@@ -395,12 +396,10 @@
     color: #393C3F;
     font-size: 1.3rem;
     font-weight: 700;
-    text-decoration: underline !important;
 }
 
 .estaly-terms-link:hover {
     text-decoration: underline;
-    color: dodgerblue;
 }
 
 /* Modal offers styles */
