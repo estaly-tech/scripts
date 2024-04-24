@@ -228,11 +228,11 @@
 
 .estaly-headline-buttons {
     font-weight: bolder;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .estaly-logo-full {
-    width: 12%;
+    width: 8%;
 }
 
 .estaly-link-buttons {
@@ -245,11 +245,10 @@
 
 .estaly-terms-and-conditions {
     display: none;
-    font-style: italic;
 }
 
 .estaly-terms-and-conditions > p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 .estaly-terms-and-conditions:hover > p > a {
