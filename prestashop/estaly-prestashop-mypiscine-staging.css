@@ -341,7 +341,6 @@
 }
 
 .estaly-sub-subheading {
-    display: none;
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -358,7 +357,6 @@
 }
 
 .estaly-list-item:not(.custom) {
-    list-style: disc;
 }
 
 .estaly-offered-by {
