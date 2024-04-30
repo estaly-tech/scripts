@@ -482,18 +482,18 @@
 /* --- Cart ---- */
 
 .estaly-cart-insurance-suggestion {
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .estaly-cart-insurance-suggestion-button {
-    background: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    background: #37AAFF;
+    border: 1px solid #37AAFF;
     color: var(--active-multiple-button-text-color);
     cursor: pointer;
     transition: border 200ms, box-shadow 200ms;
     font-size: 0.9rem;
     font-weight: 600;
-    padding: 8px;
+    padding : 0.25rem 1rem ;
     white-space: normal;
     border-radius: 5px;
 }
