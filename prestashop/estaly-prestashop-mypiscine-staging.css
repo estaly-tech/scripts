@@ -321,6 +321,7 @@
 }
 
 .estaly-merchant-logo {
+    display: none;
     max-height: 5rem;
     max-width: 17rem;
 }
