@@ -112,8 +112,6 @@
 @media (hover: hover) and (pointer: fine) {
     /* General */
     .estaly-link-buttons:hover {
-        color: dodgerblue;
-        font-weight: bold;
     }
 
     /* Multiple */
@@ -237,7 +235,7 @@
 .estaly-link-buttons {
     font-size: 13px;
     text-align: right;
-    color: var(--primary-color);
+    color: #37AAFF;
     text-decoration: underline;
     cursor: pointer;
 }
