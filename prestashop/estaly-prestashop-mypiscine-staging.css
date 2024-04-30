@@ -336,8 +336,8 @@
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.4rem;
-    color: black;
     text-align: center;
+    margin-bottom: 1.75rem;
 }
 
 .estaly-sub-subheading {
@@ -355,7 +355,6 @@
     line-height: 2rem;
     margin: 0.4rem 0;
     text-align: left;
-    color: black;
 }
 
 .estaly-list-item:not(.custom) {
@@ -514,6 +513,12 @@
 .estaly-protection-logo {
     width: 20px;
     vertical-align: middle;
+}
+
+.estaly-shield-bullet-point {
+    width: 20px;
+    vertical-align: middle;
+    color: var(--primary-color);
 }
 
 .estaly-order-button-block {
