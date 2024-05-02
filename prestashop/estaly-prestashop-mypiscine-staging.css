@@ -464,7 +464,8 @@
     .estaly-sub-subheading{ margin-bottom: 15px; font-size: 13px;}
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
-    .estaly-list-item{ font-size: 15px !important ; line-height: 1.6rem}
+    .estaly-list { padding-left: 1rem; }
+    .estaly-list-item{ font-size: 12px !important ; line-height: 1.6rem}
     .estaly-link-container{ font-size: 14px !important; text-align: center;}
     .estaly-choice-container button{ font-size: 15px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
