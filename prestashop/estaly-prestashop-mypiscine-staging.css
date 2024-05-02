@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #0B1F5F; /* Active buttons & links color */
+    --primary-color: #06c; /* Active buttons & links color */
     --hover-color: #007bff !important; /* Hover button color */
     --border-color: #06c; /* Border buttons color */
     --text-color: black; /* Text color */
@@ -345,7 +345,6 @@
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: var(--primary-color);
 }
 
 
@@ -444,7 +443,7 @@
 }
 
 .estaly-button-submit {
-    background: var(--primary-color);
+    background: #0B1F5F;
     border-width: 0rem;
     color: white;
     cursor: pointer;
@@ -455,7 +454,6 @@
 }
 
 .estaly-button-submit:hover {
-    background: var(--hover-color);
 }
 
 /* Mobile Modal */
