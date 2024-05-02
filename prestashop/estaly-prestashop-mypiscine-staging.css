@@ -470,7 +470,7 @@
     .estaly-merchant-logo { max-width: 10rem !important;}
     .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
-    .estaly-cart-insurance-suggestion-button { font-size: 0.55rem; text-align: left }
+    .estaly-cart-insurance-suggestion-button { font-size: 0.55rem !important; text-align: left }
     .estaly-terms-and-conditions > p { font-size: 0.75rem }
     .estaly-headline-buttons { font-size: 1.1rem }
 }
