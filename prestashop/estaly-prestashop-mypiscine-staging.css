@@ -502,8 +502,8 @@
 
 .estaly-cart-insurance-suggestion-button:hover,
 .estaly-cart-insurance-suggestion-button:active {
-    border-color: var(--hover-color);
-    background: var(--hover-color);
+    border-color: #0B1F5F;
+    background: #0B1F5F;
     box-shadow: 0 0 0 1px inset var(--primary-color);
     color: var(--active-multiple-button-text-color);
 }
