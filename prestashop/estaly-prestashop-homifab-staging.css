@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #a83b03; /* Active buttons & links color */
-    --hover-color: #a83b03 !important; /* Hover button color */
-    --border-color: #a83b03; /* Border buttons color */
-    --text-color: black; /* Text color */
-    --multiple-button-text-color: black; /* Multiple buttons text color */
-    --active-multiple-button-text-color: white; /* Active multiple buttons text color */
-    --active-uniq-button-text-color: white; /* Active uniq buttons text color */
+    --estaly-primary-color: #0a0b0b; /* Active buttons & links color */
+    --estaly-hover-color: #0a0b0b !important; /* Hover button color */
+    --estaly-border-color: #0a0b0b; /* Border buttons color */
+    --estaly-text-color: black; /* Text color */
+    --estaly-multiple-button-text-color: black; /* Multiple buttons text color */
+    --estaly-active-multiple-button-text-color: white; /* Active multiple buttons text color */
+    --estaly-active-uniq-button-text-color: white; /* Active uniq buttons text color */
 }
 
 /* --- Offers --- */
@@ -29,12 +29,13 @@
 /* Multiple offers style */
 
 .estaly-button-group.multiple {
-    margin-bottom: 10px;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
 }
 
 .estaly-offer-button.multiple {
     flex: 1;
-    border: 0.1px solid var(--border-color);
+    border: 0.1px solid var(--estaly-border-color);
     border-radius: 0.25rem;
     justify-content: center;
 }
@@ -46,7 +47,7 @@
 .estaly-offer-term-length,
 .estaly-offer-price {
     font-size: 1rem !important;
-    font-weight: bold !important;
+    font-weight: bolder !important;
 }
 
 .estaly-offer-price {
@@ -62,15 +63,22 @@
 .estaly-offer-button.uniq {
     justify-content: space-between;
     height: 40px;
-    cursor: pointer;
     text-align: center;
     background: transparent;
     border-radius: 0px;
-    color: var(--text-color);
+    color: var(--estaly-text-color);
     transition: border 200ms, box-shadow 200ms;
     width: 99%;
     align-items: center;
     border-radius: 5px;
+    font-size: 1.6rem;
+    margin-bottom: .5em;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: 700;
+}
+
+.estaly-offer-button.uniq.pdp {
+    cursor: pointer;
 }
 
 .estaly-offer-uniq-button-left-side {
@@ -79,9 +87,9 @@
     padding: 10px;
 }
 
-.estaly-offer-button.uniq.active > .estaly-offer-uniq-button-left-side > .estaly-offer-uniq-button-checkbox {
-    background-color: var(--primary-color);
-    color: var(--active-uniq-button-text-color);
+.estaly-offer-button.uniq.pdp.active > .estaly-offer-uniq-button-left-side > .estaly-offer-uniq-button-checkbox {
+    background-color: var(--estaly-primary-color);
+    color: var(--estaly-active-uniq-button-text-color);
     border-radius: 5px;
 }
 
@@ -89,7 +97,7 @@
     min-width: 22px;
     min-height: 22px;
     width: 22px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--estaly-border-color);
     border-radius: 5px;
     height: 22px;
     margin-right: 10px;
@@ -103,8 +111,7 @@
 }
 
 .estaly-offer-uniq-button-title {
-    display: flex;
-    align-items: center;
+    font-size: 1.3rem;
 }
 
 /* PC Offers */
@@ -112,7 +119,6 @@
 @media (hover: hover) and (pointer: fine) {
     /* General */
     .estaly-link-buttons:hover {
-        color: dodgerblue;
         font-weight: bold;
     }
 
@@ -122,38 +128,38 @@
         padding: 0.8rem;
         text-align: center;
         background: transparent;
-        color: var(--text-color);
+        color: var(--estaly-text-color);
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
     }
 
     .estaly-offer-button.multiple.active {
-        border: 1px solid var(--primary-color);
-        box-shadow: 0 0 0 1px inset  var(--primary-color);
-        background-color: var(--primary-color);
-        color: var(--active-multiple-button-text-color);
+        border: 1px solid var(--estaly-primary-color);
+        box-shadow: 0 0 0 1px inset  var(--estaly-primary-color);
+        background-color: var(--estaly-primary-color);
+        color: var(--estaly-active-multiple-button-text-color);
     }
 
     .estaly-offer-button.multiple:hover {
         border-color: #647259;
-        box-shadow: 0 0 0 1px inset  var(--primary-color);
-        background-color: var(--primary-color);
-        color: var(--active-multiple-button-text-color);
+        box-shadow: 0 0 0 1px inset  var(--estaly-primary-color);
+        background-color: var(--estaly-primary-color);
+        color: var(--estaly-active-multiple-button-text-color);
     }
 
     /* Uniq */
 
     .estaly-offer-button.uniq {
-        border: 0.1px solid var(--border-color);
+        border: 0.1px solid var(--estaly-border-color);
         box-shadow: 0px 0px 10px rgb(72 72 173 / 15%);
     }
 
-    .estaly-offer-button.uniq.active {
-        border-color: var(--primary-color);
+    .estaly-offer-button.uniq.pdp.active {
+        border-color: var(--estaly-primary-color);
     }
 
-    .estaly-offer-button.uniq:hover {
-        border-color: var(--primary-color);
+    .estaly-offer-button.uniq.pdp:hover {
+        border-color: var(--estaly-primary-color);
         box-shadow: 0 0 0 1px inset #647259;
     }
 }
@@ -162,11 +168,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1018px) {
     .estaly-offer-uniq-button-title {
-      font-size: 12px;
+        font-size: 12px;
     }
-  
+
     .estaly-offer-button.uniq {
-      height: 60px;
+        height: 60px;
     }
 }
 
@@ -184,27 +190,27 @@
         padding: 0.8rem;
         text-align: center;
         background: transparent;
-        color: var(--multiple-button-text-color);
+        color: var(--estaly-multiple-button-text-color);
         cursor: pointer;
         transition: border 200ms, box-shadow 200ms;
     }
 
     .estaly-offer-button.multiple.active {
-        border: 1px solid var(--primary-color);
-        box-shadow: 0 0 0 1px inset  var(--primary-color);
-        background-color: var(--primary-color);
+        border: 1px solid var(--estaly-primary-color);
+        box-shadow: 0 0 0 1px inset  var(--estaly-primary-color);
+        background-color: var(--estaly-primary-color);
         color: #fff;
     }
 
     /* Uniq */
 
     .estaly-offer-button.uniq {
-        border: 1px solid var(--border-color);
+        border: 1px solid var(--estaly-border-color);
     }
 
-    .estaly-offer-button.uniq.active {
-        border: 1px solid var(--primary-color);
-        box-shadow: 0 0 0 1px inset var(--border-color);
+    .estaly-offer-button.uniq.pdp.active {
+        border: 1px solid var(--estaly-primary-color);
+        box-shadow: 0 0 0 1px inset var(--estaly-border-color);
     }
 
     .estaly-modal-content .estaly-offer-uniq-button-title {
@@ -216,6 +222,7 @@
 
 .estaly-pdp-offering {
     display: none;
+    margin-top: 2.5rem;
 }
 
 .estaly-flex-col {
@@ -225,9 +232,8 @@
 }
 
 .estaly-headline-buttons {
-    font-weight: bold;
-    display: none;
-    font-size: 16px;
+    font-weight: bolder;
+    font-size: 1.4rem;
 }
 
 .estaly-logo-full {
@@ -237,22 +243,21 @@
 .estaly-link-buttons {
     font-size: 13px;
     text-align: right;
-    color: var(--primary-color);
+    color: var(--estaly-primary-color);
     text-decoration: underline;
     cursor: pointer;
 }
 
 .estaly-terms-and-conditions {
     display: none;
-    font-style: italic;
 }
 
 .estaly-terms-and-conditions > p {
-    font-size: 11px;
+    font-size: 0.9rem;
 }
 
 .estaly-terms-and-conditions:hover > p > a {
-    color: var(--primary-color);
+    color: var(--estaly-hover-color);
     font-weight: bold;
     text-decoration: underline;
 }
@@ -281,7 +286,7 @@
 
 .estaly-modal-content {
     background: white;
-    border-radius: 3rem;
+    border-radius: 1rem;
     box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 50%);
     display: flex;
     overflow: auto;
@@ -290,10 +295,7 @@
 }
 
 .estaly-content-container {
-    padding-top: 4.8rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
+    padding: 2rem;
     text-align: left;
 }
 
@@ -319,6 +321,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0 2rem 0;
 }
 
 .estaly-plus {
@@ -332,52 +335,50 @@
 }
 
 .estaly-list {
-    margin: 0 0 1.5rem;
-    overflow: hidden;
-    padding-left: 1.7rem;
-    text-overflow: ellipsis;
-    width: 100%;
+    margin-bottom: 2rem;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.4rem;
+    color: #393C3F;
 }
 
 .estaly-subheading {
-    padding-top: 1rem;
     font-size: 2rem;
-    font-weight: 500;
-    line-height: 2.4rem;
-    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Century Gothic', sans-serif;
     color: black;
+    font-weight: 700;
 }
 
 .estaly-sub-subheading {
+    display: none;
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: var(--primary-color);
+    color: var(--estaly-primary-color);
 }
 
 
 .estaly-list-item {
-    font-size: 1.4rem;
-    font-weight: normal;
-    line-height: 3rem;
-    margin: 0.4rem 0;
-    text-align: left;
+    margin-bottom: 9px;
+}
+
+.estaly-list-item:not(.custom) {
     list-style: disc;
-    color: black;
 }
 
 .estaly-offered-by {
     display: flex;
-    align-items: center;
-    text-align: center;
     position: relative;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
 
 .estaly-offered-by-text {
-    text-decoration: none;
-    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    font-family: 'Century Gothic', sans-serif;
+    color: black;
+    font-weight: 700;
     margin-right: 8px;
 }
 
@@ -391,14 +392,15 @@
 }
 
 .estaly-terms-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Century Gothic', sans-serif;
+    color: #393C3F;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .estaly-terms-link:hover {
     text-decoration: underline;
-    color: dodgerblue;
 }
 
 /* Modal offers styles */
@@ -420,8 +422,7 @@
 .estaly-choice-validation {
     font-weight: 700;
     color: red;
-    padding-top: 4%;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -432,13 +433,14 @@
 }
 
 .estaly-choice-container button {
-    border-radius: 1.4rem;
+    border-radius: 5px;
     height: 4.2rem;
     width: 19.2rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .estaly-button-link {
+    font-size: 1.3rem;
     background-color: transparent;
     border: none;
     color: #6d7278;
@@ -450,35 +452,43 @@
 }
 
 .estaly-button-submit {
-    background: var(--primary-color);
-    border-width: 0rem;
-    color: white;
+    background-color: #0a0b0b;
+    border: 1px solid #0a0b0b;
+    color: #fff;
+    text-transform: uppercase;
     cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: bold;
-    line-height: 100%;
-    transition: 250ms opacity;
+    height: 44px;
+    font-size: 1.3rem;
+    padding: 0 24px;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .estaly-button-submit:hover {
-    background: var(--hover-color);
+    background: var(--estaly-hover-color);
 }
 
 /* Mobile Modal */
 
 @media (max-width: 800px){
     .estaly-modal-content { width: 100% !important ;}
-    .estaly-subheading{ font-size: 1.3rem !important ; line-height: 25px !important; padding-bottom: 0.8rem;}
+    .estaly-subheading{ font-size: 1.5rem !important ; line-height: 25px !important; padding-bottom: 0.8rem;}
     .estaly-sub-subheading{ margin-bottom: 15px; font-size: 13px;}
     .estaly-content-container{ width: 100%;}
     .estaly-image-container{ width: 0% !important;}
-    .estaly-list-item{ font-size: 12px !important ; line-height: 1.6rem}
+    .estaly-list-item{ font-size: 14px !important ; line-height: 1.6rem}
     .estaly-link-container{ font-size: 14px !important; text-align: center;}
-    .estaly-choice-container button{ font-size: 14px !important;}
+    .estaly-choice-container button{ font-size: 12px !important;}
     .estaly-merchant-logo { max-width: 10rem !important;}
     .estaly-modal-dialog { z-index: 999 }
     .estaly-horizontal-line { margin-top: 5px; }
     .estaly-cart-insurance-suggestion-button { font-size: 1.1rem; }
+    .estaly-terms-and-conditions > p { font-size: 0.85rem }
+    .estaly-headline-buttons { font-size: 1.1rem }
 }
 
 /* --- Cart ---- */
@@ -488,27 +498,20 @@
 }
 
 .estaly-cart-insurance-suggestion-button {
-    background: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    color: var(--active-multiple-button-text-color);
+    background-color: #0a0b0b;
+    border: 1px solid #0a0b0b;
+    color: #fff;
+    text-transform: uppercase;
     cursor: pointer;
-    transition: border 200ms, box-shadow 200ms;
+    height: 44px;
     font-size: 1.3rem;
-    font-weight: 600;
-    padding: 8px;
-    white-space: normal;
-}
-
-.estaly-cart-insurance-suggestion-button:hover,
-.estaly-cart-insurance-suggestion-button:active {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 1px inset var(--primary-color);
-    color: var(--active-multiple-button-text-color);
-}
-
-.estaly-protection-logo {
-    width: 20px;
-    vertical-align: middle;
+    padding: 0 24px;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .estaly-order-button-block {
@@ -522,39 +525,51 @@
 
 /* --- Crosselling --- */
 .estaly-crosselling-modal-component {
-    display: none;
-    margin: 15px;
+    margin-top: 2.2rem;
     background-color: #F8F8F8;
+    padding: 3rem;
 }
 
 .estaly-crosselling-offer-information {
-    padding: 20px 20px 0px 20px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
 }
 
 .estaly-crosselling-offer-incentive {
+    font-size: 1.6rem;
+    margin-bottom: .5em;
+    font-family: 'Century Gothic', sans-serif;
     color: black;
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .estaly-crosselling-offer-details {
-    line-height: 15px;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.4rem;
+    color: #393C3F;
+    margin-bottom: 2.5rem;
 }
 
 .estaly-crosselling-marketing-page-redirection {
-    text-decoration: underline;
-    color: gray;
+    text-transform: uppercase;
+    font-family: 'Century Gothic', sans-serif;
+    color: #393C3F;
+    height: 44px;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .estaly-crosselling-marketing-page-redirection:hover {
-    color: dodgerblue;
-    font-weight: bold
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .estaly-crosselling-offer-content {
     display: flex;
-    padding: 0px 20px 10px 20px;
+    margin-top: 2rem;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
+    align-items: center;
 }
 
 .estaly-crosselling-offers {
@@ -562,12 +577,21 @@
 }
 
 .estaly-crosselling-offer-add-to-cart {
-    color: white;
-    background-color: black;
-    border: 2px solid #111;
-    font-weight: bold;
-    width: 80px;
-    height: 30px;
+    background-color: #a83b03;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #ccc;
+    border-radius: 12px;
+    font-size: 15px;
+    letter-spacing: 0.05rem;
+}
+
+.heading {
+    margin-bottom: 0px;
 }
 
 .estaly-crosselling-offer-add-to-cart.estaly-insurance-added {
@@ -576,18 +600,108 @@
     border: 2px solid grey;
 }
 
-.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon-check {
+.estaly-marketing-content-bullet-point-container {
+    list-style: disc;
+    margin-left: 3rem;
+    margin-bottom: 0px;
+}
+
+.estaly-crosselling-uniq-offer-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--estaly-primary-color);
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.estaly-cgv {
+    display: block;
+}
+
+.estaly-cgv-link {
+    text-decoration: underline;
+    color: #333;
+}
+
+.estaly-custom-insurance-proposition-block {
+    padding: 10px 25px;
+    background-color: #f8dfc1;
+    margin-bottom: 10px;
+}
+.estaly-custom-insurance-proposition-block-title {
+    text-transform: uppercase;
+    color: #27295a;
+    margin-bottom: 0.5rem;
+    font-family: Figtree,-apple-system,blinkmacsystemfont,Segoe UI,Helvetica Neue,arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 1rem;
+}
+.estaly-custom-insurance-proposition-block-price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.estaly-custom-insurance-proposition-block-price-span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+}
+.estaly-custom-insurance-proposition-block-add-to-cart-button {
+    margin-left: 1rem;
     display: inline-block;
+    font-family: Figtree,-apple-system,blinkmacsystemfont,Segoe UI,Helvetica Neue,arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    text-align: center;
+    white-space: wrap;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    border-radius: 10rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #27295a;
+    border-color: #27295a;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f8dfc1;
+    padding: 0.625rem 1rem;
+    font-size: .875rem;
+    line-height: 1.3;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+.estaly-custom-insurance-proposition-detail-information {
+    margin-right: 1rem;
 }
 
-.estaly-crosselling-offer-add-to-cart.estaly-insurance-added > .icon-plus {
-    display: none;
+.estaly-custom-insurance-proposition-terms-and-condition-paragraph {
+    font-size: x-small;
+    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
 }
 
-.estaly-crosselling-offer-add-to-cart:not(.estaly-insurance-added) > .icon-check {
-    display: none;
+.estaly-custom-insurance-proposition-brand {
+    display: flex;
+    font-size: x-small;
 }
 
-.estaly-crosselling-offer-add-to-cart:not(.estaly-insurance-added) > .icon-plus {
-    display: inline-block;
+.estaly-custom-insurance-proposition-brand:hover {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+.estaly-custom-insurance-proposition-brand-image {
+    margin-left: 6px;
+}
+
+.estaly-custom-insurance-proposition-marketing-item {
+    font-size: smaller;
+    list-style: disc;
+    margin-left: 1rem;
+}
+
+.estaly-crosselling-offer-incentive {
+    color: #a83b03;
 }
