@@ -248,10 +248,13 @@
     font-size: 0.7rem;
 }
 
+.estaly-terms-and-conditions > p > a {
+    text-decoration: underline;
+}
+
 .estaly-terms-and-conditions:hover > p > a {
     color: var(--hover-color);
     font-weight: bold;
-    text-decoration: underline;
 }
 
 /* --- Modal --- */
